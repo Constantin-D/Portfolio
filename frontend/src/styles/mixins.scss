@@ -1,0 +1,52 @@
+// Mixin pour le centrement flex
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+}
+
+// Bouton générique
+@mixin button($bg-color, $text-color, $hover-bg-color, $hover-text-color, $padding: 0.8rem 3rem, $border-radius: 5px) {
+    display: inline-block;
+    padding: $padding;
+    font-family: $font-body;
+    color: $text-color;
+    background-color: $bg-color;
+    border: 2px solid transparent;
+    border-radius: $border-radius;
+    transition: all 0.4s ease;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $hover-bg-color;
+        color: $hover-text-color;
+    }
+
+    &:active {
+        transform: scale(0.95);
+    }
+
+    &:focus {
+        box-shadow: 0 0 0 3px rgba($bg-color, 0.5);
+    }
+}
+
+// Mixin pour les médias queries
+@mixin respond-to($breakpoint) {
+    @if $breakpoint =="mobile" {
+        @media (max-width: $breakpoint-mobile) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint =="tablet" {
+        @media (max-width: $breakpoint-tablet) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint =="desktop" {
+        @media (max-width: $breakpoint-desktop) {
+            @content;
+        }
+    }
+}

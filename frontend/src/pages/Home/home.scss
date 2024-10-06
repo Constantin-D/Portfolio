@@ -1,0 +1,87 @@
+@import "./../../styles/variables.scss";
+@import "./../../styles/mixins.scss";
+
+.home {
+    padding: 1rem 2rem;
+    height: 100%;
+
+    &__presentation {
+        text-align: center;
+
+        p {
+            // color: $primary-color;
+            margin: auto;
+            max-width: 600px;
+        }
+    }
+
+    &__projects {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 3.5rem;
+
+        p {
+            margin: 1rem 0;
+        }
+
+        a {
+            margin: 2rem 0;
+        }
+    }
+
+    &__skills {
+
+        &-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        &-item {
+            background-color: #f0f0f0;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+        }
+    }
+
+    &__contact-cta {
+        margin: 4rem 0;
+        text-align: center;
+
+        p {
+            margin: 2rem;
+            color: $secondary-color;
+        }
+
+        &--link {
+            @include button($primary-color,
+                $text-pale-color,
+                $see-thro-primary-color,
+                $blue-light-color,
+                0.6rem 1rem);
+
+            &:hover {
+                    text-decoration: none;
+                }
+        }
+    }
+}
+
+.home {
+    @include respond-to("tablet") {
+        padding: 1.2rem;
+    }
+
+    @include respond-to("mobile") {
+        p {
+            padding: 0.5rem;
+        }
+
+        &__skills {
+            &-list {
+                flex-direction: column;
+            }
+        }
+    }
+}

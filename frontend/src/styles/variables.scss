@@ -1,0 +1,26 @@
+// Couleurs principales 
+$primary-color: rgb(8, 45, 82); 
+$secondary-color: #95a5a6; 
+$background-color: #f8f9fa;
+$card-background-color: gainsboro;
+$modal-background-color: #fff;
+$indicator-background-color: #ccc;
+$description-color: #333;
+// $text-color: #333;
+$text-pale-color: #fff;
+$see-thro-primary-color: rgba(8, 45, 82, 0.8);
+$modal-overlay-color: rgba(0, 0, 0, 0.2);
+$close-icon-color: #ccc;
+$blue-light-color: #4d94f2;
+
+$modal-padding: 2rem;
+$box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+// Typographies
+$font-title: 'Montserrat', sans-serif;
+$font-body: 'Open Sans', sans-serif;
+
+// Breakpoints pour le responsive 
+$breakpoint-mobile: 480px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1200px; 

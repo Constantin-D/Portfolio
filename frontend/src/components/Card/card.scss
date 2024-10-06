@@ -1,0 +1,51 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+
+.card {
+    @include flex-center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+    height: 400px;
+    background-color: $card-background-color;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+
+    &:hover {
+        transform: translateY(-5px);
+    }
+
+    &__image {
+        width: 100%;
+        height: 200px;
+        // overflow: hidden;
+    }
+
+    &__title {
+        font-size: 1.2rem;
+        // color: $primary-color;
+        margin: 0.8rem;
+    }
+
+    &__description {
+        @include flex-center;
+        font-size: 0.9rem;
+        font-weight: bold;
+        // color: $description-color;
+        text-align: center;
+        margin:   0.5rem;
+        flex-grow: 1;// Espace disponible
+    }
+
+    &__button {
+        margin: 1.2rem;
+        
+        @include button($primary-color,
+                $text-pale-color,
+                $see-thro-primary-color,
+                $blue-light-color,
+                0.3rem 1rem);
+    }
+}

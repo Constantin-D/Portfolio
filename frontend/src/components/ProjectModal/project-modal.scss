@@ -1,0 +1,145 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: $modal-overlay-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+
+    &.active {
+        visibility: visible;
+        opacity: 1;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    &.inactive {
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+
+// Contenu de la modale
+.modal__content {
+    background-color: $modal-background-color;
+    padding: $modal-padding;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+    width: 90%;
+    position: relative;
+    overflow-y: auto;
+    max-height: 50vh;
+
+    @include respond-to("tablet") {
+        max-width: 95%;
+    }
+
+        // Cache la barre sur Webkit (Chrome, Safari)
+    &::-webkit-scrollbar {
+        width: 0;
+    }
+
+    // Cache la barre sur Firefox
+    & {
+        scrollbar-width: none;
+    }
+
+    .modal__close {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        color: $close-icon-color;
+        font-size: 1.5rem;
+
+        &:hover {
+            color: darken($close-icon-color, 15%);
+        }
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    #modal-title {
+        font-family: $font-title;
+        font-size: 2rem;
+        // color: $primary-color;
+        margin-bottom: 1rem;
+    }
+
+    .modal__container {
+        display: flex;
+        gap: 2rem;
+
+        @include respond-to("tablet") {
+            flex-direction: column;
+        }
+
+        // Partie gauche (description)
+        .modal__left {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: space-evenly;
+            flex: 1;
+            font-weight: bold;
+            // color: $text-color;
+
+            p {
+                font-family: $font-body;
+                line-height: 1.5;
+                margin-bottom: 1rem;
+            }
+
+            .modal__technologies {
+                list-style: none;
+                padding: 0;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 0.5rem;
+
+                li {
+                    background-color: lighten($primary-color, 40%);
+                    color: $text-pale-color;
+                    padding: 0.5rem 1rem;
+                    border-radius: 4px;
+                    font-size: 0.9rem;
+                    font-family: $font-body;
+                }
+            }
+        }
+
+        // Partie droite (images)
+        .modal__right {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: center;
+            flex: 1;
+            gap: 1rem;
+
+            .modal__image {
+                width: 40%;
+                height: auto;
+                object-fit: cover;
+                border-radius: 8px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            }
+
+            p {
+                font-family: $font-body;
+                text-align: center;
+            }
+        }
+    }
+}

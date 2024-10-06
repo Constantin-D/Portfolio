@@ -1,0 +1,103 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+// Contact avec animation de background
+.contact {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    height: 900px; 
+    min-height: 100vh; 
+    padding: 5rem; 
+    background: linear-gradient(10deg, $background-color, $blue-light-color);
+    background-size: 200% 200%; 
+    animation: gradientAnimation 6s ease infinite; 
+
+    h1 {
+        font-family: $font-title; 
+        font-size: 2rem; 
+        color: $text-pale-color; 
+        margin-bottom: 1.5rem;
+        text-align: center; 
+    }
+
+    &__form {
+        @include flex-center; 
+        flex-direction: column; 
+        justify-content: center; 
+        text-align: center;
+
+        &-fieldset {
+            border: none; 
+            margin-bottom: 1.5rem; 
+            width: 100%;
+            max-width: 500px; 
+
+            legend {
+                font-family: $font-title;
+                font-size: 1.5rem; 
+                margin-bottom: 1.5rem; 
+            }
+
+            &--group {
+                display: flex;
+                flex-direction: column; 
+                margin-bottom: 1rem;
+                text-align: left;
+
+                label {
+                    display: block;
+                    margin-bottom: 0.3rem; 
+                    color: $text-pale-color; 
+                    width: 120px;
+                }
+
+                input,
+                textarea {
+                    font-family: $font-body;
+                    flex: 1; 
+                    padding: 0.8rem; 
+                    border: transparent; 
+                    border-radius: 3px; 
+                    background-color: $background-color; 
+                    color: $primary-color;
+
+                    &:focus {
+                        outline: none;
+                        border-color: $primary-color; 
+                        box-shadow: 0 0 0 3px rgba($primary-color, 0.9); 
+                    }
+                }
+
+                textarea {
+                    height: 200px; 
+                    resize: auto; 
+                }
+            }
+        }
+    }
+
+    .button {
+        @include button($primary-color,
+                $text-pale-color,
+                $secondary-color,
+                $primary-color,
+                1rem 3.5rem);
+    }
+}
+
+// Animation du background
+// @keyframes gradientAnimation {
+//     0% {
+//         background-position: 0% 50%; 
+//     }
+
+//     50% {
+//         background-position: 100% 50%;
+//     }
+
+//     100% {
+//         background-position: 0% 50%; 
+//     }
+// }
+

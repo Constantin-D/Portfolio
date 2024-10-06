@@ -1,0 +1,76 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.slider {
+    position: relative;
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto 2rem;
+    overflow: hidden;
+
+    &__slide {
+        cursor: pointer;
+        position: relative;
+        margin-bottom: 2rem;
+        z-index: 1;
+
+        @include respond-to("mobile") {
+            cursor: grab;
+            &:active {
+                cursor: grabbing;
+            }
+        }
+    }
+
+    &__arrow {
+        position: absolute;
+        top: 25%;
+        transform: translateY(-50%);
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        z-index: 2;
+
+        &--left {
+            left: 10px;
+        }
+
+        &--right {
+            right: 10px;
+        }
+
+        // @include respond-to("tablet") {
+        //     display: none;
+        // }
+
+        @include respond-to("mobile") {
+            display: none;
+        }
+
+        &-icon {
+            font-size: 2rem;
+            color: $text-pale-color;
+        }
+    }
+
+    &__indicators {
+        display: flex;
+        justify-content: center;
+        // margin-top: 1rem;
+        position: relative;
+        z-index: 2;
+
+        .slider__indicator {
+            width: 10px;
+            height: 10px;
+            background-color: $secondary-color;
+            margin: 0 5px;
+            border-radius: 50%;
+            cursor: pointer;
+
+            &.active {
+                background-color: $blue-light-color;
+            }
+        }
+    }
+}

@@ -1,0 +1,131 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.header {
+    position: relative;
+    @include flex-center;
+    justify-content: space-between;
+    padding: 3rem 2rem 1rem;
+    color: $text-pale-color;
+    background-color: $primary-color;
+    box-shadow: $box-shadow;
+
+
+    &__logo {
+        img {
+            width: 60px;
+        }
+    }
+
+    &__nav {
+        ul {
+            display: flex;
+            // flex-direction: row;
+
+            li {
+                margin-left: 1rem;
+
+                a {
+                    width: 100%;
+                    color: $text-pale-color;
+
+                    &:hover {
+                        color: $secondary-color;
+                    }
+
+                    &.active {
+                        color: $blue-light-color;
+                    }
+                }
+            }
+        }
+    }
+
+    &__bars {
+        display: none;
+
+        @include respond-to("mobile") {
+            display: block;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+    }
+}
+
+@include respond-to("tablet") {
+    .header__nav a {
+        font-size: 0.7rem;
+    }
+}
+
+@include respond-to("mobile") {
+    .header {
+        color: $text-pale-color;
+        font-size: 0.7rem;
+        height: auto;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        &__logo {
+            img {
+                width: 20%;
+            }
+        }
+
+        &__nav {
+            position: absolute;
+            top: 100%;
+            right: 0;
+            color: $text-pale-color;
+            background-color: $see-thro-primary-color;
+            z-index: 99;
+            width: 50%;
+            border-radius: 0 0 5px 5px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease-in-out;
+
+            ul {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                width: 100%;
+                padding-right: 1.1rem;
+
+                li {
+                    margin: 0;
+                    padding: 0.5rem 1rem;
+                    width: 100%;
+
+                    a {
+                        font-size: 1rem;
+                        color: $text-pale-color;
+                        text-align: right;
+                        display: block;
+                        width: 100%;
+
+                        &:hover {
+                            color: $secondary-color;
+                        }
+
+                        &.active {
+                            color: $blue-light-color;
+                        }
+                    }
+                }
+            }
+        }
+
+        // Quand le menu est ouvert on affiche les liens
+        &__nav--open {
+            max-height: 260px;
+        }
+
+        &__bars {
+            font-size: 1.5rem;
+        }
+    }
+
+
+}

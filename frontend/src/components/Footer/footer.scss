@@ -1,0 +1,48 @@
+@import "../../styles/variables"; 
+@import "../../styles/mixins";
+
+.footer {
+    background-color: $primary-color; 
+    color: $text-pale-color; 
+    padding: 2rem 1rem;
+
+    p {
+        text-align: center;
+        margin: 0; 
+    }
+
+    &__links {
+        margin-top: 1rem;
+        display: flex;
+        justify-content: center;
+        gap: 2rem; 
+
+        a {
+            color: $text-pale-color; 
+
+            &:hover {
+                color: $secondary-color; 
+            }
+
+            &.logo-link {
+                @include flex-center; 
+                gap: 0.5rem; 
+            }
+        }
+    }
+}
+
+@include respond-to("mobile") {
+    .footer {
+        font-size: 0.7rem; 
+        padding: 1.5rem 1rem; 
+
+        &__links {
+            gap: 1rem;
+            
+            a {
+                font-size: 0.7rem; 
+            }
+        }
+    }
+}
