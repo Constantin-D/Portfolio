@@ -49,11 +49,16 @@ h3
   text-align: center;
 }
 
+h1 {
+  font-size: clamp(1.9rem, 5vw, 2.5rem);
+  font-weight: 700;
+}
+
 h2 {
   margin: 2rem 0;
   
   @include respond-to("tablet") {
-    margin: 1.5rem 0;
+    margin:1.5rem 0;
   }
 
   @include respond-to("mobile") {

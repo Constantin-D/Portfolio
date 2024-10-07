@@ -1,7 +1,6 @@
 @import '../../styles/variables.scss';
 @import '../../styles/mixins.scss';
 
-// Contact avec animation de background
 .contact {
     display: flex;
     flex-direction: column; 
@@ -85,19 +84,4 @@
                 1rem 3.5rem);
     }
 }
-
-// Animation du background
-// @keyframes gradientAnimation {
-//     0% {
-//         background-position: 0% 50%; 
-//     }
-
-//     50% {
-//         background-position: 100% 50%;
-//     }
-
-//     100% {
-//         background-position: 0% 50%; 
-//     }
-// }
 
