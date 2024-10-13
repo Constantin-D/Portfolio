@@ -1,3 +1,4 @@
+import { AnimatePresence, motion } from "framer-motion";
 import React, { useEffect, useState } from "react";
 import { FaTimes } from "react-icons/fa";
 import "./project-modal.scss";
@@ -6,11 +7,10 @@ const ProjectModal = ({ project, onClose }) => {
     const [isVisible, setIsVisible] = useState(true);
 
     const handleToggleModal = () => {
-        setIsVisible(false);
-        onClose(); // Fermer la modale dans le parent
+        setIsVisible(false); // Changer la visibilité pour déclencher l'animation de fermeture
     };
 
-    // Si le projet est undefined, ne pas rendre la modale 
+    // Si le projet est undefined, ne pas rendre la modale
     if (!project) return null;
 
     useEffect(() => {
@@ -19,13 +19,12 @@ const ProjectModal = ({ project, onClose }) => {
         } else {
             document.body.classList.remove("no-scroll");
         }
-        return () => {
-            document.body.classList.remove("no-scroll");
-        };
     }, [isVisible]);
 
     return (
-        <>
+        <AnimatePresence
+            onExitComplete={onClose} // Appel de onClose après l'animation exit
+        >
             {isVisible && (
                 <div
                     className="modal-overlay"
@@ -38,7 +37,17 @@ const ProjectModal = ({ project, onClose }) => {
                         }
                     }}
                 >
-                    <div className="modal__content">
+                    <motion.div
+                        className="modal__content"
+                        initial={{ scale: 0 }}
+                        animate={{ scale: 1 }}
+                        exit={{ scale: 0, opacity: 0 }}
+                        transition={{
+                            type: "spring",
+                            stiffness: 400,
+                            damping: 50,
+                        }}
+                    >
                         <button
                             className="modal__close"
                             onClick={handleToggleModal}
@@ -80,10 +89,10 @@ const ProjectModal = ({ project, onClose }) => {
                                 )}
                             </div>
                         </div>
-                    </div>
+                    </motion.div>
                 </div>
             )}
-        </>
+        </AnimatePresence>
     );
 };
 

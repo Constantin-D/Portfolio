@@ -6,15 +6,15 @@
     flex-direction: column;
     width: 100%;
     max-width: 100%;
-    height: 400px;
+    height: auto;
     background-color: $card-background-color;
     border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: $box-shadow;
     overflow: hidden;
     transition: transform 0.3s ease;
 
     &:hover {
-        transform: translateY(-5px);
+        transform: translateY(-2px);
     }
 
     &__image {
@@ -24,9 +24,7 @@
     }
 
     &__title {
-        font-size: 1.2rem;
-        // color: $primary-color;
-        margin: 0.8rem;
+        margin-top: 0.5rem;
     }
 
     &__description {
@@ -40,7 +38,7 @@
     }
 
     &__button {
-        margin: 1.2rem;
+        margin: 0 0 1.2rem;
         
         @include button($primary-color,
                 $text-pale-color,

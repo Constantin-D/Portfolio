@@ -13,7 +13,7 @@ const Card = ({ project, onClick }) => {
                 // height="auto"
                 // style={{ maxWidth: "100%", height: "auto" }}
             />
-            <h3 className="card__title">{project.title}</h3>
+            <h4 className="card__title">{project.title}</h4>
             <p className="card__description">{project.presentation}</p>
             <button className="card__button">Voir plus</button>
         </div>

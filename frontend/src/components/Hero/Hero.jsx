@@ -8,15 +8,17 @@ const Hero = () => {
     return (
         <section className="hero-container">
             <div className="hero__image">
-                <h1>Constantin Dugard</h1>
+                <h1>Intégrateur web</h1>
                 <img
                     className="hero__image--profile"
                     src="/images/Profile-512-min.webp"
                     alt="Profile"
                 />
             </div>
+            <div className="hero__separator"></div>
             <div className="hero__presentation">
-                <h2>Intégrateur web</h2>
+                <p>Bonjour, je suis</p>
+                <h2>Constantin Dugard</h2>
                 <p className="hero__presentation--description">
                     Je crée des sites web modernes et performants avec une
                     attention particulière pour l'optimisation et

@@ -4,7 +4,7 @@
 .slider {
     position: relative;
     width: 100%;
-    max-width: 700px;
+    max-width: 400px;
     margin: 0 auto 2rem;
     overflow: hidden;
 
@@ -14,12 +14,12 @@
         margin-bottom: 2rem;
         z-index: 1;
 
-        @include respond-to("mobile") {
-            cursor: grab;
-            &:active {
-                cursor: grabbing;
-            }
-        }
+        // @include respond-to("mobile") {
+        //     cursor: grab;
+        //     &:active {
+        //         cursor: grabbing;
+        //     }
+        // }
     }
 
     &__arrow {
@@ -48,8 +48,12 @@
         }
 
         &-icon {
-            font-size: 2rem;
+            font-size: 3rem;
             color: $text-pale-color;
+
+            @include respond-to("tablet") {
+                font-size: 2rem;
+            }
         }
     }
 

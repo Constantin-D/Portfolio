@@ -13,12 +13,14 @@
     background-color: $bg-color;
     border: 2px solid transparent;
     border-radius: $border-radius;
-    transition: all 0.4s ease;
+    // transition: all 0.3s ease;
+    transition: background-color 0.2s ease, transform 0.2s ease;
     cursor: pointer;
 
     &:hover {
         background-color: $hover-bg-color;
         color: $hover-text-color;
+        transform: translateY(-2px);
     }
 
     &:active {

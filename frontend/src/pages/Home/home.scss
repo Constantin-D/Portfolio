@@ -16,33 +16,21 @@
     }
 
     &__projects {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin-top: 3.5rem;
 
         p {
             margin: 1rem 0;
         }
     }
 
-    &__skills {
-
-        &-list {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1rem;
-        }
-
-        &-item {
-            background-color: #f0f0f0;
-            padding: 0.5rem 1rem;
-            border-radius: 4px;
-        }
-    }
+    // &__skills {
+    //     background-image: url("./../../assets/images/yuriy-kovalev-nN1HSDtKdlw-unsplash.jpg");
+    //     background-color: transparent;
+    //     background-size: cover;
+    //     background-position: center;
+    //     background-repeat: no-repeat;
+    // }
 
     &__contact-cta {
-        margin: 4rem 0;
         text-align: center;
 
         p {
@@ -58,8 +46,8 @@
                 0.6rem 1rem);
 
             &:hover {
-                    text-decoration: none;
-                }
+                text-decoration: none;
+            }
         }
     }
 }
@@ -70,16 +58,16 @@
     }
 
     @include respond-to("mobile") {
-        padding: 0;
+        padding: 0.3rem;
 
-        p, a {
+        p,
+        a {
             padding: 0.5rem;
         }
 
         &__skills {
-            &-list {
-                flex-direction: column;
-            }
+            // background-image: none;
+            // background:$blue-light-color;
         }
     }
 }

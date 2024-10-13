@@ -5,6 +5,7 @@ import { ProjectsContext } from "../../context/ProjectsContext";
 import Hero from "../../components/Hero/Hero";
 import Slider from "../../components/Slider/Slider";
 import PageTransition from "../../components/PageTransition/PageTransition";
+import FilterSkills from "../../components/FilterSkills/FilterSkills";
 
 import "./home.scss";
 
@@ -69,15 +70,7 @@ const Home = () => {
 
                 <section className="home__skills">
                     <h2>Mes Compétences</h2>
-                    <ul className="home__skills-list">
-                        <li className="home__skills-item">HTML</li>
-                        <li className="home__skills-item">CSS</li>
-                        <li className="home__skills-item">JavaScript</li>
-                        <li className="home__skills-item">React</li>
-                        <li className="home__skills-item">Design UI/UX</li>
-                        <li className="home__skills-item">SEO</li>
-                        <li className="home__skills-item">Gestion de projet</li>
-                    </ul>
+                    <FilterSkills />
                 </section>
 
                 <section className="home__contact-cta">
