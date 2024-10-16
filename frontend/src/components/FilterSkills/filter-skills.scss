@@ -97,7 +97,6 @@
         }
     }
 
-    // Responsive pour les petits écrans (mobile)
     @include respond-to("mobile") {
         &__buttons {
             display: flex;

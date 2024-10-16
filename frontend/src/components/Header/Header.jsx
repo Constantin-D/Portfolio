@@ -1,7 +1,8 @@
 import React, { useEffect, useRef, useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Link, useLocation } from "react-router-dom";
-// import Logo from "./../../assets/images/logo/Logo.webp";
+import { HashLink } from "react-router-hash-link";
+
 import "./header.scss";
 
 const Header = () => {
@@ -30,9 +31,17 @@ const Header = () => {
     const navLinks = [
         { path: "about", label: "À propos de moi" },
         { path: "projects", label: "Projets" },
-        { path: "skills", label: "Compétences" },
+        { path: "skills", label: "Compétences", isHashLink: true },
         { path: "contact", label: "Contact" },
     ];
+
+    // const scrollToSkills = () => {
+    //     const skillsSection = document.getElementById("home__skills");
+    //     if (skillsSection) {
+    //         skillsSection.scrollIntoView({ behavior: "smooth" });
+    //     }
+    //     setIsMenuOpen(false);
+    // };
 
     return (
         <>
@@ -61,17 +70,28 @@ const Header = () => {
                         )}
                         {navLinks.map((link, index) => (
                             <li key={index}>
-                                <Link
-                                    to={`/${link.path}`}
-                                    className={
-                                        location.pathname === `/${link.path}`
-                                            ? "active"
-                                            : ""
-                                    }
-                                    onClick={() => setIsMenuOpen(false)}
-                                >
-                                    {link.label}
-                                </Link>
+                                {link.isHashLink ? (
+                                    <HashLink
+                                        smooth
+                                        to={`/#${link.path}`} 
+                                        onClick={() => setIsMenuOpen(false)}
+                                    >
+                                        {link.label}
+                                    </HashLink>
+                                ) : (
+                                    <Link
+                                        to={`/${link.path}`}
+                                        className={
+                                            location.pathname ===
+                                            `/${link.path}`
+                                                ? "active"
+                                                : ""
+                                        }
+                                        onClick={() => setIsMenuOpen(false)}
+                                    >
+                                        {link.label}
+                                    </Link>
+                                )}
                             </li>
                         ))}
                     </ul>

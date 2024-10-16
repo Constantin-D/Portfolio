@@ -7,7 +7,7 @@ const ProjectModal = ({ project, onClose }) => {
     const [isVisible, setIsVisible] = useState(true);
 
     const handleToggleModal = () => {
-        setIsVisible(false); // Changer la visibilité pour déclencher l'animation de fermeture
+        setIsVisible(false); // Déclenche l'animation de fermeture
     };
 
     // Si le projet est undefined, ne pas rendre la modale

@@ -17,7 +17,7 @@ const Hero = () => {
             </div>
             <div className="hero__separator"></div>
             <div className="hero__presentation">
-                <p>Bonjour, je suis</p>
+                <p>Bienvenue, je suis</p>
                 <h2>Constantin Dugard</h2>
                 <p className="hero__presentation--description">
                     Je crée des sites web modernes et performants avec une
@@ -34,6 +34,7 @@ const Hero = () => {
                         <FaGithub />
                     </a>
                     <a
+                        // noreferrer est une directive de politique de sécurité qui indique au navigateur de ne pas envoyer de référents pour les requêtes effectuées à partir d'une page donnée.
                         href="https://twitter.com/"
                         target="_blank"
                         rel="noopener noreferrer"

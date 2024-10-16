@@ -8,6 +8,7 @@ import Home from "./pages/Home/Home";
 import NotFound from "./pages/NotFound/NotFound";
 import Projects from "./pages/Projects/Projects";
 // import PageTransition from "./components/PageTransition/PageTrasition";
+import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 
 import { AnimatePresence } from "framer-motion";
 
@@ -19,6 +20,7 @@ function App() {
             <ProjectsProvider>
                 <Header />
                 <main className="main">
+                    <ScrollToTop />
                     <AnimatePresence mode="wait" initial={false}>
                         <Routes location={location} key={location.pathname}>
                             <Route path="/" element={<Home />} />

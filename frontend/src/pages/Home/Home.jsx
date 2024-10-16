@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { useContext } from "react";
+import { useLocation } from "react-router-dom"; // Pour le HashLink (URL)
+import { useContext, useEffect } from "react"; // useEffect pour le scroll
 import { ProjectsContext } from "../../context/ProjectsContext";
 import Hero from "../../components/Hero/Hero";
 import Slider from "../../components/Slider/Slider";
@@ -11,6 +12,16 @@ import "./home.scss";
 
 const Home = () => {
     const { projects, loading, error } = useContext(ProjectsContext);
+    const location = useLocation();
+
+    useEffect(() => {
+        if (location.hash) {
+            const element = document.querySelector(location.hash);
+            if (element) {
+                element.scrollIntoView(); 
+            }
+        }
+    }, [location]);
 
     // Filtre des projets 4, 6, et 7
     const selectedProjects = projects.filter((project) =>
@@ -68,7 +79,7 @@ const Home = () => {
                     </Link>
                 </section>
 
-                <section className="home__skills">
+                <section id="skills" className="home__skills">
                     <h2>Mes Compétences</h2>
                     <FilterSkills />
                 </section>

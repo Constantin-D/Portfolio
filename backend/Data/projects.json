@@ -14,7 +14,7 @@
         "id": 1,
         "title": "Booki",
         "presentation": "Site de réservation d'hébergements et d'activités",
-        "description": "Aagence de voyage, qui permet aux usagers de trouver des hébergements et des activités dans la ville de leur choix.",
+        "description": "Agence de voyage, qui permet aux usagers de trouver des hébergements et des activités dans la ville de leur choix.",
         "cardImage": "/images/booki/hebergements-min/annie-spratt-768-min.webp",
         "modalImages": [
             "/images/booki/hebergements-min/annie-spratt-1200-min.webp",
@@ -66,7 +66,7 @@
         "title": "Sophie Bruel",
         "presentation": "Site portfolio d'une architecte d'intérieur",
         "description": "Développer le site portfolio d’une architecte d’intérieur.",
-        "cardImage": "/images/sophie-bruel/sophie-bluel-768-min.webp",
+        "cardImage": "/images/sophie-bruel/abajour-tahina-768-min.webp",
         "modalImages": [
             "/images/sophie-bruel/appartement-paris-v-1200-min.webp",
             "/images/sophie-bruel/appartement-paris-xviii-1200-min.webp",

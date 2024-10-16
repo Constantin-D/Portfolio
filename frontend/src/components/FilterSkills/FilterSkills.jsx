@@ -3,8 +3,8 @@ import { AiOutlineStock } from "react-icons/ai";
 import { DiScrum } from "react-icons/di";
 import { FaReact, FaSass } from "react-icons/fa";
 import { IoIosPulse, IoLogoHtml5, IoLogoJavascript } from "react-icons/io";
-import { SiCss3, SiRedux } from "react-icons/si";
-import { motion, AnimatePresence } from "framer-motion";
+import { SiCss3, SiRedux, SiFigma } from "react-icons/si";
+// import { motion, AnimatePresence } from "framer-motion";
 
 import "./filter-skills.scss";
 
@@ -50,7 +50,12 @@ const skillsData = {
     design: [
         {
             name: "UI/UX Design",
-            icon: <AiOutlineStock />,
+            icon: (
+                <>
+                    <AiOutlineStock />
+                    <SiFigma />
+                </>
+            ),
             description: "Conception d'interfaces utilisateur intuitives.",
         },
     ],
