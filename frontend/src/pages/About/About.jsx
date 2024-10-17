@@ -7,19 +7,18 @@ import "./about.scss";
 const aboutSections = [
     {
         subtitle: "Intégrateur Web",
-        description: `Intégrateur web passionné avec la volonté d'une expertise dans la création de sites web modernes, performants et optimisés. 
-        Mon travail, pendant mon parcours de formation chez OpenclassRooms a mis un accent particulier sur l'accessibilité, l'optimisation et le respect de l'environnement à travers une approche de green code.`,
+        description: `Passionné par le développement web, je m'engage à acquérir une expertise dans la création de sites web modernes, performants et optimisés. Mon parcours de formation chez OpenClassrooms a mis un accent particulier sur l'accessibilité, l'optimisation et le respect de l'environnement, adoptant une approche de green code pour un impact plus durable.`,
         delay: 0.2,
     },
     {
         subtitle: "Expérience et Compétences",
-        description: `Je maîtrise les technologies front-end telles que HTML, CSS, JavaScript, et React. 
+        description: `Je possède de solides connaissances en technologies front-end telles que HTML, CSS, JavaScript, et React. 
         J'ai également des compétences en design UI/UX et SEO, garantissant que chaque projet soit esthétiquement agréable tout en étant bien classé sur les moteurs de recherche.`,
         delay: 0.4,
     },
     {
         subtitle: "Projets et Réalisations",
-        description: `Au cours de mon parcours d'apprentissage, j'ai eu l'opportunité de travailler sur plusieurs projets, personnels et professionnels. Ces expériences m'ont permis de perfectionner mes compétences et de fournir des solutions adaptées aux besoins de mes clients.`,
+        description: `Au cours de mon apprentissage, j'ai eu l'opportunité de travailler sur plusieurs projets, personnels et professionnels. Ces expériences m'ont permis de perfectionner mes compétences et de fournir des solutions adaptées aux besoins de mes futurs clients.`,
         delay: 0.6,
     },
 ];

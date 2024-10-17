@@ -79,7 +79,7 @@ const ProjectModal = ({ project, onClose }) => {
                                             key={index}
                                             src={image}
                                             alt={`${project.title} - ${
-                                                index + 1
+                                                index + 1 //
                                             }`}
                                             className="modal__image"
                                         />
