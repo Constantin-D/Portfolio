@@ -50,10 +50,10 @@ const Slider = ({ projects }) => {
 
             {/* Indicateurs */}
             <div className="slider__indicators">
-                {projects.map((_, index) => (
+                {projects.map((_, index) => ( 
                     <div
                         key={index}
-                        className={`slider__indicator ${
+                        className={`slider__indicator ${ 
                             index === currentIndex ? "active" : ""
                         }`}
                         onClick={() => setCurrentIndex(index)}

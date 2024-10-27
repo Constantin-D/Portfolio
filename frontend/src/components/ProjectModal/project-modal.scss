@@ -34,21 +34,21 @@
     width: 90%;
     position: relative;
     overflow-y: auto;
-    max-height: 50vh;
+    max-height: 70vh;
 
     @include respond-to("tablet") {
         max-width: 95%;
     }
 
-        // Cache la barre sur Webkit (Chrome, Safari)
-    &::-webkit-scrollbar {
-        width: 0;
-    }
+    //     // Cache la barre sur Webkit (Chrome, Safari)
+    // &::-webkit-scrollbar {
+    //     width: 0;
+    // }
 
-    // Cache la barre sur Firefox
-    & {
-        scrollbar-width: none;
-    }
+    // // Cache la barre sur Firefox
+    // & {
+    //     scrollbar-width: none;
+    // }
 
     .modal__close {
         position: absolute;

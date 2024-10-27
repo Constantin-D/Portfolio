@@ -1,11 +1,11 @@
 @import "../../styles/variables.scss";
 @import "../../styles/mixins.scss";
 
-// about.scss
 .about {
     padding: 2rem;
     max-width: 800px;
-    margin: 0 auto;
+    margin-top: 5rem;
+    margin-inline:  auto;
 
     &__title {
         font-weight: 700;
@@ -24,7 +24,7 @@
 
 @include respond-to("mobile") {
     .about {
-        padding: 1rem;
+        padding: rem;
         text-align: left;
     }
 }

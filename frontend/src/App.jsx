@@ -1,9 +1,9 @@
 import { Route, Routes, useLocation } from "react-router-dom";
-import { ProjectsProvider } from "./context/ProjectsContext";
+import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
+import { ProjectsProvider } from "./context/ProjectsContext";
 import About from "./pages/About/About";
-import Contact from "./pages/Contact/Contact";
 import Home from "./pages/Home/Home";
 import NotFound from "./pages/NotFound/NotFound";
 import Projects from "./pages/Projects/Projects";

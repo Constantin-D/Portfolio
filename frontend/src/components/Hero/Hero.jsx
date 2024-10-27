@@ -1,12 +1,18 @@
 import React from "react";
-// import Profile from "./../../assets/images/Profile-512-min.webp";
+import { motion } from "framer-motion";
 import { FaGithub, FaXTwitter, FaLinkedinIn } from "react-icons/fa6";
 import { Link } from "react-router-dom"; 
+
 import "./hero.scss";
 
 const Hero = () => {
     return (
-        <section className="hero-container">
+        <motion.section
+            initial={{ opacity: 0, scale: 0 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.6 }}
+            className="hero-container"
+        >
             <div className="hero__image">
                 <h1>Intégrateur web</h1>
                 <img
@@ -17,7 +23,7 @@ const Hero = () => {
             </div>
             <div className="hero__separator"></div>
             <div className="hero__presentation">
-                <p>Bienvenue, je suis</p>
+                <p>Bienvenue sur mon Portfolio, je suis</p>
                 <h2>Constantin Dugard</h2>
                 <p className="hero__presentation--description">
                     Je crée des sites web modernes et performants avec une
@@ -52,10 +58,10 @@ const Hero = () => {
                     </a>
                 </div>
                 <div className="hero__presentation--link">
-                    <Link to="/about">En savoir plus</Link>
+                    <Link to="/about">Pour en savoir plus sur moi</Link>
                 </div>
             </div>
-        </section>
+        </motion.section>
     );
 };
 

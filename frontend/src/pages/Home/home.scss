@@ -2,8 +2,10 @@
 @import "./../../styles/mixins.scss";
 
 .home {
-    padding: 1rem 2rem;
+    margin-top:8rem;
+    padding:  2rem;
     height: 100%;
+    // background-color: $home-background-color;
 
     &__presentation {
         text-align: center;
@@ -16,6 +18,7 @@
     }
 
     &__projects {
+        background: $modal-background-color;
         text-align: center;
 
         p {
@@ -56,11 +59,13 @@
 
 .home {
     @include respond-to("tablet") {
+        margin-top:6rem;
         padding: 1.2rem;
     }
 
     @include respond-to("mobile") {
-        padding: 0.3rem;
+        margin-top:4.5rem;
+        padding: 0.5rem;
 
         p,
         a {

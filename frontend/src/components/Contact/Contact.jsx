@@ -1,11 +1,10 @@
-import { motion } from "framer-motion";
 import React, { useState } from "react";
 import { FaPaperPlane } from "react-icons/fa";
 import PageTransition from "../../components/PageTransition/PageTransition";
 import "./contact.scss";
 
 const Contact = () => {
-    const [formStatus, setFormStatus] = useState(""); 
+    const [formStatus, setFormStatus] = useState("");
 
     const formFields = [
         {
@@ -34,33 +33,10 @@ const Contact = () => {
         },
     ];
 
-    // Variants Framer Motion
-    const containerVariants = {
-        hidden: { opacity: 0 },
-        visible: {
-            opacity: 1,
-            transition: {
-                delayChildren: 0.4,
-                staggerChildren: 0.2,
-            },
-        },
-    };
-
-    const fieldVariants = {
-        hidden: { opacity: 0, y: -20 },
-        visible: { opacity: 1, y: 0, transition: { duration: 0.8 } },
-    };
-
-    const buttonVariants = {
-        hidden: { opacity: 0, scale: 0.9 },
-        visible: { opacity: 1, scale: 1, transition: { duration: 0.6 } },
-    };
-
     // Utilisation de l'API Web3Forms
     const onSubmit = async (event) => {
         event.preventDefault();
         const formData = new FormData(event.target);
-
         formData.append("access_key", "fde7cf8f-e400-42d5-997e-bf695f93cf5b");
 
         const object = Object.fromEntries(formData);
@@ -76,43 +52,23 @@ const Contact = () => {
                 body: json,
             }).then((res) => res.json());
 
-            if (res.success) {
-                setFormStatus("success"); 
-            } else {
-                setFormStatus("error"); 
-            }
+            setFormStatus(res.success ? "success" : "error");
         } catch (error) {
-            setFormStatus("error"); 
+            setFormStatus("error");
         }
     };
 
     return (
         <PageTransition>
             <section className="contact">
-                <motion.h1
-                    initial="hidden"
-                    animate="visible"
-                    variants={fieldVariants}
-                >
-                    Contactez-moi
-                </motion.h1>
-                <motion.form
-                    className="contact__form"
-                    onSubmit={onSubmit}
-                    initial="hidden"
-                    animate="visible"
-                    variants={containerVariants}
-                >
-                    <motion.fieldset
-                        className="contact__form-fieldset"
-                        variants={fieldVariants}
-                    >
-                        <legend>Vos informations</legend>
+                <h2>Contactez-moi</h2>
+                <form className="contact__form" onSubmit={onSubmit}>
+                    <fieldset className="contact__form-fieldset">
+                        {/* <legend>Vos informations</legend> */}
                         {formFields.map((field) => (
-                            <motion.div
+                            <div
                                 className="contact__form-fieldset--group"
                                 key={field.id}
-                                variants={fieldVariants}
                             >
                                 <label
                                     id={`label-${field.id}`}
@@ -129,19 +85,13 @@ const Contact = () => {
                                     autoComplete={field.autocomplete}
                                     aria-labelledby={`label-${field.id}`}
                                 />
-                            </motion.div>
+                            </div>
                         ))}
-                    </motion.fieldset>
+                    </fieldset>
 
-                    <motion.fieldset
-                        className="contact__form-fieldset"
-                        variants={fieldVariants}
-                    >
-                        <legend>Votre message</legend>
-                        <motion.div
-                            className="contact__form-fieldset--group"
-                            variants={fieldVariants}
-                        >
+                    <fieldset className="contact__form-fieldset">
+                        {/* <legend>Votre message</legend> */}
+                        <div className="contact__form-fieldset--group">
                             <label htmlFor="message" id="label-message">
                                 Message
                             </label>
@@ -152,16 +102,12 @@ const Contact = () => {
                                 required
                                 aria-labelledby="label-message"
                             ></textarea>
-                        </motion.div>
-                    </motion.fieldset>
+                        </div>
+                    </fieldset>
 
-                    <motion.button
-                        type="submit"
-                        className="button"
-                        variants={buttonVariants}
-                    >
+                    <button type="submit" className="button">
                         <FaPaperPlane aria-hidden="true" /> ENVOYER
-                    </motion.button>
+                    </button>
 
                     {formStatus === "success" && (
                         <p className="form-status success">
@@ -174,7 +120,7 @@ const Contact = () => {
                             tard.
                         </p>
                     )}
-                </motion.form>
+                </form>
             </section>
         </PageTransition>
     );

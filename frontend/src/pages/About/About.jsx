@@ -12,13 +12,13 @@ const aboutSections = [
     },
     {
         subtitle: "Expérience et Compétences",
-        description: `Je possède de solides connaissances en technologies front-end telles que HTML, CSS, JavaScript, et React. 
+        description: `J'ai développé une bonne expertise en technologies front-end, notamment HTML, CSS, JavaScript et React, et je continue à perfectionner ces compétences à travers mes projets. 
         J'ai également des compétences en design UI/UX et SEO, garantissant que chaque projet soit esthétiquement agréable tout en étant bien classé sur les moteurs de recherche.`,
         delay: 0.4,
     },
     {
         subtitle: "Projets et Réalisations",
-        description: `Au cours de mon apprentissage, j'ai eu l'opportunité de travailler sur plusieurs projets, personnels et professionnels. Ces expériences m'ont permis de perfectionner mes compétences et de fournir des solutions adaptées aux besoins de mes futurs clients.`,
+        description: `Au cours de mon apprentissage, j'ai eu l'opportunité de travailler sur plusieurs projets, personnels et professionnels. Ces expériences me permettent de perfectionner mes compétences et de fournir des solutions adaptées aux besoins de mes futurs clients.`,
         delay: 0.6,
     },
 ];

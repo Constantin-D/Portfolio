@@ -1,12 +1,12 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import { useLocation } from "react-router-dom"; // Pour le HashLink (URL)
-import { useContext, useEffect } from "react"; // useEffect pour le scroll
-import { ProjectsContext } from "../../context/ProjectsContext";
-import Hero from "../../components/Hero/Hero";
-import Slider from "../../components/Slider/Slider";
-import PageTransition from "../../components/PageTransition/PageTransition";
+import { motion } from "framer-motion";
+import React, { useContext, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
+import Contact from "../../components/Contact/Contact";
 import FilterSkills from "../../components/FilterSkills/FilterSkills";
+import Hero from "../../components/Hero/Hero";
+import PageTransition from "../../components/PageTransition/PageTransition";
+import Slider from "../../components/Slider/Slider";
+import { ProjectsContext } from "../../context/ProjectsContext";
 
 import "./home.scss";
 
@@ -18,7 +18,7 @@ const Home = () => {
         if (location.hash) {
             const element = document.querySelector(location.hash);
             if (element) {
-                element.scrollIntoView(); 
+                element.scrollIntoView();
             }
         }
     }, [location]);
@@ -75,7 +75,7 @@ const Home = () => {
                     )}
 
                     <Link to="/projects" className="home__projects-button">
-                        Voir tous les projets
+                        Voir tous mes projets de formation
                     </Link>
                 </section>
 
@@ -84,13 +84,18 @@ const Home = () => {
                     <FilterSkills />
                 </section>
 
-                <section className="home__contact-cta">
-                    <h2>Contact</h2>
-                    <p>Vous avez un projet en tête ?</p>
-                    <Link to="/contact" className="home__contact-cta--link">
+                <motion.section
+                    initial={{ opacity: 0, scale: 0 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 0.6 }}
+                    id="contact" className="home__contact-cta"
+                >
+                    {/* <h2>Contactez-moi</h2> */}
+                    {/* <Link to="/contact" className="home__contact-cta--link">
                         Contactez-moi !
-                    </Link>
-                </section>
+                    </Link> */}
+                    <Contact />
+                </motion.section>
             </div>
         </PageTransition>
     );

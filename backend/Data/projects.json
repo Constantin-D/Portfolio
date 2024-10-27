@@ -4,8 +4,14 @@
         "title": "Riding cities",
         "presentation": "Site d'une association sportive",
         "description": "Site d'une association sportive qui promeut le skate en région",
-        "cardImage": "/images/riding-cities/header-1200-min.webp",
-        "assignment": "Mettre à jour la partie HTML de la page Internet.",
+        "cardImage": "/images/riding-cities/header-768-min.webp",
+        "modalImages": [
+            "/images/riding-cities/riding-cities-team-768-min.webp",
+            "/images/riding-cities/planning-768-min.webp",
+            "/images/riding-cities/planning-kids-768-min.webp",
+            "/images/riding-cities/header-768-min.webp"
+        ],
+        "assignment": "Mise à jour la partie HTML de la page Internet.",
         "technologies": ["HTML", "CSS"],
         "date": "2023-11-01",
         "link": "/project/1"
@@ -39,7 +45,7 @@
             "/images/ohmyfood/stil-u2Lp8tXIcjw-unsplash-1200-min.webp",
             "/images/ohmyfood/toa-heftiba-DQKerTsQwi0-unsplash-1200-min.webp"
         ],
-        "assignment": "Développer l'interface mobile-first du site d’une start-up. J'ai utiliseré Sass, implémenteré des animations CSS et versionneré le projet avec Git et GitHub.",
+        "assignment": "Développer l'interface mobile-first du site d’une start-up. Utilisation de Sass, implémentation d'animations CSS et versionner le projet avec Git et GitHub.",
         "technologies": ["HTML", "Sass", "Git & GitHub"],
         "date": "2024-01-01",
         "link": "/project/3"
@@ -51,10 +57,10 @@
         "description": "Dynamiser le site Internet statique d’une petite imprimerie familiale.",
         "cardImage": "/images/print-it/slide1-768-min.webp",
         "modalImages": [
-            "/images/print-it/slide1-1200-min.webp",
+            "/images/print-it/colors-768-min.webp",
             "/images/print-it/slide2-1200-min.webp",
-            "/images/print-it/slide3-1200-min.webp",
-            "/images/print-it/slide4-1200-min.webp"
+            "/images/print-it/yellow-book-768-min.webp",
+            "/images/print-it/magnifying-glass-768-min.webp"
         ],
         "assignment": "Rendre un site web plus dynamique et engageant en intégrant des fonctionnalités interactives telles qu'un carrousel avec JavaScript.",
         "technologies": ["JavaScript"],
@@ -65,16 +71,17 @@
         "id": 4,
         "title": "Sophie Bruel",
         "presentation": "Site portfolio d'une architecte d'intérieur",
-        "description": "Développer le site portfolio d’une architecte d’intérieur.",
-        "cardImage": "/images/sophie-bruel/abajour-tahina-768-min.webp",
+        "description": "Développer le site portfolio d’une architecte d’intérieur avec Javascript et Figma.",
+        "cardImage": "/images/sophie-bruel/abajour-tahina-375-min.webp",
         "modalImages": [
             "/images/sophie-bruel/appartement-paris-v-1200-min.webp",
             "/images/sophie-bruel/appartement-paris-xviii-1200-min.webp",
             "/images/sophie-bruel/la-balisiere-1200-min.webp",
-            "/images/sophie-bruel/hotel-first-arte-new-delhi-1200-min.webp"
+            "/images/sophie-bruel/hotel-first-arte-new-delhi-1200-min.webp",
+            "/images/sophie-bruel/figma-bruel-768-min.webp"
         ],
-        "assignment": "3 missions principales, développer : La page de présentation des travaux de l'architecte (à partir du HTML fourni). La page de connexion de l'administrateur du site (le client) (code à créer de zéro). La modale permettant d'uploader de nouveaux médias (code à créer from scratch).",
-        "technologies": ["JavaScript"],
+        "assignment": "3 missions principales de développement du site : La page de présentation des travaux de l'architecte (à partir du HTML fourni). La page de connexion de l'administrateur du site (le client). Une modale permettant d'uploader de nouveaux médias (code à créer from scratch).",
+        "technologies": ["JavaScript", "Figma"],
         "date": "2024-02-01",
         "link": "/project/4"
     },
@@ -83,7 +90,7 @@
         "title": "Menu Maker",
         "presentation": "Site de création de menus de restaurants",
         "description": "Qwenta a créé un “Menu Maker” : un site permettant aux restaurateurs d’afficher et de mettre en page leurs menus facilement, en quelques clics.",
-        "cardImage": "/images/menu-maker/menu-maker_by_Qwenta-611-min.webp",
+        "cardImage": "/images/menu-maker/Banner-Qwenta-1200-min.webp",
         "modalImages": [
             "/images/menu-maker/wenbgencia-logo-768-min.webp",
             "/images/menu-maker/eden-constantino-OXmym9cuaEY-unsplash-1200-min.webp",
@@ -107,7 +114,7 @@
             "/images/kasa/Kasa-1-1200-min.webp"
         ],
         "assignment": "Implémenter le front-end de l'application en utilisant React et React Router pour créer une expérience utilisateur moderne et réactive.",
-        "technologies": ["React", "React Router"],
+        "technologies": ["React", "React Router", "UX"],
         "date": "2024-04-01",
         "link": "/project/6"
     },
@@ -140,8 +147,8 @@
             "/images/724-events/chuttersnap-Q_KdjKxntH8-unsplash-768-min.webp",
             "/images/724-events/sophia-sideri-LFXMtUuAKK8-unsplash1-768-min.webp"
         ],
-        "assignment": "L’agence souhaitait publier la nouvelle version de son site vitrine. Mon objectif était de résoudre ces bugs et problèmes. Cela implique l'utilisation en JavaScript, ainsi que des outils spécifiques à React, comme React Developer Tools.",
-        "technologies": ["JavaScript", "React", "React Developer Tools"],
+        "assignment": "Débugger et finaliser le développement d'un site one-page. Compléter le cahier de recette pour valider le bon fonctionnement du site, incluant des tests unitaires et fonctionnels.",
+        "technologies": ["React", "React Developer Tools"],
         "date": "2024-06-01",
         "link": "/project/8"
     },
@@ -158,7 +165,7 @@
             "/images/argent-bank/icon-chat-1200-min.webp"
         ],
         "assignment": "Intégrer le front-end avec le back-end via des appels API. En utilisant React pour développer l'interface utilisateur, Redux pour gérer les données de l'application afin maintenir un état global cohérent à travers l'application. Définir les points d'accès de l'AP avec Swagger et Node.js pour exécuter le code JavaScript côté serveur pour une expérience pratique de la gestion d'une application full-stack.",
-        "technologies": ["Node", "React", "Redux"],
+        "technologies": ["Node", "React", "Redux", "Redux Toolkit", "Swagger"],
         "date": "2024-07-01",
         "link": "/project/9"
     }

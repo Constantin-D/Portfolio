@@ -32,7 +32,7 @@ const Header = () => {
         { path: "about", label: "À propos de moi" },
         { path: "projects", label: "Projets" },
         { path: "skills", label: "Compétences", isHashLink: true },
-        { path: "contact", label: "Contact" },
+        { path: "contact", label: "Contactez-moi", isHashLink: true },
     ];
 
     // const scrollToSkills = () => {
@@ -48,7 +48,7 @@ const Header = () => {
             <header className="header">
                 <div className="header__logo">
                     <Link to="/" onClick={() => setIsMenuOpen(false)}>
-                        <img src="/images/logo/Logo.webp" alt="Logo" />
+                        <img src="/images/logo/Logo-1-768-min.webp" alt="Logo" />
                     </Link>
                 </div>
                 <nav

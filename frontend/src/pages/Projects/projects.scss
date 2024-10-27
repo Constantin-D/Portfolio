@@ -2,7 +2,7 @@
 @import "../../styles/mixins.scss";
 
 .projects {
-    // padding: 2rem;
+    margin-top: 8rem;
     margin-inline: 1rem;
 
     &__title {
@@ -22,14 +22,30 @@
         margin-bottom: 3rem;
 
         @include respond-to("tablet") {
-            margin: 0 0.7rem 1.8rem;
+            // margin: 0 0.7rem 1.8rem;
             grid-template-columns: repeat(2, 1fr);
         }
         
         @include respond-to("mobile") {
             padding: 0;
-            margin: 0 0 1.3rem;
+            // margin: 0 0 1.3rem;
             grid-template-columns: 1fr;
+        }
+    }
+}
+
+.projects {
+    @include respond-to("tablet") {
+        margin-top: 8rem;
+    }
+}
+
+.projects {
+    @include respond-to("mobile") {
+        margin-top: 6rem;
+
+        &__list {
+            margin-top: 0;
         }
     }
 }

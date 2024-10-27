@@ -2,10 +2,14 @@
 @import "../../styles/mixins";
 
 .header {
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
     @include flex-center;
     justify-content: space-between;
-    padding: 3rem 2rem 1rem;
+    padding: 1rem 2rem;
     color: $text-pale-color;
     background-color: $primary-color;
     box-shadow: $box-shadow;
@@ -13,7 +17,8 @@
 
     &__logo {
         img {
-            width: 7.5rem;
+            border-radius: 50%;
+            width: 4rem;
         }
     }
 
@@ -54,9 +59,11 @@
 
 @include respond-to("tablet") {
     .header {
+        padding: 0.7rem 1.3rem;
+
         &__logo {
             img {
-                width: 6rem;
+                width: 3.5rem;
             }
         }
 
@@ -69,16 +76,12 @@
 
 @include respond-to("mobile") {
     .header {
-        color: $text-pale-color;
-        font-size: 0.7rem;
-        height: auto;
+        padding: 0.5rem 2rem 0.5rem;
         flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
 
         &__logo {
             img {
-                width: 5rem;
+                width: 3rem;
             }
         }
 

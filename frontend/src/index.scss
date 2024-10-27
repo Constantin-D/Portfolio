@@ -1,6 +1,6 @@
 // Variables globales
-@import "./styles/variables.scss"; 
-@import "./styles/mixins.scss"; 
+@import "./styles/variables.scss";
+@import "./styles/mixins.scss";
 
 // Marges et paddings
 *,
@@ -22,7 +22,6 @@ body,
 html {
   font-size: 1rem;
   line-height: 1.5;
-  scroll-behavior: smooth;
 }
 
 body {
@@ -39,15 +38,14 @@ body {
 }
 
 .main {
-  flex: 1; 
+  flex: 1;
 }
 
-// Contenu principal pour les titre
+// Contenu principal pour les titres et t
 h1,
 h2,
 h3,
-h4
- {
+h4 {
   font-family: $font-title;
   text-align: center;
 }
@@ -60,9 +58,9 @@ h1 {
 h2 {
   font-size: $subtitle-h2-font-size;
   margin: 2rem 0;
-  
+
   @include respond-to("tablet") {
-    margin:1.5rem 0;
+    margin: 1.5rem 0;
   }
 
   @include respond-to("mobile") {
@@ -93,12 +91,12 @@ a {
 }
 
 //Images et médias
-img, .image  {
+img,
+.image {
   // display: block;
   object-fit: cover;
   max-width: 100%;
   height: auto;
-  // overflow: hidden;
 }
 
 // Modale des projets
