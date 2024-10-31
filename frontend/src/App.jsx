@@ -7,6 +7,7 @@ import About from "./pages/About/About";
 import Home from "./pages/Home/Home";
 import NotFound from "./pages/NotFound/NotFound";
 import Projects from "./pages/Projects/Projects";
+import ProjectToShow from "./pages/ProjectToShow/ProjectToShow";
 // import PageTransition from "./components/PageTransition/PageTrasition";
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 
@@ -26,6 +27,7 @@ function App() {
                             <Route path="/" element={<Home />} />
                             <Route path="/about" element={<About />} />
                             <Route path="/projects" element={<Projects />} />
+                            <Route path="/project/:id" element={<ProjectToShow  />} />
                             <Route path="/contact" element={<Contact />} />
                             <Route path="*" element={<NotFound />} />
                         </Routes>

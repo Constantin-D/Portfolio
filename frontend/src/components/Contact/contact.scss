@@ -6,7 +6,12 @@
     flex-direction: column; 
     justify-content: center;
     padding: 1rem 5rem 2rem; 
-    background: linear-gradient(10deg, $background-color, $blue-light-color);
+    // background: linear-gradient(10deg, $background-color, $blue-light-color);
+    background: linear-gradient(180deg,
+                $blue-light-color 0%, 
+                $blue-light-color 50%,
+                $background-color 100%
+            );
      
     h2 {
         font-size: $subtitle-h2-font-size; 

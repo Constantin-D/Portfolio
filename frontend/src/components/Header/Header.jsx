@@ -44,11 +44,17 @@ const Header = () => {
     // };
 
     return (
-        <>
+        <section>
             <header className="header">
                 <div className="header__logo">
                     <Link to="/" onClick={() => setIsMenuOpen(false)}>
-                        <img src="/images/logo/Logo-1-768-min.webp" alt="Logo" />
+                        <img
+                            src="/images/logo/Logo-1-768-min.webp"
+                            srcSet="/images/logo/Logo-1-375-min.webp 375w, /images/logo/Logo-1-768-min.webp 768w, /images/logo/Logo-1-1200-min.webp 1200w"
+                            sizes="(max-width: 375px) 375px, (max-width: 768px) 768px, 1200px"
+                            alt="Logo"
+                            loading="lazy"
+                        />
                     </Link>
                 </div>
                 <nav
@@ -73,7 +79,7 @@ const Header = () => {
                                 {link.isHashLink ? (
                                     <HashLink
                                         smooth
-                                        to={`/#${link.path}`} 
+                                        to={`/#${link.path}`}
                                         onClick={() => setIsMenuOpen(false)}
                                     >
                                         {link.label}
@@ -100,7 +106,7 @@ const Header = () => {
                     {isMenuOpen ? <FaTimes /> : <FaBars />}
                 </div>
             </header>
-        </>
+        </section>
     );
 };
 

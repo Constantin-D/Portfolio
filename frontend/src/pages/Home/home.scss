@@ -36,24 +36,23 @@
 
     &__contact-cta {
         text-align: center;
-        margin-bottom: 2rem;
 
         p {
             margin-bottom: 1.5rem;
             color: $secondary-color;
         }
 
-        &--link {
-            @include button($primary-color,
-                $text-pale-color,
-                $see-thro-primary-color,
-                $blue-light-color,
-                0.6rem 1rem);
+        // &--link {
+        //     @include button($primary-color,
+        //         $text-pale-color,
+        //         $see-thro-primary-color,
+        //         $blue-light-color,
+        //         0.6rem 1rem);
 
-            &:hover {
-                text-decoration: none;
-            }
-        }
+        //     &:hover {
+        //         text-decoration: none;
+        //     }
+        // }
     }
 }
 
@@ -67,8 +66,7 @@
         margin-top:4.5rem;
         padding: 0.5rem;
 
-        p,
-        a {
+        p {
             padding: 0.5rem;
         }
 

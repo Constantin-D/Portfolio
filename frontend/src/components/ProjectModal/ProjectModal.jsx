@@ -23,7 +23,7 @@ const ProjectModal = ({ project, onClose }) => {
 
     return (
         <AnimatePresence
-            onExitComplete={onClose} // Appel de onClose après l'animation exit
+            onExitComplete={onClose} // Appel de onClose après l'animation de sortie
         >
             {isVisible && (
                 <div
@@ -78,11 +78,21 @@ const ProjectModal = ({ project, onClose }) => {
                                     project.modalImages.map((image, index) => (
                                         <img
                                             key={index}
-                                            src={image}
-                                            alt={`${project.title} - ${
-                                                index + 1 
-                                            }`}
+                                            src={image.srcSet.default}
+                                            srcSet={`${
+                                                image.srcSet["375w"] ||
+                                                image.srcSet.default
+                                            } 375w, ${
+                                                image.srcSet["768w"] ||
+                                                image.srcSet.default
+                                            } 768w, ${
+                                                image.srcSet["1200w"] ||
+                                                image.srcSet.default
+                                            } 1200w`}
+                                            sizes="(max-width: 375px) 375px, (max-width: 768px) 768px, 1200px"
+                                            alt={image.alt}
                                             className="modal__image"
+                                            loading="lazy"
                                         />
                                     ))
                                 ) : (

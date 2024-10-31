@@ -3,7 +3,7 @@ import { AiOutlineStock } from "react-icons/ai";
 import { DiScrum } from "react-icons/di";
 import { FaReact, FaSass } from "react-icons/fa";
 import { IoIosPulse, IoLogoHtml5, IoLogoJavascript } from "react-icons/io";
-import { SiCss3, SiRedux, SiFigma } from "react-icons/si";
+import { SiCss3, SiFigma, SiRedux } from "react-icons/si";
 // import { motion, AnimatePresence } from "framer-motion";
 
 import "./filter-skills.scss";
@@ -68,7 +68,7 @@ const skillsData = {
             category: "tools",
         },
         {
-            name: "Agile",
+            name: "Agile/Scrum",
             icon: <DiScrum />,
             description: "Méthodologie de gestion de projet collaborative.",
             category: "tools",
@@ -113,11 +113,9 @@ const FilterSkills = () => {
                 {filteredSkills.map((skill, index) => (
                     <li key={index} className="filter-skills__list--item">
                         {skill.icon}
+                        <h4>{skill.name}</h4>
                         {selectedCategory !== "all" && (
-                            <>
-                                <h4>{skill.name}</h4>
-                                <p>{skill.description}</p>
-                            </>
+                            <p>{skill.description}</p>
                         )}
                     </li>
                 ))}

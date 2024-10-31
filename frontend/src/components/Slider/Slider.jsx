@@ -20,8 +20,8 @@ const Slider = ({ projects }) => {
         setCurrentIndex((prevIndex) => (prevIndex === 0 ? 2 : prevIndex - 1)); // 3 cartes
     };
 
-    const handleCardClick = (link) => {
-        navigate(link);
+    const handleCardClick = (id) => {
+        navigate(`/project/${id}`);	
     };
 
     return (

@@ -4,169 +4,612 @@
         "title": "Riding cities",
         "presentation": "Site d'une association sportive",
         "description": "Site d'une association sportive qui promeut le skate en région",
-        "cardImage": "/images/riding-cities/header-768-min.webp",
+        "cardImage": {
+            "srcSet": {
+                "default": "/images/riding-cities/header-768-min.webp",
+                "375w": "/images/riding-cities/header-375-min.webp",
+                "768w": "/images/riding-cities/header-768-min.webp",
+                "1200w": "/images/riding-cities/header-1200-min.webp"
+            },
+            "alt": "Riding cities"
+        },
         "modalImages": [
-            "/images/riding-cities/riding-cities-team-768-min.webp",
-            "/images/riding-cities/planning-768-min.webp",
-            "/images/riding-cities/planning-kids-768-min.webp",
-            "/images/riding-cities/header-768-min.webp"
+            {
+                "srcSet": {
+                    "default": "/images/riding-cities/riding-cities-team-768-min.webp",
+                    "375w": "/images/riding-cities/riding-cities-team-375-min.webp",
+                    "768w": "/images/riding-cities/riding-cities-team-768-min.webp",
+                    "1200w": "/images/riding-cities/riding-cities-team-1200-min.webp"
+                },
+                "alt": "Riding cities team"
+            },
+            {
+                "srcSet": {
+                    "default": "/images/riding-cities/planning-768-min.webp",
+                    "375w": "/images/riding-cities/planning-375-min.webp",
+                    "768w": "/images/riding-cities/planning-768-min.webp",
+                    "1200w": "/images/riding-cities/planning-1200-min.webp"
+                },
+                "alt": "Planning"
+            },
+            {
+                "srcSet": {
+                    "default": "/images/riding-cities/planning-kids-768-min.webp",
+                    "375w": "/images/riding-cities/planning-kids-375-min.webp",
+                    "768w": "/images/riding-cities/planning-kids-768-min.webp",
+                    "1200w": "/images/riding-cities/planning-kids-1200-min.webp"
+                },
+                "alt": "Planning kids"
+            },
+            {
+                "srcSet": {
+                    "default": "/images/riding-cities/header-768-min.webp",
+                    "375w": "/images/riding-cities/header-375-min.webp",
+                    "768w": "/images/riding-cities/header-768-min.webp",
+                    "1200w": "/images/riding-cities/header-1200-min.webp"
+                },
+                "alt": "Skate"
+            }
         ],
-        "assignment": "Mise à jour la partie HTML de la page Internet.",
-        "technologies": ["HTML", "CSS"],
-        "date": "2023-11-01",
-        "link": "/project/1"
+        "assignment": [
+    {
+        "task": "Mise à jour HTML",
+        "details": "Adapter la structure HTML en fonction de la maquette Figma fournie, en conservant le CSS existant et en respectant les contraintes de design."
+    },
+    {
+        "task": "Responsive Design",
+        "details": "S'assurer que la mise en page HTML reste conforme aux attentes pour toutes les tailles d'écrans (desktop, tablette, mobile)."
+    },
+    {
+        "task": "Contrôle qualité",
+        "details": "Vérifier la conformité du rendu visuel par rapport à la maquette et assurer une compatibilité sur les principaux navigateurs."
+    }
+],
+
+        "technologies": ["HTML", "CSS", "FIGMA"],
+        "date": "2023-11-01"
     },
     {
         "id": 1,
         "title": "Booki",
         "presentation": "Site de réservation d'hébergements et d'activités",
         "description": "Agence de voyage, qui permet aux usagers de trouver des hébergements et des activités dans la ville de leur choix.",
-        "cardImage": "/images/booki/hebergements-min/annie-spratt-768-min.webp",
+        "cardImage": {
+            "srcSet": {
+                "default": "/images/booki/hebergements-min/annie-spratt-768-min.webp",
+                "375w": "/images/booki/hebergements-min/annie-spratt-375-min.webp",
+                "768w": "/images/booki/hebergements-min/annie-spratt-768-min.webp",
+                "1200w": "/images/booki/hebergements-min/annie-spratt-1200-min.webp"
+            },
+            "alt": "Booki"
+        },
         "modalImages": [
-            "/images/booki/hebergements-min/annie-spratt-1200-min.webp",
-            "/images/booki/hebergements-min/aw-creative-1200-min.webp",
-            "/images/booki/hebergements-min/emile-guillemot-1200-min.webp",
-            "/images/booki/activities-min/kilyan-sockalingum-1200-min.webp"
+            {
+                "srcSet": {
+                    "default": "/images/booki/hebergements-min/annie-spratt-1200-min.webp",
+                    "375w": "/images/booki/hebergements-min/annie-spratt-375-min.webp",
+                    "768w": "/images/booki/hebergements-min/annie-spratt-768-min.webp",
+                    "1200w": "/images/booki/hebergements-min/annie-spratt-1200-min.webp"
+                },
+                "alt": "Annie Spratt Accommodation"
+            },
+            {
+                "srcSet": {
+                    "default": "/images/booki/hebergements-min/aw-creative-1200-min.webp",
+                    "375w": "/images/booki/hebergements-min/aw-creative-375-min.webp",
+                    "768w": "/images/booki/hebergements-min/aw-creative-768-min.webp",
+                    "1200w": "/images/booki/hebergements-min/aw-creative-1200-min.webp"
+                },
+                "alt": "AW Creative Accommodation"
+            },
+            {
+                "srcSet": {
+                    "default": "/images/booki/hebergements-min/emile-guillemot-1200-min.webp",
+                    "375w": "/images/booki/hebergements-min/emile-guillemot-375-min.webp",
+                    "768w": "/images/booki/hebergements-min/emile-guillemot-768-min.webp",
+                    "1200w": "/images/booki/hebergements-min/emile-guillemot-1200-min.webp"
+                },
+                "alt": "Emile Guillemot Accommodation"
+            },
+            {
+                "srcSet": {
+                    "default": "/images/booki/activities-min/kilyan-sockalingum-1200-min.webp",
+                    "375w": "/images/booki/activities-min/kilyan-sockalingum-375-min.webp",
+                    "768w": "/images/booki/activities-min/kilyan-sockalingum-768-min.webp",
+                    "1200w": "/images/booki/activities-min/kilyan-sockalingum-1200-min.webp"
+                },
+                "alt": "See View"
+            }
         ],
-        "assignment": "Intégrer l'interface du site avec du code HTML et CSS.",
+        "assignment": [
+            "Intégrer l'interface responsive du site en respectant les maquettes Figma fournies pour mobile, tablette et desktop",
+            "Créer des composants d'interface personnalisés en HTML et CSS pour obtenir un rendu fidèle aux maquettes",
+            "Assurer une compatibilité et une adaptabilité optimale de la page d'accueil pour différents appareils et résolutions d’écran",
+            "Appliquer les spécificités mentionnées dans la note de synthèse du projet pour respecter les attentes du client",
+            "Renforcer les compétences en design responsive tout au long de l'intégration"
+        ],
         "technologies": ["HTML", "CSS"],
-        "date": "2023-12-01",
-        "link": "/project/2"
+        "date": "2023-12-01"
     },
     {
         "id": 2,
         "title": "Ohmyfood",
         "presentation": "Site de réservation de menus de restaurants gastronomiques",
         "description": "Site “mobile first” qui répertorie les menus de restaurants gastronomiques. En plus des systèmes classiques de réservation, les clients peuvent composer le menu de leur repas pour que les plats soient prêts à leur arrivée.",
-        "cardImage": "/images/ohmyfood/jay-wennington-N_Y88TWmGwA-unsplash-768-min.webp",
+        "cardImage": {
+            "srcSet": {
+                "default": "/images/ohmyfood/jay-wennington-N_Y88TWmGwA-unsplash-768-min.webp",
+                "375w": "/images/ohmyfood/jay-wennington-N_Y88TWmGwA-unsplash-375-min.webp",
+                "768w": "/images/ohmyfood/jay-wennington-N_Y88TWmGwA-unsplash-768-min.webp",
+                "1200w": "/images/ohmyfood/jay-wennington-N_Y88TWmGwA-unsplash-1200-min.webp"
+            },
+            "alt": "Ohmyfood"
+        },
         "modalImages": [
-            "/images/ohmyfood/jay-wennington-N_Y88TWmGwA-unsplash-1200-min.webp",
-            "/images/ohmyfood/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash-1200-min.webp",
-            "/images/ohmyfood/stil-u2Lp8tXIcjw-unsplash-1200-min.webp",
-            "/images/ohmyfood/toa-heftiba-DQKerTsQwi0-unsplash-1200-min.webp"
+            {
+                "srcSet": {
+                    "default": "/images/ohmyfood/jay-wennington-N_Y88TWmGwA-unsplash-1200-min.webp",
+                    "375w": "/images/ohmyfood/jay-wennington-N_Y88TWmGwA-unsplash-375-min.webp",
+                    "768w": "/images/ohmyfood/jay-wennington-N_Y88TWmGwA-unsplash-768-min.webp",
+                    "1200w": "/images/ohmyfood/jay-wennington-N_Y88TWmGwA-unsplash-1200-min.webp"
+                },
+                "alt": "Jay Wennington"
+            },
+            {
+                "srcSet": {
+                    "default": "/images/ohmyfood/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash-1200-min.webp",
+                    "375w": "/images/ohmyfood/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash-375-min.webp",
+                    "768w": "/images/ohmyfood/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash-768-min.webp",
+                    "1200w": "/images/ohmyfood/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash-1200-min.webp"
+                },
+                "alt": "Louis Hansel Restaurant"
+            },
+            {
+                "srcSet": {
+                    "default": "/images/ohmyfood/stil-u2Lp8tXIcjw-unsplash-1200-min.webp",
+                    "375w": "/images/ohmyfood/stil-u2Lp8tXIcjw-unsplash-375-min.webp",
+                    "768w": "/images/ohmyfood/stil-u2Lp8tXIcjw-unsplash-768-min.webp",
+                    "1200w": "/images/ohmyfood/stil-u2Lp8tXIcjw-unsplash-1200-min.webp"
+                },
+                "alt": "Full Menu"
+            },
+            {
+                "srcSet": {
+                    "default": "/images/ohmyfood/toa-heftiba-DQKerTsQwi0-unsplash-1200-min.webp",
+                    "375w": "/images/ohmyfood/toa-heftiba-DQKerTsQwi0-unsplash-375-min.webp",
+                    "768w": "/images/ohmyfood/toa-heftiba-DQKerTsQwi0-unsplash-768-min.webp",
+                    "1200w": "/images/ohmyfood/toa-heftiba-DQKerTsQwi0-unsplash-1200-min.webp"
+                },
+                "alt": "Toa Heftiba Starter"
+            }
         ],
-        "assignment": "Développer l'interface mobile-first du site d’une start-up. Utilisation de Sass, implémentation d'animations CSS et versionner le projet avec Git et GitHub.",
-        "technologies": ["HTML", "Sass", "Git & GitHub"],
-        "date": "2024-01-01",
-        "link": "/project/3"
+        "assignment": [
+            "Développer l'interface mobile-first selon la maquette fournie",
+            "Utiliser Sass pour la structure des styles",
+            "Implémenter des animations CSS",
+            "Versionner avec Git et GitHub"
+        ],
+        "technologies": ["HTML", "Sass", "Git & GitHub", "FIGMA"],
+        "date": "2024-01-01"
     },
     {
         "id": 3,
         "title": "Print it",
         "presentation": "Site d'une imprimerie familiale",
         "description": "Dynamiser le site Internet statique d’une petite imprimerie familiale.",
-        "cardImage": "/images/print-it/slide1-768-min.webp",
+        "cardImage": {
+            "srcSet": {
+                "default": "/images/print-it/slide1-768-min.webp",
+                "375w": "/images/print-it/slide1-375-min.webp",
+                "768w": "/images/print-it/slide1-768-min.webp",
+                "1200w": "/images/print-it/slide1-1200-min.webp"
+            },
+            "alt": "Print it"
+        },
         "modalImages": [
-            "/images/print-it/colors-768-min.webp",
-            "/images/print-it/slide2-1200-min.webp",
-            "/images/print-it/yellow-book-768-min.webp",
-            "/images/print-it/magnifying-glass-768-min.webp"
+            {
+                "srcSet": {
+                    "default": "/images/print-it/colors-768-min.webp",
+                    "375w": "/images/print-it/colors-375-min.webp",
+                    "768w": "/images/print-it/colors-768-min.webp",
+                    "1200w": "/images/print-it/colors-1200-min.webp"
+                },
+                "alt": "Colors"
+            },
+            {
+                "srcSet": {
+                    "default": "/images/print-it/slide2-1200-min.webp",
+                    "375w": "/images/print-it/slide2-375-min.webp",
+                    "768w": "/images/print-it/slide2-768-min.webp",
+                    "1200w": "/images/print-it/slide2-1200-min.webp"
+                },
+                "alt": "Slide 2 Poster"
+            },
+            {
+                "srcSet": {
+                    "default": "/images/print-it/yellow-book-768-min.webp",
+                    "375w": "/images/print-it/yellow-book-375-min.webp",
+                    "768w": "/images/print-it/yellow-book-768-min.webp",
+                    "1200w": "/images/print-it/yellow-book-1200-min.webp"
+                },
+                "alt": "Yellow Book"
+            },
+            {
+                "srcSet": {
+                    "default": "/images/print-it/magnifying-glass-768-min.webp",
+                    "375w": "/images/print-it/magnifying-glass-375-min.webp",
+                    "768w": "/images/print-it/magnifying-glass-768-min.webp",
+                    "1200w": "/images/print-it/magnifying-glass-1200-min.webp"
+                },
+                "alt": "Magnifying Glass"
+            }
         ],
-        "assignment": "Rendre un site web plus dynamique et engageant en intégrant des fonctionnalités interactives telles qu'un carrousel avec JavaScript.",
-        "technologies": ["JavaScript"],
-        "date": "2024-02-01",
-        "link": "/project/4"
+        "assignment": [
+            "Analyser les besoins pour améliorer l'interactivité du site",
+            "Concevoir et développer un carrousel dynamique avec JavaScript",
+            "Intégrer les transitions et animations pour fluidifier l'expérience utilisateur",
+            "Tester et optimiser le carrousel pour une navigation multi-supports (desktop et mobile)"
+        ]
     },
     {
         "id": 4,
         "title": "Sophie Bruel",
         "presentation": "Site portfolio d'une architecte d'intérieur",
         "description": "Développer le site portfolio d’une architecte d’intérieur avec Javascript et Figma.",
-        "cardImage": "/images/sophie-bruel/abajour-tahina-375-min.webp",
+        "cardImage": {
+            "srcSet": {
+                "default": "/images/sophie-bruel/abajour-tahina-768-min.webp",
+                "375w": "/images/sophie-bruel/abajour-tahina-375-min.webp",
+                "768w": "/images/sophie-bruel/abajour-tahina-768-min.webp"
+            },
+            "alt": "Sophie Bruel"
+        },
         "modalImages": [
-            "/images/sophie-bruel/appartement-paris-v-1200-min.webp",
-            "/images/sophie-bruel/appartement-paris-xviii-1200-min.webp",
-            "/images/sophie-bruel/la-balisiere-1200-min.webp",
-            "/images/sophie-bruel/hotel-first-arte-new-delhi-1200-min.webp",
-            "/images/sophie-bruel/figma-bruel-768-min.webp"
+            {
+                "srcSet": {
+                    "default": "/images/sophie-bruel/appartement-paris-v-768-min.webp",
+                    "375w": "/images/sophie-bruel/appartement-paris-v-375-min.webp",
+                    "768w": "/images/sophie-bruel/appartement-paris-v-768-min.webp",
+                    "1200w": "/images/sophie-bruel/appartement-paris-v-1200-min.webp"
+                },
+                "alt": "Appartement Paris V"
+            },
+            {
+                "srcSet": {
+                    "default": "/images/sophie-bruel/appartement-paris-xviii-768-min.webp",
+                    "375w": "/images/sophie-bruel/appartement-paris-xviii-375-min.webp",
+                    "768w": "/images/sophie-bruel/appartement-paris-xviii-768-min.webp",
+                    "1200w": "/images/sophie-bruel/appartement-paris-xviii-1200-min.webp"
+                },
+                "alt": "Appartement Paris XVIII"
+            },
+            {
+                "srcSet": {
+                    "default": "/images/sophie-bruel/la-balisiere-768-min.webp",
+                    "375w": "/images/sophie-bruel/la-balisiere-375-min.webp",
+                    "768w": "/images/sophie-bruel/la-balisiere-768-min.webp",
+                    "1200w": "/images/sophie-bruel/la-balisiere-1200-min.webp"
+                },
+                "alt": "La Balisière"
+            },
+            {
+                "srcSet": {
+                    "default": "/images/sophie-bruel/hotel-first-arte-new-delhi-768-min.webp",
+                    "375w": "/images/sophie-bruel/hotel-first-arte-new-delhi-375-min.webp",
+                    "768w": "/images/sophie-bruel/hotel-first-arte-new-delhi-768-min.webp",
+                    "1200w": "/images/sophie-bruel/hotel-first-arte-new-delhi-1200-min.webp"
+                },
+                "alt": "Hotel First Arte New Delhi"
+            },
+            {
+                "srcSet": {
+                    "default": "/images/sophie-bruel/figma-bruel-768-min.webp",
+                    "375w": "/images/sophie-bruel/figma-bruel-375-min.webp",
+                    "768w": "/images/sophie-bruel/figma-bruel-768-min.webp",
+                    "1200w": "/images/sophie-bruel/figma-bruel-1200-min.webp"
+                },
+                "alt": "Mockup Figma Sophie Bruel"
+            }
         ],
-        "assignment": "3 missions principales de développement du site : La page de présentation des travaux de l'architecte (à partir du HTML fourni). La page de connexion de l'administrateur du site (le client). Une modale permettant d'uploader de nouveaux médias (code à créer from scratch).",
+        "assignment": [
+            "Créer une page de présentation des travaux de l'architecte en intégrant le HTML fourni et en appliquant le style approprié",
+            "Développer une interface de connexion sécurisée pour l'administrateur du site en utilisant JavaScript pour la validation",
+            "Concevoir et coder une modale fonctionnelle permettant l'upload de nouveaux médias, en gérant les interactions et les erreurs",
+            "Tester la compatibilité de l'ensemble des fonctionnalités sur différents navigateurs et appareils"
+        ],
+
         "technologies": ["JavaScript", "Figma"],
-        "date": "2024-02-01",
-        "link": "/project/4"
+        "date": "2024-02-01"
     },
     {
         "id": 5,
         "title": "Menu Maker",
         "presentation": "Site de création de menus de restaurants",
         "description": "Qwenta a créé un “Menu Maker” : un site permettant aux restaurateurs d’afficher et de mettre en page leurs menus facilement, en quelques clics.",
-        "cardImage": "/images/menu-maker/Banner-Qwenta-1200-min.webp",
+        "cardImage": {
+            "srcSet": {
+                "default": "/images/menu-maker/Banner-Qwenta-768-min.webp",
+                "375w": "/images/menu-maker/Banner-Qwenta-375-min.webp",
+                "768w": "/images/menu-maker/Banner-Qwenta-768-min.webp",
+                "1200w": "/images/menu-maker/Banner-Qwenta-1200-min.webp"
+            },
+            "alt": "Menu Maker"
+        },
         "modalImages": [
-            "/images/menu-maker/wenbgencia-logo-768-min.webp",
-            "/images/menu-maker/eden-constantino-OXmym9cuaEY-unsplash-1200-min.webp",
-            "/images/menu-maker/rubaitul-azad-8tRo5_ogsfA-unsplash-1200-min.webp"          
+            {
+                "srcSet": {
+                    "default": "/images/menu-maker/wenbgencia-logo-768-min.webp",
+                    "375w": "/images/menu-maker/wenbgencia-logo-375-min.webp",
+                    "768w": "/images/menu-maker/wenbgencia-logo-768-min.webp",
+                    "1200w": "/images/menu-maker/wenbgencia-logo-1200-min.webp"
+                },
+                "alt": "Logo Wenbgencia"
+            },
+            {
+                "srcSet": {
+                    "default": "/images/menu-maker/eden-constantino-OXmym9cuaEY-unsplash-768-min.webp",
+                    "375w": "/images/menu-maker/eden-constantino-OXmym9cuaEY-unsplash-375-min.webp",
+                    "768w": "/images/menu-maker/eden-constantino-OXmym9cuaEY-unsplash-768-min.webp",
+                    "1200w": "/images/menu-maker/eden-constantino-OXmym9cuaEY-unsplash-1200-min.webp"
+                },
+                "alt": "Eden Constantino Kanban"
+            },
+            {
+                "srcSet": {
+                    "default": "/images/menu-maker/rubaitul-azad-8tRo5_ogsfA-unsplash-768-min.webp",
+                    "375w": "/images/menu-maker/rubaitul-azad-8tRo5_ogsfA-unsplash-375-min.webp",
+                    "768w": "/images/menu-maker/rubaitul-azad-8tRo5_ogsfA-unsplash-768-min.webp",
+                    "1200w": "/images/menu-maker/rubaitul-azad-8tRo5_ogsfA-unsplash-1200-min.webp"
+                },
+                "alt": "Notion"
+            }
         ],
-        "assignment": "Planifier le développement du site web, sans intervenir directement dans le codage. C'est à dire : Entreprendre une veille technologique. Rédiger les spécifications techniques du projet. Utiliser l'outil de gestion de projet Notion pour organiser le projet et créer un tableau Kanban. Enfin, présenter la solution technique.",
+        "assignment": [
+            "Planifier le développement du site web en définissant les étapes clés et les ressources nécessaires",
+            "Effectuer une veille technologique pour identifier les solutions et pratiques adaptées au projet",
+            "Rédiger les spécifications techniques détaillées pour guider l'équipe de développement",
+            "Utiliser l'outil de gestion de projet Notion pour structurer le projet et suivre l'avancement dans un tableau Kanban",
+            "Préparer et présenter la solution technique au client, en expliquant les choix stratégiques et techniques"
+        ],
+
         "technologies": ["Gestion de projet", "Notion", "Kanban"],
-        "date": "2024-03-01",
-        "link": "/project/5"
+        "date": "2024-03-01"
     },
     {
         "id": 6,
         "title": "Kasa",
         "presentation": "Site de location d'appartements entre particuliers",
         "description": "Avec plus de 500 annonces postées chaque jour, Kasa fait partie des leaders de la location d’appartements entre particuliers en France.",
-        "cardImage": "/images/kasa/Kasa-1-768-min.webp",
+        "cardImage": {
+            "srcSet": {
+                "default": "/images/kasa/Kasa-1-768-min.webp",
+                "375w": "/images/kasa/Kasa-1-375-min.webp",
+                "768w": "/images/kasa/Kasa-1-768-min.webp",
+                "1200w": "/images/kasa/Kasa-1-1200-min.webp"
+            },
+            "alt": "Kasa Location"
+        },
         "modalImages": [
-            "/images/kasa/BannerAbout-1200-min.webp",
-            "/images/kasa/Kasa-2-1200-min.webp",
-            "/images/kasa/Kasa-3-1200-min.webp",
-            "/images/kasa/Kasa-1-1200-min.webp"
+            {
+                "srcSet": {
+                    "default": "/images/kasa/BannerAbout-768-min.webp",
+                    "375w": "/images/kasa/BannerAbout-375-min.webp",
+                    "768w": "/images/kasa/BannerAbout-768-min.webp",
+                    "1200w": "/images/kasa/BannerAbout-1200-min.webp"
+                },
+                "alt": "Kasa Banner"
+            },
+            {
+                "srcSet": {
+                    "default": "/images/kasa/Kasa-2-768-min.webp",
+                    "375w": "/images/kasa/Kasa-2-375-min.webp",
+                    "768w": "/images/kasa/Kasa-2-768-min.webp",
+                    "1200w": "/images/kasa/Kasa-2-1200-min.webp"
+                },
+                "alt": "Kasa Appartement 2"
+            },
+            {
+                "srcSet": {
+                    "default": "/images/kasa/Kasa-3-768-min.webp",
+                    "375w": "/images/kasa/Kasa-3-375-min.webp",
+                    "768w": "/images/kasa/Kasa-3-768-min.webp",
+                    "1200w": "/images/kasa/Kasa-3-1200-min.webp"
+                },
+                "alt": "Kasa Appartement 3"
+            },
+            {
+                "srcSet": {
+                    "default": "/images/kasa/Kasa-4-768-min.webp",
+                    "375w": "/images/kasa/Kasa-4-375-min.webp",
+                    "768w": "/images/kasa/Kasa-4-768-min.webp",
+                    "1200w": "/images/kasa/Kasa-4-1200-min.webp"
+                },
+                "alt": "Appartment Kasa"
+            }
         ],
-        "assignment": "Implémenter le front-end de l'application en utilisant React et React Router pour créer une expérience utilisateur moderne et réactive.",
-        "technologies": ["React", "React Router", "UX"],
-        "date": "2024-04-01",
-        "link": "/project/6"
+        "assignment": [
+            "Développement frontend avec React",
+            "Implémenter la navigation avec React Router",
+            "Créer la page d'accueil listant les appartements",
+            "Développer la page de détail pour chaque appartement",
+            "Afficher une page 404 pour les erreurs d'URL"
+        ],
+        "technologies": ["React", "React-Router"],
+        "date": "2024-04-01"
     },
     {
         "id": 7,
         "title": "Nina Carducci",
         "presentation": "Site Portfolio d'une photographe",
         "description": "Optimisaton d'un site Portfolio d'une photographe ",
-        "cardImage": "/images/nina-carducci-min/camera-740px.webp",
+        "cardImage": {
+            "srcSet": {
+                "default": "/images/nina-carducci-min/camera-740-min.webp",
+                "375w": "/images/nina-carducci-min/camera-375-min.webp",
+                "768w": "/images/nina-carducci-min/camera-768-min.webp",
+                "1200w": "/images/nina-carducci-min/camera-1200-min.webp"
+            },
+            "alt": "Nina Carducci Photography Portfolio"
+        },
         "modalImages": [
-            "/images/nina-carducci-min/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash-740px.webp",
-            "/images/nina-carducci-min/slider/edward-cisneros-3_h6-1NPDGw-unsplash-740px.webp",
-            "/images/nina-carducci-min/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-740px.webp",
-            "/images/nina-carducci-min/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash-740px.webp"
+            {
+                "srcSet": {
+                    "375w": "/images/nina-carducci-min/hannah-busing-RvF2R_qMpRk-unsplash-375-min.webp",
+                    "768w": "/images/nina-carducci-min/hannah-busing-RvF2R_qMpRk-unsplash-768-min.webp",
+                    "1200w": "/images/nina-carducci-min/hannah-busing-RvF2R_qMpRk-unsplash-1200-min.webp"
+                },
+                "alt": "Mariage par Nina Carducci"
+            },
+            {
+                "srcSet": {
+                    "375w": "/images/nina-carducci-min/nina-375-min.webp",
+                    "768w": "/images/nina-carducci-min/nina-768-min.webp",
+                    "1200w": "/images/nina-carducci-min/nina-1200-min.webp"
+                },
+                "alt": "Portrait par Nina Carducci"
+            },
+            {
+                "srcSet": {
+                    "375w": "/images/nina-carducci-min/ryoji-iwata-wUZjnOv7t0g-unsplash-375-min.webp",
+                    "768w": "/images/nina-carducci-min/ryoji-iwata-wUZjnOv7t0g-unsplash-768-min.webp",
+                    "1200w": "/images/nina-carducci-min/ryoji-iwata-wUZjnOv7t0g-unsplash-1200-min.webp"
+                },
+                "alt": "Paysage urbain par Nina Carducci"
+            },
+            {
+                "srcSet": {
+                    "375w": "/images/nina-carducci-min/mateus-campos-felipe-Fsgzm8N0hIY-unsplash-375-min.webp",
+                    "768w": "/images/nina-carducci-min/mateus-campos-felipe-Fsgzm8N0hIY-unsplash-768-min.webp",
+                    "1200w": "/images/nina-carducci-min/mateus-campos-felipe-Fsgzm8N0hIY-unsplash-1200-min.webp"
+                },
+                "alt": "Photographie corporate par Nina Carducci"
+            }
         ],
-        "assignment": "Optimiser le référencement du site, en améliorant sa performance et son accessibilité. C'est à dire : Faire une optimisation globale du site tant sur les performances que sur le SEO. Mettre en place le référencement local en utilisant Schema.org. Ajouter les metas pour les réseaux sociaux. Faire les modifications liées à l’accessibilité du site. Produire un rapport d’optimisation présentant toutes vos actions et leur impact.",
+        "assignment": [
+            "Optimiser le référencement naturel (SEO) pour améliorer la visibilité du site dans les moteurs de recherche",
+            "Améliorer les performances du site en optimisant les temps de chargement et l'expérience utilisateur",
+            "Mettre en place les balises Schema.org pour enrichir les résultats de recherche et améliorer le SEO",
+            "Configurer les métadonnées pour les réseaux sociaux (Open Graph, Twitter Cards) afin d'assurer une bonne présentation du site",
+            "Rendre le site plus accessible en suivant les bonnes pratiques d'accessibilité (W3C) et en appliquant des ajustements pour les lecteurs d'écran"
+        ],
         "technologies": ["SEO", "Accessibilité", "Performance"],
-        "date": "2024-05-01",
-        "link": "/project/7"
+        "date": "2024-05-01"
     },
     {
         "id": 8,
         "title": "724events",
         "presentation": "Site d'une agence événementielle",
         "description": "Débugger le site web d'une agence événementielle.",
-        "cardImage": "/images/724-events/alexandre-pellaes-6vAjp0pscX0-unsplash-768-min.webp",
+        "cardImage": {
+            "srcSet": {
+                "default": "/images/724-events/alexandre-pellaes-6vAjp0pscX0-unsplash-768-min.webp",
+                "375w": "/images/724-events/alexandre-pellaes-6vAjp0pscX0-unsplash-375-min.webp",
+                "768w": "/images/724-events/alexandre-pellaes-6vAjp0pscX0-unsplash-768-min.webp",
+                "1200w": "/images/724-events/alexandre-pellaes-6vAjp0pscX0-unsplash-1200-min.webp"
+            },
+            "alt": "724events Agency"
+        },
         "modalImages": [
-            "/images/724-events/product-school-dJICd7b_LlE-unsplash-768-min.webp",
-            "/images/724-events/alexandre-pellaes-6vAjp0pscX0-unsplash-768-min.webp",
-            "/images/724-events/chuttersnap-Q_KdjKxntH8-unsplash-768-min.webp",
-            "/images/724-events/sophia-sideri-LFXMtUuAKK8-unsplash1-768-min.webp"
+            {
+                "srcSet": {
+                    "375w": "/images/724-events/product-school-dJICd7b_LlE-unsplash-375-min.webp",
+                    "768w": "/images/724-events/product-school-dJICd7b_LlE-unsplash-768-min.webp",
+                    "1200w": "/images/724-events/product-school-dJICd7b_LlE-unsplash-1200-min.webp"
+                },
+                "alt": "Product School Event"
+            },
+            {
+                "srcSet": {
+                    "375w": "/images/724-events/alexandre-pellaes-6vAjp0pscX0-unsplash-375-min.webp",
+                    "768w": "/images/724-events/alexandre-pellaes-6vAjp0pscX0-unsplash-768-min.webp",
+                    "1200w": "/images/724-events/alexandre-pellaes-6vAjp0pscX0-unsplash-1200-min.webp"
+                },
+                "alt": "Conference"
+            },
+            {
+                "srcSet": {
+                    "375w": "/images/724-events/chuttersnap-Q_KdjKxntH8-unsplash-375-min.webp",
+                    "768w": "/images/724-events/chuttersnap-Q_KdjKxntH8-unsplash-768-min.webp",
+                    "1200w": "/images/724-events/chuttersnap-Q_KdjKxntH8-unsplash-1200-min.webp"
+                },
+                "alt": "Business Conference"
+            },
+            {
+                "srcSet": {
+                    "375w": "/images/724-events/sophia-sideri-LFXMtUuAKK8-unsplash1-375-min.webp",
+                    "768w": "/images/724-events/sophia-sideri-LFXMtUuAKK8-unsplash1-768-min.webp",
+                    "1200w": "/images/724-events/sophia-sideri-LFXMtUuAKK8-unsplash1-1200-min.webp"
+                },
+                "alt": "Sophia Sideri Visio Event"
+            }
         ],
-        "assignment": "Débugger et finaliser le développement d'un site one-page. Compléter le cahier de recette pour valider le bon fonctionnement du site, incluant des tests unitaires et fonctionnels.",
+        "assignment": [
+            "Identifier et corriger les bugs dans le développement d'un site one-page pour assurer sa stabilité",
+            "Optimiser le code et le design pour garantir une navigation fluide et une expérience utilisateur améliorée",
+            "Mettre en place et exécuter des tests unitaires avec Jest pour vérifier la fiabilité des fonctions du site",
+            "Réaliser des tests fonctionnels afin d'assurer le bon fonctionnement global des éléments interactifs",
+            "Finaliser le déploiement du site en effectuant les ajustements finaux et les vérifications de compatibilité"
+        ],
         "technologies": ["React", "React Developer Tools"],
-        "date": "2024-06-01",
-        "link": "/project/8"
+        "date": "2024-06-01"
     },
     {
         "id": 9,
         "title": "Argent Bank",
         "presentation": "Site d'une banque en ligne",
         "description": "Argent Bank est une nouvelle banque en ligne qui souhaite percer dans le secteur bancaire.",
-        "cardImage": "/images/argent-bank/icon-money-768-min.webp",
+        "cardImage": {
+            "srcSet": {
+                "default": "/images/argent-bank/icon-money-768-min.webp",
+                "375w": "/images/argent-bank/icon-money-375-min.webp",
+                "768w": "/images/argent-bank/icon-money-768-min.webp",
+                "1200w": "/images/argent-bank/icon-money-1200-min.webp"
+            },
+            "alt": "Argent Bank Icon"
+        },
         "modalImages": [
-            "/images/argent-bank/argentBankLogo-1200-min.webp",
-            "/images/argent-bank/bank-tree-1200-min.webp",
-            "/images/argent-bank/icon-security-1200-min.webp",
-            "/images/argent-bank/icon-chat-1200-min.webp"
+            {
+                "srcSet": {
+                    "375w": "/images/argent-bank/argentBankLogo-375-min.webp",
+                    "768w": "/images/argent-bank/argentBankLogo-768-min.webp",
+                    "1200w": "/images/argent-bank/argentBankLogo-1200-min.webp"
+                },
+                "alt": "Argent Bank Logo"
+            },
+            {
+                "srcSet": {
+                    "375w": "/images/argent-bank/bank-tree-375-min.webp",
+                    "768w": "/images/argent-bank/bank-tree-768-min.webp",
+                    "1200w": "/images/argent-bank/bank-tree-1200-min.webp"
+                },
+                "alt": "Bank Tree Illustration"
+            },
+            {
+                "srcSet": {
+                    "375w": "/images/argent-bank/icon-security-375-min.webp",
+                    "768w": "/images/argent-bank/icon-security-768-min.webp",
+                    "1200w": "/images/argent-bank/icon-security-1200-min.webp"
+                },
+                "alt": "Security Icon"
+            },
+            {
+                "srcSet": {
+                    "375w": "/images/argent-bank/icon-chat-375-min.webp",
+                    "768w": "/images/argent-bank/icon-chat-768-min.webp",
+                    "1200w": "/images/argent-bank/icon-chat-1200-min.webp"
+                },
+                "alt": "Chat Icon"
+            }
         ],
-        "assignment": "Intégrer le front-end avec le back-end via des appels API. En utilisant React pour développer l'interface utilisateur, Redux pour gérer les données de l'application afin maintenir un état global cohérent à travers l'application. Définir les points d'accès de l'AP avec Swagger et Node.js pour exécuter le code JavaScript côté serveur pour une expérience pratique de la gestion d'une application full-stack.",
+        "assignment": [
+            "Concevoir et documenter les routes API backend avec Swagger pour une intégration front-end/back-end claire et structurée",
+            "Rédiger les fichiers de configuration YAML pour Swagger afin de formaliser les spécifications API et garantir la cohérence des appels",
+            "Utiliser YAML Lint pour vérifier la conformité syntaxique et prévenir les erreurs dans les fichiers YAML",
+            "Mettre en place Redux dans le projet pour gérer un état global cohérent et faciliter la synchronisation des données entre le front-end et le back-end",
+            "Utiliser Node.js pour exécuter le code JavaScript côté serveur et traiter les requêtes API de manière efficace"
+        ],
+
         "technologies": ["Node", "React", "Redux", "Redux Toolkit", "Swagger"],
-        "date": "2024-07-01",
-        "link": "/project/9"
+        "date": "2024-07-01"
     }
 ]
