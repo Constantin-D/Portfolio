@@ -52,19 +52,19 @@
             }
         ],
         "assignment": [
-    {
-        "task": "Mise à jour HTML",
-        "details": "Adapter la structure HTML en fonction de la maquette Figma fournie, en conservant le CSS existant et en respectant les contraintes de design."
-    },
-    {
-        "task": "Responsive Design",
-        "details": "S'assurer que la mise en page HTML reste conforme aux attentes pour toutes les tailles d'écrans (desktop, tablette, mobile)."
-    },
-    {
-        "task": "Contrôle qualité",
-        "details": "Vérifier la conformité du rendu visuel par rapport à la maquette et assurer une compatibilité sur les principaux navigateurs."
-    }
-],
+            {
+                "task": "Mise à jour HTML",
+                "details": "Adapter la structure HTML en fonction de la maquette Figma fournie, en conservant le CSS existant et en respectant les contraintes de design."
+            },
+            {
+                "task": "Responsive Design",
+                "details": "S'assurer que la mise en page HTML reste conforme aux attentes pour toutes les tailles d'écrans (desktop, tablette, mobile)."
+            },
+            {
+                "task": "Contrôle qualité",
+                "details": "Vérifier la conformité du rendu visuel par rapport à la maquette et assurer une compatibilité sur les principaux navigateurs."
+            }
+        ],
 
         "technologies": ["HTML", "CSS", "FIGMA"],
         "date": "2023-11-01"
@@ -122,11 +122,26 @@
             }
         ],
         "assignment": [
-            "Intégrer l'interface responsive du site en respectant les maquettes Figma fournies pour mobile, tablette et desktop",
-            "Créer des composants d'interface personnalisés en HTML et CSS pour obtenir un rendu fidèle aux maquettes",
-            "Assurer une compatibilité et une adaptabilité optimale de la page d'accueil pour différents appareils et résolutions d’écran",
-            "Appliquer les spécificités mentionnées dans la note de synthèse du projet pour respecter les attentes du client",
-            "Renforcer les compétences en design responsive tout au long de l'intégration"
+            {
+                "task": "Intégration responsive",
+                "details": "Intégrer l'interface responsive en suivant les maquettes Figma pour mobile, tablette, et desktop."
+            },
+            {
+                "task": "Composants d'interface",
+                "details": "Créer des composants personnalisés en HTML et CSS pour obtenir un rendu fidèle aux maquettes."
+            },
+            {
+                "task": "Compatibilité multi-supports",
+                "details": "Assurer une adaptabilité optimale de la page d'accueil pour différents appareils et résolutions d’écran."
+            },
+            {
+                "task": "Conformité aux spécifications",
+                "details": "Appliquer les spécificités de la note de synthèse pour respecter les attentes du client."
+            },
+            {
+                "task": "Renforcement des compétences",
+                "details": "Améliorer les compétences en design responsive tout au long de l'intégration."
+            }
         ],
         "technologies": ["HTML", "CSS"],
         "date": "2023-12-01"
@@ -184,10 +199,22 @@
             }
         ],
         "assignment": [
-            "Développer l'interface mobile-first selon la maquette fournie",
-            "Utiliser Sass pour la structure des styles",
-            "Implémenter des animations CSS",
-            "Versionner avec Git et GitHub"
+            {
+                "task": "Développement mobile-first",
+                "details": "Développer l'interface en mobile-first selon la maquette fournie."
+            },
+            {
+                "task": "Utilisation de Sass",
+                "details": "Organiser les styles avec le préprocesseur Sass pour une meilleure structuration."
+            },
+            {
+                "task": "Animations CSS",
+                "details": "Implémenter des animations CSS pour améliorer l'interactivité."
+            },
+            {
+                "task": "Versionnement",
+                "details": "Versionner le projet en utilisant Git et GitHub pour la gestion des modifications."
+            }
         ],
         "technologies": ["HTML", "Sass", "Git & GitHub", "FIGMA"],
         "date": "2024-01-01"
@@ -245,10 +272,22 @@
             }
         ],
         "assignment": [
-            "Analyser les besoins pour améliorer l'interactivité du site",
-            "Concevoir et développer un carrousel dynamique avec JavaScript",
-            "Intégrer les transitions et animations pour fluidifier l'expérience utilisateur",
-            "Tester et optimiser le carrousel pour une navigation multi-supports (desktop et mobile)"
+            {
+                "task": "Analyse des besoins",
+                "details": "Analyser les besoins pour renforcer l'interactivité du site."
+            },
+            {
+                "task": "Développement de carrousel",
+                "details": "Concevoir et développer un carrousel dynamique en JavaScript."
+            },
+            {
+                "task": "Transitions et animations",
+                "details": "Intégrer des transitions et animations pour une expérience utilisateur fluide."
+            },
+            {
+                "task": "Optimisation multi-supports",
+                "details": "Tester et optimiser le carrousel pour une navigation sur desktop et mobile."
+            }
         ]
     },
     {
@@ -274,24 +313,8 @@
                 },
                 "alt": "Appartement Paris V"
             },
-            {
-                "srcSet": {
-                    "default": "/images/sophie-bruel/appartement-paris-xviii-768-min.webp",
-                    "375w": "/images/sophie-bruel/appartement-paris-xviii-375-min.webp",
-                    "768w": "/images/sophie-bruel/appartement-paris-xviii-768-min.webp",
-                    "1200w": "/images/sophie-bruel/appartement-paris-xviii-1200-min.webp"
-                },
-                "alt": "Appartement Paris XVIII"
-            },
-            {
-                "srcSet": {
-                    "default": "/images/sophie-bruel/la-balisiere-768-min.webp",
-                    "375w": "/images/sophie-bruel/la-balisiere-375-min.webp",
-                    "768w": "/images/sophie-bruel/la-balisiere-768-min.webp",
-                    "1200w": "/images/sophie-bruel/la-balisiere-1200-min.webp"
-                },
-                "alt": "La Balisière"
-            },
+            
+            
             {
                 "srcSet": {
                     "default": "/images/sophie-bruel/hotel-first-arte-new-delhi-768-min.webp",
@@ -312,12 +335,23 @@
             }
         ],
         "assignment": [
-            "Créer une page de présentation des travaux de l'architecte en intégrant le HTML fourni et en appliquant le style approprié",
-            "Développer une interface de connexion sécurisée pour l'administrateur du site en utilisant JavaScript pour la validation",
-            "Concevoir et coder une modale fonctionnelle permettant l'upload de nouveaux médias, en gérant les interactions et les erreurs",
-            "Tester la compatibilité de l'ensemble des fonctionnalités sur différents navigateurs et appareils"
+            {
+                "task": "Présentation des travaux",
+                "details": "Créer une page de présentation des travaux en intégrant le HTML fourni et le style approprié."
+            },
+            {
+                "task": "Interface de connexion",
+                "details": "Développer une interface de connexion sécurisée pour l'administrateur avec validation JavaScript."
+            },
+            {
+                "task": "Modale d'upload",
+                "details": "Concevoir et coder une modale permettant l'upload de médias, avec gestion des interactions et erreurs."
+            },
+            {
+                "task": "Tests de compatibilité",
+                "details": "Tester toutes les fonctionnalités sur différents navigateurs et appareils."
+            }
         ],
-
         "technologies": ["JavaScript", "Figma"],
         "date": "2024-02-01"
     },
@@ -365,13 +399,27 @@
             }
         ],
         "assignment": [
-            "Planifier le développement du site web en définissant les étapes clés et les ressources nécessaires",
-            "Effectuer une veille technologique pour identifier les solutions et pratiques adaptées au projet",
-            "Rédiger les spécifications techniques détaillées pour guider l'équipe de développement",
-            "Utiliser l'outil de gestion de projet Notion pour structurer le projet et suivre l'avancement dans un tableau Kanban",
-            "Préparer et présenter la solution technique au client, en expliquant les choix stratégiques et techniques"
+            {
+                "task": "Planification du développement",
+                "details": "Définir les étapes clés et les ressources nécessaires pour la mise en œuvre du site web."
+            },
+            {
+                "task": "Veille technologique",
+                "details": "Effectuer une veille pour identifier les solutions et pratiques adaptées aux besoins du projet."
+            },
+            {
+                "task": "Rédaction des spécifications techniques",
+                "details": "Élaborer des spécifications détaillées pour guider l'équipe dans le développement du site."
+            },
+            {
+                "task": "Organisation de projet avec Notion",
+                "details": "Structurer le projet et suivre son avancement via un tableau Kanban dans Notion."
+            },
+            {
+                "task": "Présentation de la solution technique",
+                "details": "Préparer et exposer au client la solution technique, en expliquant les choix stratégiques et techniques."
+            }
         ],
-
         "technologies": ["Gestion de projet", "Notion", "Kanban"],
         "date": "2024-03-01"
     },
@@ -428,11 +476,26 @@
             }
         ],
         "assignment": [
-            "Développement frontend avec React",
-            "Implémenter la navigation avec React Router",
-            "Créer la page d'accueil listant les appartements",
-            "Développer la page de détail pour chaque appartement",
-            "Afficher une page 404 pour les erreurs d'URL"
+            {
+                "task": "Développement frontend avec React",
+                "details": "Construire l'application avec React pour assurer une interface dynamique."
+            },
+            {
+                "task": "Navigation avec React Router",
+                "details": "Implémenter la navigation entre les pages de l'application avec React Router."
+            },
+            {
+                "task": "Page d'accueil",
+                "details": "Créer la page d'accueil listant les appartements disponibles."
+            },
+            {
+                "task": "Page de détail des appartements",
+                "details": "Développer une page détaillée pour chaque appartement avec toutes les informations."
+            },
+            {
+                "task": "Page 404",
+                "details": "Afficher une page 404 en cas d'URL incorrecte pour améliorer l'expérience utilisateur."
+            }
         ],
         "technologies": ["React", "React-Router"],
         "date": "2024-04-01"
@@ -486,11 +549,26 @@
             }
         ],
         "assignment": [
-            "Optimiser le référencement naturel (SEO) pour améliorer la visibilité du site dans les moteurs de recherche",
-            "Améliorer les performances du site en optimisant les temps de chargement et l'expérience utilisateur",
-            "Mettre en place les balises Schema.org pour enrichir les résultats de recherche et améliorer le SEO",
-            "Configurer les métadonnées pour les réseaux sociaux (Open Graph, Twitter Cards) afin d'assurer une bonne présentation du site",
-            "Rendre le site plus accessible en suivant les bonnes pratiques d'accessibilité (W3C) et en appliquant des ajustements pour les lecteurs d'écran"
+            {
+                "task": "Optimisation SEO",
+                "details": "Améliorer la visibilité du site dans les moteurs de recherche via des optimisations SEO."
+            },
+            {
+                "task": "Optimisation des performances",
+                "details": "Réduire les temps de chargement et améliorer l'expérience utilisateur par des ajustements de performance."
+            },
+            {
+                "task": "Balises Schema.org",
+                "details": "Intégrer des balises Schema.org pour enrichir les résultats de recherche et améliorer le SEO."
+            },
+            {
+                "task": "Métadonnées réseaux sociaux",
+                "details": "Configurer les balises Open Graph et Twitter Cards pour une présentation optimisée sur les réseaux sociaux."
+            },
+            {
+                "task": "Accessibilité",
+                "details": "Suivre les bonnes pratiques W3C pour rendre le site plus accessible, en particulier pour les lecteurs d'écran."
+            }
         ],
         "technologies": ["SEO", "Accessibilité", "Performance"],
         "date": "2024-05-01"
@@ -544,11 +622,26 @@
             }
         ],
         "assignment": [
-            "Identifier et corriger les bugs dans le développement d'un site one-page pour assurer sa stabilité",
-            "Optimiser le code et le design pour garantir une navigation fluide et une expérience utilisateur améliorée",
-            "Mettre en place et exécuter des tests unitaires avec Jest pour vérifier la fiabilité des fonctions du site",
-            "Réaliser des tests fonctionnels afin d'assurer le bon fonctionnement global des éléments interactifs",
-            "Finaliser le déploiement du site en effectuant les ajustements finaux et les vérifications de compatibilité"
+            {
+                "task": "Correction de bugs",
+                "details": "Identifier et corriger les bugs pour garantir la stabilité du site one-page."
+            },
+            {
+                "task": "Optimisation du code et design",
+                "details": "Améliorer le code et le design pour une navigation fluide et une meilleure expérience utilisateur."
+            },
+            {
+                "task": "Tests unitaires avec Jest",
+                "details": "Mettre en place des tests unitaires pour vérifier la fiabilité des fonctionnalités du site."
+            },
+            {
+                "task": "Tests fonctionnels",
+                "details": "Réaliser des tests pour garantir le bon fonctionnement des éléments interactifs."
+            },
+            {
+                "task": "Déploiement final",
+                "details": "Finaliser le déploiement avec les ajustements et les vérifications nécessaires."
+            }
         ],
         "technologies": ["React", "React Developer Tools"],
         "date": "2024-06-01"
@@ -602,13 +695,27 @@
             }
         ],
         "assignment": [
-            "Concevoir et documenter les routes API backend avec Swagger pour une intégration front-end/back-end claire et structurée",
-            "Rédiger les fichiers de configuration YAML pour Swagger afin de formaliser les spécifications API et garantir la cohérence des appels",
-            "Utiliser YAML Lint pour vérifier la conformité syntaxique et prévenir les erreurs dans les fichiers YAML",
-            "Mettre en place Redux dans le projet pour gérer un état global cohérent et faciliter la synchronisation des données entre le front-end et le back-end",
-            "Utiliser Node.js pour exécuter le code JavaScript côté serveur et traiter les requêtes API de manière efficace"
+            {
+                "task": "Documentation des API avec Swagger",
+                "details": "Définir et documenter les routes API backend pour une intégration claire avec le front-end."
+            },
+            {
+                "task": "Configuration YAML pour Swagger",
+                "details": "Rédiger les fichiers YAML pour formaliser les spécifications des API."
+            },
+            {
+                "task": "Validation YAML avec YAML Lint",
+                "details": "Utiliser YAML Lint pour vérifier la syntaxe et éviter les erreurs dans les fichiers de configuration."
+            },
+            {
+                "task": "Gestion d'état avec Redux et Redux Toolkit",
+                "details": "Mettre en place Redux pour un état global cohérent et synchronisé entre le front-end et le back-end."
+            },
+            {
+                "task": "Exécution serveur avec Node.js",
+                "details": "Utiliser Node.js pour exécuter le code JavaScript côté serveur et traiter les requêtes API efficacement."
+            }
         ],
-
         "technologies": ["Node", "React", "Redux", "Redux Toolkit", "Swagger"],
         "date": "2024-07-01"
     }

@@ -1,3 +1,105 @@
 @import "./../../styles/variables.scss";
 @import "./../../styles/mixins.scss";
 
+.project-details {
+    margin: 12rem 2rem 6rem;
+
+    @include respond-to("tablet") {
+        margin: 9rem 0 1rem;
+    }
+
+    @include respond-to("mobile") {
+        margin: 8rem 0 1rem;
+    }
+
+    h1 {
+        margin-bottom: 6rem;
+
+        @include respond-to("tablet") {
+            margin-bottom: 4rem;
+        }
+
+        @include respond-to("mobile") {
+            margin-bottom: 2.5rem;
+        }
+    }
+
+    .template__container {
+        display: flex;
+        gap: 2rem;
+
+        @include respond-to("mobile") {
+            flex-direction: column;
+        }
+
+        .template__left {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            gap: 1.5rem;
+
+            @include respond-to("tablet") {
+                padding-inline: 1.3rem;
+            }
+
+            @include respond-to("mobile") {
+                padding-inline: 1rem;
+            }
+
+            h3 {
+                font-size: $subtitle-h3-font-size;
+            }
+
+            p,
+            li {
+                font-size: $text-font-size;
+                line-height: 1.6;
+                color: $primary-color;
+            }
+
+            &--assignment {
+                padding-left: 1.5rem;
+
+                li {
+                    margin: 0.5rem 0;
+                    position: relative;
+
+                    &:before {
+                        content: "•";
+                        position: absolute;
+                        left: -1.5rem;
+                        color: $primary-color;
+                    }
+                }
+            }
+
+            &--technologies {
+                @include tech-list();
+            }
+        }
+
+        .template__right {
+            @include flex-center;
+            flex-direction: column;
+            justify-content: space-around;
+            flex: 1;
+            gap: 1.5rem;
+
+            &--images {
+                width: 70%;
+                max-height: 100%;
+                border-radius: 5px;
+                box-shadow: $box-shadow;
+                // transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+                @include respond-to("tablet") {
+                    width: 90%;
+                }
+
+                @include respond-to("mobile") {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

@@ -22,7 +22,7 @@ const Projects = () => {
         return (
             <PageTransition>
                 <section className="projects">
-                    <h2 className="projects__title">Mes Projets</h2>
+                    <h1 className="projects__title">Mes Projets</h1>
                     <p>Chargement des projets...</p>
                 </section>
             </PageTransition>
@@ -33,7 +33,7 @@ const Projects = () => {
         return (
             <PageTransition>
                 <section className="projects">
-                    <h2 className="projects__title">Mes Projets</h2>
+                    <h1 className="projects__title">Mes Projets</h1>
                     <p>Erreur : {error}</p>
                 </section>
             </PageTransition>
@@ -43,7 +43,7 @@ const Projects = () => {
     return (
         <PageTransition>
             <section className="projects">
-                <h2 className="projects__title">Mes Projets</h2>
+                <h1 className="projects__title">Mes Projets</h1>
                 <div className="projects__list">
                     {projects.length > 0 ? (
                         projects.map((project) => (

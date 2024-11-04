@@ -21,7 +21,7 @@ const Slider = ({ projects }) => {
     };
 
     const handleCardClick = (id) => {
-        navigate(`/project/${id}`);	
+        navigate(`/project/${id}`); 	
     };
 
     return (
@@ -43,17 +43,18 @@ const Slider = ({ projects }) => {
             {/* Slide Actuelle */}
             <div
                 className="slider__slide"
-                onClick={() => handleCardClick(projects[currentIndex].link)}
+                onClick={() => handleCardClick(projects[currentIndex].id)}
+                // showSliderCardDetails={() => handleCardClick(projects[currentIndex].id)}
             >
                 <Card project={projects[currentIndex]} />
             </div>
 
             {/* Indicateurs */}
             <div className="slider__indicators">
-                {projects.map((_, index) => ( 
+                {projects.map((_, index) => (
                     <div
                         key={index}
-                        className={`slider__indicator ${ 
+                        className={`slider__indicator ${
                             index === currentIndex ? "active" : ""
                         }`}
                         onClick={() => setCurrentIndex(index)}

@@ -10,6 +10,7 @@ import Projects from "./pages/Projects/Projects";
 import ProjectToShow from "./pages/ProjectToShow/ProjectToShow";
 // import PageTransition from "./components/PageTransition/PageTrasition";
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
+import { HelmetProvider } from "react-helmet-async";
 
 import { AnimatePresence } from "framer-motion";
 
@@ -17,25 +18,33 @@ function App() {
     const location = useLocation();
 
     return (
-        <div className="app">
-            <ProjectsProvider>
-                <Header />
-                <main className="main">
-                    <ScrollToTop />
-                    <AnimatePresence mode="wait" initial={false}>
-                        <Routes location={location} key={location.pathname}>
-                            <Route path="/" element={<Home />} />
-                            <Route path="/about" element={<About />} />
-                            <Route path="/projects" element={<Projects />} />
-                            <Route path="/project/:id" element={<ProjectToShow  />} />
-                            <Route path="/contact" element={<Contact />} />
-                            <Route path="*" element={<NotFound />} />
-                        </Routes>
-                    </AnimatePresence>
-                </main>
-                <Footer />
-            </ProjectsProvider>
-        </div>
+        <HelmetProvider>
+            <div className="app">
+                <ProjectsProvider>
+                    <Header />
+                    <main className="main">
+                        <ScrollToTop />
+                        <AnimatePresence mode="wait" initial={false}>
+                            <Routes location={location} key={location.pathname}>
+                                <Route path="/" element={<Home />} />
+                                <Route path="/about" element={<About />} />
+                                <Route
+                                    path="/projects"
+                                    element={<Projects />}
+                                />
+                                <Route
+                                    path="/project/:id"
+                                    element={<ProjectToShow />}
+                                />
+                                <Route path="/contact" element={<Contact />} />
+                                <Route path="*" element={<NotFound />} />
+                            </Routes>
+                        </AnimatePresence>
+                    </main>
+                    <Footer />
+                </ProjectsProvider>
+            </div>
+        </HelmetProvider>
     );
 }
 

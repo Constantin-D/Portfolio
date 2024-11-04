@@ -2,15 +2,13 @@
 @import "../../styles/mixins.scss";
 
 .projects {
-    margin-top: 8rem;
-    margin-inline: 1rem;
+    margin: 10rem 2rem 4rem;
 
     &__title {
-        margin: 2rem;
+        margin-bottom: 3rem;
 
         @include respond-to("mobile") {
-            padding: 0;
-            margin: 1rem;
+            margin-bottom: 2rem; 
         }
     }
 
@@ -18,17 +16,12 @@
         display: grid;
         grid-template-columns: repeat(5, 1fr); 
         gap: 30px;
-        padding-inline: 1.2rem;
-        margin-bottom: 3rem;
-
         @include respond-to("tablet") {
-            // margin: 0 0.7rem 1.8rem;
             grid-template-columns: repeat(2, 1fr);
         }
         
         @include respond-to("mobile") {
             padding: 0;
-            // margin: 0 0 1.3rem;
             grid-template-columns: 1fr;
         }
     }
@@ -42,7 +35,7 @@
 
 .projects {
     @include respond-to("mobile") {
-        margin-top: 6rem;
+        margin: 6rem 0 3rem;
 
         &__list {
             margin-top: 0;

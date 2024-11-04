@@ -52,3 +52,22 @@
         }
     }
 }
+
+// Mixin pour la liste des technologies utilisées
+@mixin tech-list($bg-color: $primary-color, $text-color: $text-pale-color, $font: $font-body) {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+
+    li {
+        background-color: lighten($bg-color, 40%);
+        color: $text-color;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        font-size: 0.9rem;
+        font-family: $font;
+    }
+}

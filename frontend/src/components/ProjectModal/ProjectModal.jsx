@@ -1,6 +1,7 @@
 import { AnimatePresence, motion } from "framer-motion";
 import React, { useEffect, useState } from "react";
 import { FaTimes } from "react-icons/fa";
+
 import "./project-modal.scss";
 
 const ProjectModal = ({ project, onClose }) => {
@@ -60,9 +61,9 @@ const ProjectModal = ({ project, onClose }) => {
                             {/* Partie gauche pour la description */}
                             <div className="modal__left">
                                 <p>{project.description}</p>
-                                <p>{project.assignment}</p>
+
                                 {project.technologies && (
-                                    <ul className="modal__technologies">
+                                    <ul className="modal__left--technologies">
                                         {project.technologies.map(
                                             (tech, index) => (
                                                 <li key={index}>{tech}</li>
@@ -70,6 +71,12 @@ const ProjectModal = ({ project, onClose }) => {
                                         )}
                                     </ul>
                                 )}
+                                <div className="project-date">
+                                    <p>
+                                        <span>Date du projet : </span>
+                                        {project.date}
+                                    </p>
+                                </div>
                             </div>
 
                             {/* Partie droite pour les images */}
@@ -91,7 +98,7 @@ const ProjectModal = ({ project, onClose }) => {
                                             } 1200w`}
                                             sizes="(max-width: 375px) 375px, (max-width: 768px) 768px, 1200px"
                                             alt={image.alt}
-                                            className="modal__image"
+                                            className="modal__right--images"
                                             loading="lazy"
                                         />
                                     ))

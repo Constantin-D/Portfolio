@@ -1,7 +1,7 @@
 import React from "react";
 import "./card.scss";
 
-const Card = ({ project, onClick }) => {
+const Card = ({ project, onClick, showSliderCardDetails }) => {
     const { srcSet, alt } = project.cardImage;
     
    return (
@@ -18,7 +18,11 @@ const Card = ({ project, onClick }) => {
            />
            <h4 className="card__title">{project.title}</h4>
            <p className="card__description">{project.presentation}</p>
-           <button className="card__button">Voir plus</button>
+           <button className="card__button"
+                onClick={showSliderCardDetails}
+           >Voir plus
+
+           </button>
        </div>
    );
 };

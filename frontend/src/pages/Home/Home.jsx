@@ -7,6 +7,7 @@ import Hero from "../../components/Hero/Hero";
 import PageTransition from "../../components/PageTransition/PageTransition";
 import Slider from "../../components/Slider/Slider";
 import { ProjectsContext } from "../../context/ProjectsContext";
+import { Helmet } from "react-helmet-async";
 
 import "./home.scss";
 
@@ -58,7 +59,30 @@ const Home = () => {
 
     return (
         <PageTransition>
-            <div className="home">
+            <Helmet>
+                <title>Accueil - Portfolio</title>
+                <meta
+                    name="description"
+                    content="Découvrez les projets de mon portfolio, mes compétences et mon parcours en tant que développeur."
+                />
+                <link rel="canonical" href="https://votre-site.fr/" />
+                <meta property="og:type" content="website" />
+                <meta property="og:title" content="Accueil - Portfolio" />
+                <meta
+                    property="og:description"
+                    content="Découvrez mes projets récents et mes compétences en développement web."
+                />
+                <meta property="og:url" content="https://votre-site.fr/" />
+                <meta property="og:image" content="lien/vers/une/image.jpg" />
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="Accueil - Portfolio" />
+                <meta
+                    name="twitter:description"
+                    content="Découvrez mes projets récents et mes compétences en développement web."
+                />
+                <meta name="twitter:image" content="lien/vers/une/image.jpg" />
+            </Helmet>
+            <section className="home">
                 <Hero />
 
                 <section className="home__projects">
@@ -88,15 +112,24 @@ const Home = () => {
                     initial={{ opacity: 0, scale: 0 }}
                     whileInView={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.6 }}
-                    id="contact" className="home__contact-cta"
+                    id="contact"
+                    className="home__contact"
                 >
-                    {/* <h2>Contactez-moi</h2> */}
+                    <div>
+                        <h3>Pour une collaboration ou une question</h3>
+                    </div>
+                    <div>
+                        <p>
+                            Remplissez le formulaire ci-dessous. Je serais ravi
+                            d'échanger avec vous.
+                        </p>
+                    </div>
                     {/* <Link to="/contact" className="home__contact-cta--link">
                         Contactez-moi !
                     </Link> */}
                     <Contact />
                 </motion.section>
-            </div>
+            </section>
         </PageTransition>
     );
 };
