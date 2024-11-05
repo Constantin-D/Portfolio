@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import React from "react";
 import PageTransition from "../../components/PageTransition/PageTransition";
+import { Helmet } from "react-helmet-async";
 
 import "./about.scss";
 
@@ -50,37 +51,65 @@ const descriptionVariant = {
 const About = () => {
     return (
         <PageTransition>
-            <section className="about">
-                <motion.h2
-                    className="about__title"
-                    variants={titleVariant}
-                    initial="hidden"
-                    animate="visible"
-                >
-                    À propos de moi
-                </motion.h2>
-                {aboutSections.map((section, index) => (
-                    <React.Fragment key={index}>
-                        <motion.h3
-                            className="about__subtitle"
-                            custom={section.delay}
-                            variants={subtitleVariant}
-                            initial="hidden"
-                            animate="visible"
-                        >
-                            {section.subtitle}
-                        </motion.h3>
-                        <motion.p
-                            className="about__description"
-                            custom={section.delay}
-                            variants={descriptionVariant}
-                            initial="hidden"
-                            animate="visible"
-                        >
-                            {section.description}
-                        </motion.p>
-                    </React.Fragment>
-                ))}
+            <section>
+                <Helmet>
+                    <title></title>
+                    <meta name="description" content="" />
+                    <link
+                        rel="canonical"
+                        href="https://portfolio-3675bwfws-dugards-projects.vercel.app/"
+                    />
+                    <meta property="og:type" content=" website" />
+                    <meta property="og:title" content="" />
+                    <meta property="og:description" content="" />
+                    <meta
+                        property="og:url"
+                        content="https://portfolio-3675bwfws-dugards-projects.vercel.app/"
+                    />
+                    <meta
+                        property="og:image"
+                        content="lien/vers/une/image.webp"
+                    />
+                    <meta name="twitter:card" content="summary_large_image" />
+                    <meta name="twitter:title" content="" />
+                    <meta name="twitter:description" content="" />
+                    <meta
+                        name="twitter:image"
+                        content="lien/vers/une/image.webp"
+                    />
+                </Helmet>
+                <section className="about">
+                    <motion.h2
+                        className="about__title"
+                        variants={titleVariant}
+                        initial="hidden"
+                        animate="visible"
+                    >
+                        À propos de moi
+                    </motion.h2>
+                    {aboutSections.map((section, index) => (
+                        <React.Fragment key={index}>
+                            <motion.h3
+                                className="about__subtitle"
+                                custom={section.delay}
+                                variants={subtitleVariant}
+                                initial="hidden"
+                                animate="visible"
+                            >
+                                {section.subtitle}
+                            </motion.h3>
+                            <motion.p
+                                className="about__description"
+                                custom={section.delay}
+                                variants={descriptionVariant}
+                                initial="hidden"
+                                animate="visible"
+                            >
+                                {section.description}
+                            </motion.p>
+                        </React.Fragment>
+                    ))}
+                </section>
             </section>
         </PageTransition>
     );

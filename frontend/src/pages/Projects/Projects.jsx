@@ -1,8 +1,9 @@
 import React, { useContext, useState } from "react";
-import { ProjectsContext } from "../../context/ProjectsContext";
 import Card from "../../components/Card/Card";
-import ProjectModal from "../../components/ProjectModal/ProjectModal";
 import PageTransition from "../../components/PageTransition/PageTransition";
+import ProjectModal from "../../components/ProjectModal/ProjectModal";
+import { ProjectsContext } from "../../context/ProjectsContext";
+import { Helmet } from "react-helmet-async";
 
 import "./projects.scss";
 
@@ -42,28 +43,56 @@ const Projects = () => {
 
     return (
         <PageTransition>
-            <section className="projects">
-                <h1 className="projects__title">Mes Projets</h1>
-                <div className="projects__list">
-                    {projects.length > 0 ? (
-                        projects.map((project) => (
-                            <Card
-                                key={project.id}
-                                project={project}
-                                onClick={() => handleOpenModal(project)}
-                            />
-                        ))
-                    ) : (
-                        <p>Aucun projet disponible pour l'instant.</p>
-                    )}
-                </div>
-
-                {selectedProject && (
-                    <ProjectModal
-                        project={selectedProject}
-                        onClose={closeModal}
+            <section>
+                <Helmet>
+                    <title></title>
+                    <meta name="description" content="" />
+                    <link
+                        rel="canonical"
+                        href="https://portfolio-3675bwfws-dugards-projects.vercel.app/"
                     />
-                )}
+                    <meta property="og:type" content=" website" />
+                    <meta property="og:title" content="" />
+                    <meta property="og:description" content="" />
+                    <meta
+                        property="og:url"
+                        content="https://portfolio-3675bwfws-dugards-projects.vercel.app/"
+                    />
+                    <meta
+                        property="og:image"
+                        content="lien/vers/une/image.webp"
+                    />
+                    <meta name="twitter:card" content="summary_large_image" />
+                    <meta name="twitter:title" content="" />
+                    <meta name="twitter:description" content="" />
+                    <meta
+                        name="twitter:image"
+                        content="lien/vers/une/image.webp"
+                    />
+                </Helmet>
+                <section className="projects">
+                    <h1 className="projects__title">Mes Projets</h1>
+                    <div className="projects__list">
+                        {projects.length > 0 ? (
+                            projects.map((project) => (
+                                <Card
+                                    key={project.id}
+                                    project={project}
+                                    onClick={() => handleOpenModal(project)}
+                                />
+                            ))
+                        ) : (
+                            <p>Aucun projet disponible pour l'instant.</p>
+                        )}
+                    </div>
+
+                    {selectedProject && (
+                        <ProjectModal
+                            project={selectedProject}
+                            onClose={closeModal}
+                        />
+                    )}
+                </section>
             </section>
         </PageTransition>
     );

@@ -59,7 +59,7 @@ const ProjectModal = ({ project, onClose }) => {
                         <h2 id="modal-title">{project.title}</h2>
                         <div className="modal__container">
                             {/* Partie gauche pour la description */}
-                            <div className="modal__left">
+                            <section className="modal__left">
                                 <p>{project.description}</p>
 
                                 {project.technologies && (
@@ -77,10 +77,10 @@ const ProjectModal = ({ project, onClose }) => {
                                         {project.date}
                                     </p>
                                 </div>
-                            </div>
+                            </section>
 
                             {/* Partie droite pour les images */}
-                            <div className="modal__right">
+                            <section className="modal__right">
                                 {project.modalImages?.length > 0 ? (
                                     project.modalImages.map((image, index) => (
                                         <img
@@ -105,7 +105,7 @@ const ProjectModal = ({ project, onClose }) => {
                                 ) : (
                                     <p>Aucune image disponible.</p>
                                 )}
-                            </div>
+                            </section>
                         </div>
                     </motion.div>
                 </div>

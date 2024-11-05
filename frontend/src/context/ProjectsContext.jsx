@@ -1,4 +1,5 @@
 import React, { createContext, useEffect, useState } from "react";
+
 // Fournisseur du contexte
 export const ProjectsProvider = ({ children }) => {
     const [projects, setProjects] = useState([]);
@@ -8,15 +9,15 @@ export const ProjectsProvider = ({ children }) => {
     useEffect(() => {
         const fetchProjects = async () => {
             try {
-                const response = await fetch(
-                    "http://localhost:3000/api/projects"
-                );
+                const response = await fetch("/src/assets/data/projects.json");
+                console.log("response", response);
                 if (!response.ok) {
                     throw new Error("Erreur lors du chargement des projets.");
                 }
                 const data = await response.json();
                 setProjects(data);
             } catch (err) {
+                console.error("Fetch error:", err);
                 setError(err.message);
             } finally {
                 setLoading(false);
@@ -33,5 +34,4 @@ export const ProjectsProvider = ({ children }) => {
     );
 };
 
-
-export const ProjectsContext = createContext(); 
+export const ProjectsContext = createContext();
