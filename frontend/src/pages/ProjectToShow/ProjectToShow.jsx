@@ -44,32 +44,23 @@ const ProjectToShow = () => {
         <section>
             <Helmet>
                 <title></title>
-                <meta
-                    name="description"
-                    content=""
-                />
+                <meta name="description" content="" />
                 <link
                     rel="canonical"
                     href="https://portfolio-3675bwfws-dugards-projects.vercel.app/"
                 />
                 <meta property="og:type" content=" website" />
                 <meta property="og:title" content="" />
-                <meta
-                    property="og:description"
-                    content=""
-                />
+                <meta property="og:description" content="" />
                 <meta
                     property="og:url"
                     content="https://portfolio-3675bwfws-dugards-projects.vercel.app/"
                 />
-                <meta property="og:image" content="lien/vers/une/image.webp" />
+                <meta property="og:image" content="https://portfolio-3675bwfws-dugards-projects.vercel.app/images/profile-512-min.webp" />
                 <meta name="twitter:card" content="summary_large_image" />
                 <meta name="twitter:title" content="" />
-                <meta
-                    name="twitter:description"
-                    content=""
-                />
-                <meta name="twitter:image" content="lien/vers/une/image.webp" />
+                <meta name="twitter:description" content="" />
+                <meta name="twitter:image" content="https://portfolio-3675bwfws-dugards-projects.vercel.app/images/profile-512-min.webp" />
             </Helmet>
             <section className="project-details">
                 <motion.h1
@@ -125,18 +116,12 @@ const ProjectToShow = () => {
                                 <img
                                     key={index}
                                     src={image.srcSet.default}
-                                    srcSet={`${
-                                        image.srcSet["375w"] 
-                                       
-                                    } 375w, ${
-                                        image.srcSet["768w"] 
-                                    } 768w, ${
-                                        image.srcSet["1200w"] 
-                                    } 1200w`}
-                                    sizes="(max-width: 375px) 375px, (max-width: 768px) 768px, 1200px"
+                                    srcSet={`${image.srcSet["375w"]} 375w, ${image.srcSet["768w"]} 768w, ${image.srcSet["1200w"]} 1200w`}
+                                    sizes="(max-width: 375px) 375px, (max-width: 768px) 768px, (min-width: 769px) 1200px"
                                     alt={image.alt}
                                     className="template__right--images"
                                     loading="lazy"
+                                    // style={{ maxWidth: "100%", height: "auto" }}
                                 />
                             ))
                         ) : (

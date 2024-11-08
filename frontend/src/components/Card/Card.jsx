@@ -8,9 +8,9 @@ const Card = ({ project, onClick, showSliderCardDetails }) => {
         <section className="card" onClick={onClick}>
             <img
                 src={srcSet.default}
-                srcSet={`${srcSet["375w"] || srcSet.default} 375w, ${
-                    srcSet["768w"] || srcSet.default
-                } 768w, ${srcSet["1200w"] || srcSet.default} 1200w`}
+                srcSet={`${srcSet["375w"]} 375w, ${
+                    srcSet["768w"]
+                } 768w, ${srcSet["1200w"]} 1200w`}
                 sizes="(max-width: 375px) 375px, (max-width: 768px) 768px, 1200px"
                 className="card__image"
                 alt={alt}

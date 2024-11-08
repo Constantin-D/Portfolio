@@ -61,19 +61,21 @@ const Home = () => {
         <PageTransition>
             <section>
                 <Helmet>
-                    <title>Accueil - Portfolio</title>
+                    <title>
+                        Accueil | Portfolio de Constantin | Intégrateur Web
+                    </title>
                     <meta
                         name="description"
-                        content="Découvrez les projets de mon portfolio, mes compétences et mon parcours de formation en tant qu'intégrateur web."
+                        content="Découvrez les projets dans mon portfolio, mes compétences et mon parcours de formation en tant qu'intégrateur web."
                     />
                     <link
                         rel="canonical"
                         href="https://portfolio-3675bwfws-dugards-projects.vercel.app/"
                     />
-                    <meta property="og:type" content="Accueil - website" />
+                    <meta property="og:type" content="website" />
                     <meta
                         property="og:title"
-                        content="Accueil - Mon Portfolio"
+                        content="Accueil | Portfolio de Constantin | Intégrateur Web"
                     />
                     <meta
                         property="og:description"
@@ -85,17 +87,20 @@ const Home = () => {
                     />
                     <meta
                         property="og:image"
-                        content="lien/vers/une/image.jpg"
+                        content="https://portfolio-3675bwfws-dugards-projects.vercel.app/images/profile-512-min.webp"
                     />
                     <meta name="twitter:card" content="summary_large_image" />
-                    <meta name="twitter:title" content="Accueil - Portfolio" />
+                    <meta
+                        name="twitter:title"
+                        content="Accueil - Portfolio de Constantin"
+                    />
                     <meta
                         name="twitter:description"
                         content="Découvrez mes projets récents et mes compétences en développement web."
                     />
                     <meta
                         name="twitter:image"
-                        content="lien/vers/une/image.jpg"
+                        content="https://portfolio-3675bwfws-dugards-projects.vercel.app/images/profile-512-min.webp"
                     />
                 </Helmet>
                 <section className="home">
@@ -114,7 +119,7 @@ const Home = () => {
                             <p>Aucun projet disponible pour l'instant.</p>
                         )}
 
-                        <Link to="/projects" className="home__projects-button">
+                        <Link to="/projects" className="home__projects--button">
                             Voir tous mes projets de formation
                         </Link>
                     </section>

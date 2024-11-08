@@ -45,29 +45,35 @@ const Projects = () => {
         <PageTransition>
             <section>
                 <Helmet>
-                    <title></title>
-                    <meta name="description" content="" />
+                    <title>Mes projets</title>
+                    <meta
+                        name="description"
+                        content="Les projets réalisés au cours de la formation Intégrateur web d'OpenClassrooms"
+                    />
                     <link
                         rel="canonical"
                         href="https://portfolio-3675bwfws-dugards-projects.vercel.app/"
                     />
                     <meta property="og:type" content=" website" />
-                    <meta property="og:title" content="" />
-                    <meta property="og:description" content="" />
+                    <meta property="og:title" content="Les projets récents" />
+                    <meta
+                        property="og:description"
+                        content="Découvrez les divers projets réalisés "
+                    />
                     <meta
                         property="og:url"
                         content="https://portfolio-3675bwfws-dugards-projects.vercel.app/"
                     />
                     <meta
                         property="og:image"
-                        content="lien/vers/une/image.webp"
+                        content="https://portfolio-3675bwfws-dugards-projects.vercel.app/images/profile-512-min.webp"
                     />
                     <meta name="twitter:card" content="summary_large_image" />
                     <meta name="twitter:title" content="" />
                     <meta name="twitter:description" content="" />
                     <meta
                         name="twitter:image"
-                        content="lien/vers/une/image.webp"
+                        content="https://portfolio-3675bwfws-dugards-projects.vercel.app/images/profile-512-min.webp"
                     />
                 </Helmet>
                 <section className="projects">

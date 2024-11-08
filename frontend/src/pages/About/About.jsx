@@ -53,29 +53,38 @@ const About = () => {
         <PageTransition>
             <section>
                 <Helmet>
-                    <title></title>
-                    <meta name="description" content="" />
+                    <title>À propos de moi | Portfolio de Constantin</title>
+                    <meta
+                        name="description"
+                        content="Découvrez mon parcours en tant qu’intégrateur web avec OpenClassrooms, mes compétences, et mon expérience dans le développement web."
+                    />
                     <link
                         rel="canonical"
                         href="https://portfolio-3675bwfws-dugards-projects.vercel.app/"
                     />
                     <meta property="og:type" content=" website" />
-                    <meta property="og:title" content="" />
-                    <meta property="og:description" content="" />
+                    <meta
+                        property="og:title"
+                        content=">À propos de moi | Portfolio de Constantin"
+                    />
+                    <meta
+                        property="og:description"
+                        content="Parcours, compétences et expérience en intégration web et développement React. Apprenez-en plus sur moi et mon expertise en développement web."
+                    />
                     <meta
                         property="og:url"
                         content="https://portfolio-3675bwfws-dugards-projects.vercel.app/"
                     />
                     <meta
                         property="og:image"
-                        content="lien/vers/une/image.webp"
+                        content="https://portfolio-3675bwfws-dugards-projects.vercel.app/images/profile-512-min.webp"
                     />
                     <meta name="twitter:card" content="summary_large_image" />
                     <meta name="twitter:title" content="" />
                     <meta name="twitter:description" content="" />
                     <meta
                         name="twitter:image"
-                        content="lien/vers/une/image.webp"
+                        content="https://portfolio-3675bwfws-dugards-projects.vercel.app/images/profile-512-min.webp"
                     />
                 </Helmet>
                 <section className="about">

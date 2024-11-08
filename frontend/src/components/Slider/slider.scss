@@ -13,13 +13,6 @@
         position: relative;
         margin-bottom: 1rem;
         z-index: 1;
-
-        // @include respond-to("mobile") {
-        //     cursor: grab;
-        //     &:active {
-        //         cursor: grabbing;
-        //     }
-        // }
     }
 
     &__arrow {
@@ -38,10 +31,6 @@
         &--right {
             right: 10px;
         }
-
-        // @include respond-to("tablet") {
-        //     display: none;
-        // }
 
         @include respond-to("mobile") {
             display: none;

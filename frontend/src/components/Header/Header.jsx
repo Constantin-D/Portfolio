@@ -35,22 +35,14 @@ const Header = () => {
         { path: "contact", label: "Contactez-moi", isHashLink: true },
     ];
 
-    // const scrollToSkills = () => {
-    //     const skillsSection = document.getElementById("home__skills");
-    //     if (skillsSection) {
-    //         skillsSection.scrollIntoView({ behavior: "smooth" });
-    //     }
-    //     setIsMenuOpen(false);
-    // };
-
     return (
         <section>
             <header className="header">
                 <div className="header__logo">
                     <Link to="/" onClick={() => setIsMenuOpen(false)}>
                         <img
-                            src="/images/logo/Logo-1-768-min.webp"
-                            srcSet="/images/logo/Logo-1-375-min.webp 375w, /images/logo/Logo-1-768-min.webp 768w, /images/logo/Logo-1-1200-min.webp 1200w"
+                            src="/images/logo/logo-1-768-min.webp"
+                            srcSet="/images/logo/logo-1-375-min.webp 375w, /images/logo/logo-1-768-min.webp 768w, /images/logo/logo-1-1200-min.webp 1200w"
                             sizes="(max-width: 375px) 375px, (max-width: 768px) 768px, 1200px"
                             alt="Logo"
                             loading="lazy"
