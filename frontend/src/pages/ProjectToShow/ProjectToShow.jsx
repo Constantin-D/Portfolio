@@ -43,24 +43,55 @@ const ProjectToShow = () => {
     return (
         <section>
             <Helmet>
-                <title></title>
-                <meta name="description" content="" />
+                <title>{`${project.title} | ${project.presentation} | Portfolio de Constantin`}</title>
+                <meta
+                    name="description"
+                    content={`${
+                        project.description
+                    } - Ce projet met en avant des compétences en ${project.technologies.join(
+                        ", "
+                    )}.`}
+                />
                 <link
                     rel="canonical"
-                    href="https://portfolio-3675bwfws-dugards-projects.vercel.app/"
+                    href={`https://portfolio-3675bwfws-dugards-projects.vercel.app/project/${project.id}`}
                 />
-                <meta property="og:type" content=" website" />
-                <meta property="og:title" content="" />
-                <meta property="og:description" content="" />
+                <meta property="og:type" content="website" />
+                <meta
+                    property="og:title"
+                    content={`${project.title} | ${project.presentation} | Projet de Constantin`}
+                />
+                <meta
+                    property="og:description"
+                    content={`${
+                        project.description
+                    }. Découvrez ce projet axé sur ${project.technologies.join(
+                        ", "
+                    )}.`}
+                />
                 <meta
                     property="og:url"
-                    content="https://portfolio-3675bwfws-dugards-projects.vercel.app/"
+                    content={`https://portfolio-3675bwfws-dugards-projects.vercel.app/project/${project.id}`}
                 />
-                <meta property="og:image" content="https://portfolio-3675bwfws-dugards-projects.vercel.app/images/profile-512-min.webp" />
+                <meta
+                    property="og:image"
+                    content={`https://portfolio-3675bwfws-dugards-projects.vercel.app${project.cardImage.srcSet["1200w"]}`}
+                />
                 <meta name="twitter:card" content="summary_large_image" />
-                <meta name="twitter:title" content="" />
-                <meta name="twitter:description" content="" />
-                <meta name="twitter:image" content="https://portfolio-3675bwfws-dugards-projects.vercel.app/images/profile-512-min.webp" />
+                <meta
+                    name="twitter:title"
+                    content={`${project.title} | ${project.presentation} | Projet de Constantin`}
+                />
+                <meta
+                    name="twitter:description"
+                    content={`${
+                        project.description
+                    }. Un projet utilisant ${project.technologies.join(", ")}.`}
+                />
+                <meta
+                    name="twitter:image"
+                    content={`https://portfolio-3675bwfws-dugards-projects.vercel.app${project.cardImage.srcSet["1200w"]}`}
+                />
             </Helmet>
             <section className="project-details">
                 <motion.h1

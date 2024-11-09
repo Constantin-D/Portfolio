@@ -1,9 +1,9 @@
 import React, { useContext, useState } from "react";
+import { Helmet } from "react-helmet-async";
 import Card from "../../components/Card/Card";
 import PageTransition from "../../components/PageTransition/PageTransition";
 import ProjectModal from "../../components/ProjectModal/ProjectModal";
 import { ProjectsContext } from "../../context/ProjectsContext";
-import { Helmet } from "react-helmet-async";
 
 import "./projects.scss";
 
@@ -45,32 +45,41 @@ const Projects = () => {
         <PageTransition>
             <section>
                 <Helmet>
-                    <title>Mes projets</title>
+                    <title>Mes projets | Portfolio de Constantin</title>
                     <meta
                         name="description"
-                        content="Les projets réalisés au cours de la formation Intégrateur web d'OpenClassrooms"
+                        content="Découvrez les projets réalisés au cours de la formation Intégrateur web d'OpenClassrooms, incluant en autres, des travaux en HTML, CSS, JavaScript et React."
                     />
                     <link
                         rel="canonical"
-                        href="https://portfolio-3675bwfws-dugards-projects.vercel.app/"
+                        href="https://portfolio-3675bwfws-dugards-projects.vercel.app/projects"
                     />
                     <meta property="og:type" content=" website" />
-                    <meta property="og:title" content="Les projets récents" />
+                    <meta
+                        property="og:title"
+                        content="Mes projets de formation | Portfolio de Constantin"
+                    />
                     <meta
                         property="og:description"
-                        content="Découvrez les divers projets réalisés "
+                        content="Parcourez les divers projets réalisés dans le cadre de la formation Intégrateur Web d'OpenClassrooms, incluant des compétences en développement web. "
                     />
                     <meta
                         property="og:url"
-                        content="https://portfolio-3675bwfws-dugards-projects.vercel.app/"
+                        content="https://portfolio-3675bwfws-dugards-projects.vercel.app/projects"
                     />
                     <meta
                         property="og:image"
                         content="https://portfolio-3675bwfws-dugards-projects.vercel.app/images/profile-512-min.webp"
                     />
                     <meta name="twitter:card" content="summary_large_image" />
-                    <meta name="twitter:title" content="" />
-                    <meta name="twitter:description" content="" />
+                    <meta
+                        name="twitter:title"
+                        content="Mes projets de formation | Portfolio de Constantin"
+                    />
+                    <meta
+                        name="twitter:description"
+                        content="Découvrez les projets créés durant ma formation chez OpenClassrooms, montrant mes compétences en développement web."
+                    />
                     <meta
                         name="twitter:image"
                         content="https://portfolio-3675bwfws-dugards-projects.vercel.app/images/profile-512-min.webp"

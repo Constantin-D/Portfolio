@@ -17,7 +17,7 @@ const Hero = () => {
                 <h1>Intégrateur web</h1>
                 <img
                     className="hero__image--profile"
-                    src="/images/Profile-512-min.webp"
+                    src="/images/profile-512-min.webp"
                     alt="Profile"
                 />
             </div>

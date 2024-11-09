@@ -60,7 +60,7 @@ const About = () => {
                     />
                     <link
                         rel="canonical"
-                        href="https://portfolio-3675bwfws-dugards-projects.vercel.app/"
+                        href="https://portfolio-3675bwfws-dugards-projects.vercel.app/about"
                     />
                     <meta property="og:type" content=" website" />
                     <meta
@@ -73,15 +73,21 @@ const About = () => {
                     />
                     <meta
                         property="og:url"
-                        content="https://portfolio-3675bwfws-dugards-projects.vercel.app/"
+                        content="https://portfolio-3675bwfws-dugards-projects.vercel.app/about"
                     />
                     <meta
                         property="og:image"
                         content="https://portfolio-3675bwfws-dugards-projects.vercel.app/images/profile-512-min.webp"
                     />
                     <meta name="twitter:card" content="summary_large_image" />
-                    <meta name="twitter:title" content="" />
-                    <meta name="twitter:description" content="" />
+                    <meta
+                        name="twitter:title"
+                        content="À propos de moi | Portfolio de Constantin"
+                    />
+                    <meta
+                        name="twitter:description"
+                        content="Découvrez mon parcours et mes compétences en intégration web et développement React."
+                    />
                     <meta
                         name="twitter:image"
                         content="https://portfolio-3675bwfws-dugards-projects.vercel.app/images/profile-512-min.webp"
