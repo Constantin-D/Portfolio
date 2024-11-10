@@ -1,5 +1,5 @@
-@import "../../styles/variables.scss";
-@import "../../styles/mixins.scss";
+@use "../../styles/variables" as *;
+@use "../../styles/mixins" as *;
 
 .card {
     @include flex-center;
@@ -34,16 +34,16 @@
         font-weight: bold;
         text-align: center;
         margin: 0.5rem;
-        flex-grow: 1;// Espace disponible
+        flex-grow: 1; // Espace disponible
     }
 
     &__button {
         margin: 0 0 1.2rem;
-        
+
         @include button($primary-color,
-                $text-pale-color,
-                $see-thro-primary-color,
-                $blue-light-color,
-                0.3rem 1rem);
+            $text-pale-color,
+            $see-thro-primary-color,
+            $blue-light-color,
+            0.3rem 1rem);
     }
 }

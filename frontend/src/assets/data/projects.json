@@ -578,10 +578,10 @@
         "description": "Débugger le site web d'une agence événementielle.",
         "cardImage": {
             "srcSet": {
-                "default": "/images/724-events/alexandre-pellaes-6vAjp0pscx0-unsplash-768-min.webp",
-                "375w": "/images/724-events/alexandre-pellaes-6vAjp0pscx0-unsplash-375-min.webp",
-                "768w": "/images/724-events/alexandre-pellaes-6vAjp0pscx0-unsplash-768-min.webp",
-                "1200w": "/images/724-events/alexandre-pellaes-6vAjp0pscx0-unsplash-1200-min.webp"
+                "default": "/images/724-events/alexandre-pellaes-6vajp0pscx0-unsplash-768-min.webp",
+                "375w": "/images/724-events/alexandre-pellaes-6vajp0pscx0-unsplash-375-min.webp",
+                "768w": "/images/724-events/alexandre-pellaes-6vajp0pscx0-unsplash-768-min.webp",
+                "1200w": "/images/724-events/alexandre-pellaes-6vajp0pscx0-unsplash-1200-min.webp"
             },
             "alt": "724events Agency"
         },
@@ -596,9 +596,9 @@
             },
             {
                 "srcSet": {
-                    "375w": "/images/724-events/alexandre-pellaes-6vAjp0pscx0-unsplash-375-min.webp",
-                    "768w": "/images/724-events/alexandre-pellaes-6vAjp0pscx0-unsplash-768-min.webp",
-                    "1200w": "/images/724-events/alexandre-pellaes-6vAjp0pscx0-unsplash-1200-min.webp"
+                    "375w": "/images/724-events/alexandre-pellaes-6vajp0pscx0-unsplash-375-min.webp",
+                    "768w": "/images/724-events/alexandre-pellaes-6vajp0pscx0-unsplash-768-min.webp",
+                    "1200w": "/images/724-events/alexandre-pellaes-6vajp0pscx0-unsplash-1200-min.webp"
                 },
                 "alt": "Conference"
             },
@@ -661,9 +661,9 @@
         "modalImages": [
             {
                 "srcSet": {
-                    "375w": "/images/argent-bank/argentBankLogo-375-min.webp",
-                    "768w": "/images/argent-bank/argentBankLogo-768-min.webp",
-                    "1200w": "/images/argent-bank/argentBankLogo-1200-min.webp"
+                    "375w": "/images/argent-bank/argentbank_logo-375-min.webp",
+                    "768w": "/images/argent-bank/argentbank_logo-768-min.webp",
+                    "1200w": "/images/argent-bank/argentbank_logo-1200-min.webp"
                 },
                 "alt": "Argent Bank Logo"
             },

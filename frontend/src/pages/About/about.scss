@@ -1,11 +1,11 @@
-@import "../../styles/variables.scss";
-@import "../../styles/mixins.scss";
+@use "../../styles/variables" as *;
+@use "../../styles/mixins" as *;
 
 .about {
     padding: 2rem;
     max-width: 800px;
     margin-top: 5rem;
-    margin-inline:  auto;
+    margin-inline: auto;
 
     &__title {
         font-weight: 700;
@@ -16,7 +16,7 @@
         margin-bottom: 1.5rem;
     }
 
-    &__description { 
+    &__description {
         line-height: 1.7;
         margin-bottom: 1rem;
     }

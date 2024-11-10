@@ -1,5 +1,5 @@
 import { motion } from "framer-motion"; // Import Framer Motion
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { ProjectsContext } from "../../context/ProjectsContext";
 import { Helmet } from "react-helmet-async";
@@ -10,12 +10,46 @@ const ProjectToShow = () => {
     const { id } = useParams();
     const { projects, loading, error } = useContext(ProjectsContext);
 
+    useEffect(() => {
+        const images = document.querySelectorAll(".template__right--images");   
+        images.forEach((img) => {
+            // console.log("image actuelles chargées", img.currentSrc);
+            img.onload = () => {
+                const loadedWidth = img.naturalWidth;
+                const srcLoaded = img.currentSrc;
+
+                if (!srcLoaded) {
+                    console.log("Image non chargée : aucun src trouvé.");
+                    return;
+                }
+
+                let format;
+                if (loadedWidth <= 375) {
+                    format = "375w";
+                } else if (loadedWidth <= 768) {
+                    format = "768w";
+                } else {
+                    format = "1200w";
+                }
+
+                console.log(`Image chargées : ${srcLoaded} | format : ${format}`);
+            };
+
+            console.log("Image srcSet:", img.srcSet);
+            console.log("Image sizes:", img.sizes);
+
+        });
+    }, []);
+
     if (loading) return <div>Chargement...</div>;
     if (error) return <div>Erreur lors du chargement des projets {error}</div>;
 
     const project = projects.find((project) => project.id === parseInt(id));
 
     if (!project) return <div>Projet introuvable</div>;
+
+    console.log("Project data:", project);
+
 
     const titleVariant = {
         hidden: { opacity: 0, y: -50 },
