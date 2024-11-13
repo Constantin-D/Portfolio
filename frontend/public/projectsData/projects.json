@@ -297,9 +297,9 @@
         "description": "Développer le site portfolio d’une architecte d’intérieur avec Javascript et Figma.",
         "cardImage": {
             "srcSet": {
-                "default": "/images/sophie-bruel/abajour-tahina-768-min.webp",
-                "375w": "/images/sophie-bruel/abajour-tahina-375-min.webp",
-                "768w": "/images/sophie-bruel/abajour-tahina-768-min.webp"
+                "default": "images/sophie-bruel/abajour-tahina-768-min.webp",
+                "375w": "images/sophie-bruel/abajour-tahina-375-min.webp",
+                "768w": "images/sophie-bruel/abajour-tahina-768-min.webp"
             },
             "alt": "Sophie Bruel"
         },
