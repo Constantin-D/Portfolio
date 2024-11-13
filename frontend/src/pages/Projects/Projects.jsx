@@ -52,7 +52,7 @@ const Projects = () => {
                     />
                     <link
                         rel="canonical"
-                        href="https://portfolio-3675bwfws-dugards-projects.vercel.app/projects"
+                        href="https://portfolio-dugards-projects.vercel.app/projects"
                     />
                     <meta property="og:type" content=" website" />
                     <meta
@@ -65,11 +65,11 @@ const Projects = () => {
                     />
                     <meta
                         property="og:url"
-                        content="https://portfolio-3675bwfws-dugards-projects.vercel.app/projects"
+                        content="https://portfolio-dugards-projects.vercel.app/projects"
                     />
                     <meta
                         property="og:image"
-                        content="https://portfolio-3675bwfws-dugards-projects.vercel.app/images/profile-512-min.webp"
+                        content="https://portfolio-dugards-projects.vercel.app/images/profile-512-min.webp"
                     />
                     <meta name="twitter:card" content="summary_large_image" />
                     <meta
@@ -82,7 +82,7 @@ const Projects = () => {
                     />
                     <meta
                         name="twitter:image"
-                        content="https://portfolio-3675bwfws-dugards-projects.vercel.app/images/profile-512-min.webp"
+                        content="https://portfolio-dugards-projects.vercel.app/images/profile-512-min.webp"
                     />
                 </Helmet>
                 <section className="projects">

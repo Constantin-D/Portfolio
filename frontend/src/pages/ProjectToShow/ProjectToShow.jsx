@@ -5,6 +5,7 @@ import { ProjectsContext } from "../../context/ProjectsContext";
 import { Helmet } from "react-helmet-async";
 
 import "./project-to-show.scss";
+import ResponsiveImages from "../../components/ResponsiveImages/ResponsiveImages";
 
 const ProjectToShow = () => {
     const { id } = useParams();
@@ -14,14 +15,16 @@ const ProjectToShow = () => {
         const images = document.querySelectorAll(".template__right--images");   
         images.forEach((img) => {
             // console.log("image actuelles chargées", img.currentSrc);
+            // console.log("srcSet dans le DOM:", img.getAttribute("srcset"));
+            
             img.onload = () => {
                 const loadedWidth = img.naturalWidth;
                 const srcLoaded = img.currentSrc;
 
-                if (!srcLoaded) {
-                    console.log("Image non chargée : aucun src trouvé.");
-                    return;
-                }
+                // if (!srcLoaded) {
+                //     console.log("Image non chargée : aucun src trouvé.");
+                //     return;
+                // }
 
                 let format;
                 if (loadedWidth <= 375) {
@@ -33,13 +36,14 @@ const ProjectToShow = () => {
                 }
 
                 console.log(`Image chargées : ${srcLoaded} | format : ${format}`);
+                img.srcSet = `${project.modalImages[0].srcSet[format]} ${format}`;
             };
 
             console.log("Image srcSet:", img.srcSet);
             console.log("Image sizes:", img.sizes);
 
         });
-    }, []);
+    }, [projects]);
 
     if (loading) return <div>Chargement...</div>;
     if (error) return <div>Erreur lors du chargement des projets {error}</div>;
@@ -48,7 +52,7 @@ const ProjectToShow = () => {
 
     if (!project) return <div>Projet introuvable</div>;
 
-    console.log("Project data:", project);
+    // console.log("Project data:", project);
 
 
     const titleVariant = {
@@ -88,7 +92,7 @@ const ProjectToShow = () => {
                 />
                 <link
                     rel="canonical"
-                    href={`https://portfolio-3675bwfws-dugards-projects.vercel.app/project/${project.id}`}
+                    href={`https://portfolio-dugards-projects.vercel.app/project/${project.id}`}
                 />
                 <meta property="og:type" content="website" />
                 <meta
@@ -105,11 +109,11 @@ const ProjectToShow = () => {
                 />
                 <meta
                     property="og:url"
-                    content={`https://portfolio-3675bwfws-dugards-projects.vercel.app/project/${project.id}`}
+                    content={`https://portfolio-dugards-projects.vercel.app/project/${project.id}`}
                 />
                 <meta
                     property="og:image"
-                    content={`https://portfolio-3675bwfws-dugards-projects.vercel.app${project.cardImage.srcSet["1200w"]}`}
+                    content={`https://portfolio-dugards-projects.vercel.app${project.cardImage.srcSet["1200w"]}`}
                 />
                 <meta name="twitter:card" content="summary_large_image" />
                 <meta
@@ -124,7 +128,7 @@ const ProjectToShow = () => {
                 />
                 <meta
                     name="twitter:image"
-                    content={`https://portfolio-3675bwfws-dugards-projects.vercel.app${project.cardImage.srcSet["1200w"]}`}
+                    content={`https://portfolio-dugards-projects.vercel.app${project.cardImage.srcSet["1200w"]}`}
                 />
             </Helmet>
             <section className="project-details">
@@ -178,7 +182,7 @@ const ProjectToShow = () => {
                     >
                         {project.modalImages?.length > 0 ? (
                             project.modalImages.map((image, index) => (
-                                <img
+                                <ResponsiveImages
                                     key={index}
                                     src={image.srcSet.default}
                                     srcSet={`${image.srcSet["375w"]} 375w, ${image.srcSet["768w"]} 768w, ${image.srcSet["1200w"]} 1200w`}
@@ -192,6 +196,14 @@ const ProjectToShow = () => {
                         ) : (
                             <p>Aucune image disponible.</p>
                         )}
+                        {/* <img
+                            src="/images/nina-carducci-min/camera-740-min.webp"
+                            srcSet="/images/nina-carducci-min/camera-375-min.webp 375w, /images/nina-carducci-min/camera-768-min.webp 768w, /images/nina-carducci-min/camera-1200-min.webp 1200w"
+                            sizes="(max-width: 375px) 375px, (max-width: 768px) 768px, (min-width: 769px) 1200px"
+                            alt="Image test"
+                            className="template__right--images"
+                            loading="lazy"
+                        /> */}
                     </motion.section>
                 </div>
             </section>

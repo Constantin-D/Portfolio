@@ -70,7 +70,7 @@ const Home = () => {
                     />
                     <link
                         rel="canonical"
-                        href="https://portfolio-3675bwfws-dugards-projects.vercel.app/"
+                        href="https://portfolio-dugards-projects.vercel.app/"
                     />
                     <meta property="og:type" content="website" />
                     <meta
@@ -83,11 +83,11 @@ const Home = () => {
                     />
                     <meta
                         property="og:url"
-                        content="https://portfolio-3675bwfws-dugards-projects.vercel.app/"
+                        content="https://portfolio-dugards-projects.vercel.app/"
                     />
                     <meta
                         property="og:image"
-                        content="https://portfolio-3675bwfws-dugards-projects.vercel.app/images/profile-512-min.webp"
+                        content="https://portfolio-dugards-projects.vercel.app/images/profile-512-min.webp"
                     />
                     <meta name="twitter:card" content="summary_large_image" />
                     <meta
@@ -100,7 +100,7 @@ const Home = () => {
                     />
                     <meta
                         name="twitter:image"
-                        content="https://portfolio-3675bwfws-dugards-projects.vercel.app/images/profile-512-min.webp"
+                        content="https://portfolio-dugards-projects.vercel.app/images/profile-512-min.webp"
                     />
                 </Helmet>
                 <section className="home">

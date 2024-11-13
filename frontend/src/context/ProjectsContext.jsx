@@ -9,7 +9,7 @@ export const ProjectsProvider = ({ children }) => {
     useEffect(() => {
         const fetchProjects = async () => {
             try {
-                const response = await fetch("/projects/projects.json");
+                const response = await fetch("/projectsData/projects.json");
                 console.log("response", response);
                 if (!response.ok) {
                     throw new Error("Erreur lors du chargement des projets.");
