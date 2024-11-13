@@ -84,6 +84,9 @@ const Projects = () => {
                         name="twitter:image"
                         content="https://portfolio-dugards-projects.vercel.app/images/profile-512-min.webp"
                     />
+                    <meta name="robots" 
+                    content="index, follow" 
+                    />
                 </Helmet>
                 <section className="projects">
                     <h1 className="projects__title">Mes Projets</h1>

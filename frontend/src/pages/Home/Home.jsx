@@ -102,6 +102,9 @@ const Home = () => {
                         name="twitter:image"
                         content="https://portfolio-dugards-projects.vercel.app/images/profile-512-min.webp"
                     />
+                    <meta name="robots" 
+                    content="index, follow" 
+                    />
                 </Helmet>
                 <section className="home">
                     <Hero />

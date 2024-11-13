@@ -130,6 +130,9 @@ const ProjectToShow = () => {
                     name="twitter:image"
                     content={`https://portfolio-dugards-projects.vercel.app${project.cardImage.srcSet["1200w"]}`}
                 />
+                <meta name="robots" 
+                content="index, follow" 
+                />
             </Helmet>
             <section className="project-details">
                 <motion.h1
@@ -190,7 +193,6 @@ const ProjectToShow = () => {
                                     alt={image.alt}
                                     className="template__right--images"
                                     loading="lazy"
-                                    // style={{ maxWidth: "100%", height: "auto" }}
                                 />
                             ))
                         ) : (
