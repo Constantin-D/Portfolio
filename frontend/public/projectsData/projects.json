@@ -297,37 +297,37 @@
         "description": "Développer le site portfolio d’une architecte d’intérieur avec Javascript et Figma.",
         "cardImage": {
             "srcSet": {
-                "default": "images/sophie-bruel/abajour-tahina-768-min.webp",
-                "375w": "images/sophie-bruel/abajour-tahina-375-min.webp",
-                "768w": "images/sophie-bruel/abajour-tahina-768-min.webp"
+                "default": "images/sophie-bluel/abajour-tahina-768-min.webp",
+                "375w": "images/sophie-bluel/abajour-tahina-375-min.webp",
+                "768w": "images/sophie-bluel/abajour-tahina-768-min.webp"
             },
             "alt": "Sophie Bruel"
         },
         "modalImages": [
             {
                 "srcSet": {
-                    "default": "/images/sophie-bruel/appartement-paris-v-768-min.webp",
-                    "375w": "/images/sophie-bruel/appartement-paris-v-375-min.webp",
-                    "768w": "/images/sophie-bruel/appartement-paris-v-768-min.webp",
-                    "1200w": "/images/sophie-bruel/appartement-paris-v-1200-min.webp"
+                    "default": "/images/sophie-bluel/appartement-paris-v-768-min.webp",
+                    "375w": "/images/sophie-bluel/appartement-paris-v-375-min.webp",
+                    "768w": "/images/sophie-bluel/appartement-paris-v-768-min.webp",
+                    "1200w": "/images/sophie-bluel/appartement-paris-v-1200-min.webp"
                 },
                 "alt": "Appartement Paris V"
             },
             {
                 "srcSet": {
-                    "default": "/images/sophie-bruel/hotel-first-arte-new-delhi-768-min.webp",
-                    "375w": "/images/sophie-bruel/hotel-first-arte-new-delhi-375-min.webp",
-                    "768w": "/images/sophie-bruel/hotel-first-arte-new-delhi-768-min.webp",
-                    "1200w": "/images/sophie-bruel/hotel-first-arte-new-delhi-1200-min.webp"
+                    "default": "/images/sophie-bluel/hotel-first-arte-new-delhi-768-min.webp",
+                    "375w": "/images/sophie-bluel/hotel-first-arte-new-delhi-375-min.webp",
+                    "768w": "/images/sophie-bluel/hotel-first-arte-new-delhi-768-min.webp",
+                    "1200w": "/images/sophie-bluel/hotel-first-arte-new-delhi-1200-min.webp"
                 },
                 "alt": "Hotel First Arte New Delhi"
             },
             {
                 "srcSet": {
-                    "default": "/images/sophie-bruel/figma-bruel-768-min.webp",
-                    "375w": "/images/sophie-bruel/figma-bruel-375-min.webp",
-                    "768w": "/images/sophie-bruel/figma-bruel-768-min.webp",
-                    "1200w": "/images/sophie-bruel/figma-bruel-1200-min.webp"
+                    "default": "/images/sophie-bluel/figma-bruel-768-min.webp",
+                    "375w": "/images/sophie-bluel/figma-bruel-375-min.webp",
+                    "768w": "/images/sophie-bluel/figma-bruel-768-min.webp",
+                    "1200w": "/images/sophie-bluel/figma-bruel-1200-min.webp"
                 },
                 "alt": "Mockup Figma Sophie Bruel"
             }
@@ -578,10 +578,10 @@
         "description": "Débugger le site web d'une agence événementielle.",
         "cardImage": {
             "srcSet": {
-                "default": "/images/724-events/alexandre-pellaes-6vajp0pscx0-unsplash-768-min.webp",
-                "375w": "/images/724-events/alexandre-pellaes-6vajp0pscx0-unsplash-375-min.webp",
-                "768w": "/images/724-events/alexandre-pellaes-6vajp0pscx0-unsplash-768-min.webp",
-                "1200w": "/images/724-events/alexandre-pellaes-6vajp0pscx0-unsplash-1200-min.webp"
+                "default": "/images/724-events/alexandre-pellaes-6vAjp0pscX0-unsplash-768-min.webp",
+                "375w": "/images/724-events/alexandre-pellaes-6vAjp0pscX0-unsplash-375-min.webp",
+                "768w": "/images/724-events/alexandre-pellaes-6vAjp0pscX0-unsplash-768-min.webp",
+                "1200w": "/images/724-events/alexandre-pellaes-6vAjp0pscX0-unsplash-1200-min.webp"
             },
             "alt": "724events Agency"
         },
@@ -596,17 +596,17 @@
             },
             {
                 "srcSet": {
-                    "375w": "/images/724-events/alexandre-pellaes-6vajp0pscx0-unsplash-375-min.webp",
-                    "768w": "/images/724-events/alexandre-pellaes-6vajp0pscx0-unsplash-768-min.webp",
-                    "1200w": "/images/724-events/alexandre-pellaes-6vajp0pscx0-unsplash-1200-min.webp"
+                    "375w": "/images/724-events/alexandre-pellaes-6vAjp0pscX0-unsplash-375-min.webp",
+                    "768w": "/images/724-events/alexandre-pellaes-6vAjp0pscX0-unsplash-768-min.webp",
+                    "1200w": "/images/724-events/alexandre-pellaes-6vAjp0pscX0-unsplash-1200-min.webp"
                 },
                 "alt": "Conference"
             },
             {
                 "srcSet": {
-                    "375w": "/images/724-events/chuttersnap-q_kdjkxnth8-unsplash-375-min.webp",
-                    "768w": "/images/724-events/chuttersnap-q_kdjkxnth8-unsplash-768-min.webp",
-                    "1200w": "/images/724-events/chuttersnap-q_kdjkxnth8-unsplash-1200-min.webp"
+                    "375w": "/images/724-events/chuttersnap-Q_KdjKxntH8-unsplash-375-min.webp",
+                    "768w": "/images/724-events/chuttersnap-Q_KdjKxntH8-unsplash-768-min.webp",
+                    "1200w": "/images/724-events/chuttersnap-Q_KdjKxntH8-unsplash-1200-min.webp"
                 },
                 "alt": "Business Conference"
             },
