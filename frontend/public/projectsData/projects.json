@@ -292,7 +292,7 @@
     },
     {
         "id": 4,
-        "title": "Sophie Bruel",
+        "title": "Sophie Bluel",
         "presentation": "Site portfolio d'une architecte d'intérieur",
         "description": "Développer le site portfolio d’une architecte d’intérieur avec Javascript et Figma.",
         "cardImage": {
@@ -301,7 +301,7 @@
                 "375w": "images/sophie-bluel/abajour-tahina-375-min.webp",
                 "768w": "images/sophie-bluel/abajour-tahina-768-min.webp"
             },
-            "alt": "Sophie Bruel"
+            "alt": "Sophie Bluel"
         },
         "modalImages": [
             {
@@ -428,10 +428,10 @@
         "description": "Avec plus de 500 annonces postées chaque jour, Kasa fait partie des leaders de la location d’appartements entre particuliers en France.",
         "cardImage": {
             "srcSet": {
-                "default": "/images/kasa/kasa-1-768-min.webp",
-                "375w": "/images/kasa/kasa-1-375-min.webp",
-                "768w": "/images/kasa/kasa-1-768-min.webp",
-                "1200w": "/images/kasa/kasa-1-1200-min.webp"
+                "default": "/images/kasa/Kasa-1-768-min.webp",
+                "375w": "/images/kasa/Kasa-1-375-min.webp",
+                "768w": "/images/kasa/Kasa-1-768-min.webp",
+                "1200w": "/images/kasa/Kasa-1-1200-min.webp"
             },
             "alt": "Kasa Location"
         },
@@ -447,28 +447,28 @@
             },
             {
                 "srcSet": {
-                    "default": "/images/kasa/kasa-2-768-min.webp",
-                    "375w": "/images/kasa/kasa-2-375-min.webp",
-                    "768w": "/images/kasa/kasa-2-768-min.webp",
-                    "1200w": "/images/kasa/kasa-2-1200-min.webp"
+                    "default": "/images/kasa/Kasa-2-768-min.webp",
+                    "375w": "/images/kasa/Kasa-2-375-min.webp",
+                    "768w": "/images/kasa/Kasa-2-768-min.webp",
+                    "1200w": "/images/kasa/Kasa-2-1200-min.webp"
                 },
                 "alt": "Kasa Appartement 2"
             },
             {
                 "srcSet": {
-                    "default": "/images/kasa/kasa-3-768-min.webp",
-                    "375w": "/images/kasa/kasa-3-375-min.webp",
-                    "768w": "/images/kasa/kasa-3-768-min.webp",
-                    "1200w": "/images/kasa/kasa-3-1200-min.webp"
+                    "default": "/images/kasa/Kasa-3-768-min.webp",
+                    "375w": "/images/kasa/Kasa-3-375-min.webp",
+                    "768w": "/images/kasa/Kasa-3-768-min.webp",
+                    "1200w": "/images/kasa/Kasa-3-1200-min.webp"
                 },
                 "alt": "Kasa Appartement 3"
             },
             {
                 "srcSet": {
-                    "default": "/images/kasa/kasa-4-768-min.webp",
-                    "375w": "/images/kasa/kasa-4-375-min.webp",
-                    "768w": "/images/kasa/kasa-4-768-min.webp",
-                    "1200w": "/images/kasa/kasa-4-1200-min.webp"
+                    "default": "/images/kasa/Kasa-4-768-min.webp",
+                    "375w": "/images/kasa/Kasa-4-375-min.webp",
+                    "768w": "/images/kasa/Kasa-4-768-min.webp",
+                    "1200w": "/images/kasa/Kasa-4-1200-min.webp"
                 },
                 "alt": "Appartment Kasa"
             }
@@ -612,9 +612,9 @@
             },
             {
                 "srcSet": {
-                    "375w": "/images/724-events/sophia-sideri-lfxmtuuakk8-unsplash1-375-min.webp",
-                    "768w": "/images/724-events/sophia-sideri-lfxmtuuakk8-unsplash1-768-min.webp",
-                    "1200w": "/images/724-events/sophia-sideri-lfxmtuuakk8-unsplash1-1200-min.webp"
+                    "375w": "/images/724-events/sophia-sideri-LFXMtUuAKK8-unsplash1-375-min.webp",
+                    "768w": "/images/724-events/sophia-sideri-LFXMtUuAKK8-unsplash1-768-min.webp",
+                    "1200w": "/images/724-events/sophia-sideri-LFXMtUuAKK8-unsplash1-1200-min.webp"
                 },
                 "alt": "Sophia Sideri Visio Event"
             }
