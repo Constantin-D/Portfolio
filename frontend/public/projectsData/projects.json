@@ -153,47 +153,47 @@
         "description": "Site “mobile first” qui répertorie les menus de restaurants gastronomiques. En plus des systèmes classiques de réservation, les clients peuvent composer le menu de leur repas pour que les plats soient prêts à leur arrivée.",
         "cardImage": {
             "srcSet": {
-                "default": "/images/ohmyfood/jay-wennington-n_y88twmgwa-unsplash-768-min.webp",
-                "375w": "/images/ohmyfood/jay-wennington-n_y88twmgwa-unsplash-375-min.webp",
-                "768w": "/images/ohmyfood/jay-wennington-n_y88twmgwa-unsplash-768-min.webp",
-                "1200w": "/images/ohmyfood/jay-wennington-n_y88twmgwa-unsplash-1200-min.webp"
+                "default": "/images/ohmyfood/jay-wennington-N_Y88TWmGwA-unsplash-768-min.webp",
+                "375w": "/images/ohmyfood/jay-wennington-N_Y88TWmGwA-unsplash-375-min.webp",
+                "768w": "/images/ohmyfood/jay-wennington-N_Y88TWmGwA-unsplash-768-min.webp",
+                "1200w": "/images/ohmyfood/jay-wennington-N_Y88TWmGwA-unsplash-1200-min.webp"
             },
             "alt": "Ohmyfood"
         },
         "modalImages": [
             {
                 "srcSet": {
-                    "default": "/images/ohmyfood/jay-wennington-n_y88twmgwa-unsplash-1200-min.webp",
-                    "375w": "/images/ohmyfood/jay-wennington-n_y88twmgwa-unsplash-375-min.webp",
-                    "768w": "/images/ohmyfood/jay-wennington-n_y88twmgwa-unsplash-768-min.webp",
-                    "1200w": "/images/ohmyfood/jay-wennington-n_y88twmgwa-unsplash-1200-min.webp"
+                    "default": "/images/ohmyfood/jay-wennington-N_Y88TWmGwA-unsplash-1200-min.webp",
+                    "375w": "/images/ohmyfood/jay-wennington-N_Y88TWmGwA-unsplash-375-min.webp",
+                    "768w": "/images/ohmyfood/jay-wennington-N_Y88TWmGwA-unsplash-768-min.webp",
+                    "1200w": "/images/ohmyfood/jay-wennington-N_Y88TWmGwA-unsplash-1200-min.webp"
                 },
                 "alt": "Jay Wennington"
             },
             {
                 "srcSet": {
-                    "default": "/images/ohmyfood/louis-hansel-shotsoflouis-qnbgvyocy8q-unsplash-1200-min.webp",
-                    "375w": "/images/ohmyfood/louis-hansel-shotsoflouis-qnbgvyocy8q-unsplash-375-min.webp",
-                    "768w": "/images/ohmyfood/louis-hansel-shotsoflouis-qnbgvyocy8q-unsplash-768-min.webp",
-                    "1200w": "/images/ohmyfood/louis-hansel-shotsoflouis-qnbgvyocy8q-unsplash-1200-min.webp"
+                    "default": "/images/ohmyfood/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash-1200-min.webp",
+                    "375w": "/images/ohmyfood/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash-375-min.webp",
+                    "768w": "/images/ohmyfood/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash-768-min.webp",
+                    "1200w": "/images/ohmyfood/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash-1200-min.webp"
                 },
                 "alt": "Louis Hansel Restaurant"
             },
             {
                 "srcSet": {
-                    "default": "/images/ohmyfood/stil-u2lp8txicjw-unsplash-1200-min.webp",
-                    "375w": "/images/ohmyfood/stil-u2lp8txicjw-unsplash-375-min.webp",
-                    "768w": "/images/ohmyfood/stil-u2lp8txicjw-unsplash-768-min.webp",
-                    "1200w": "/images/ohmyfood/stil-u2lp8txicjw-unsplash-1200-min.webp"
+                    "default": "/images/ohmyfood/stil-u2Lp8tXIcjw-unsplash-1200-min.webp",
+                    "375w": "/images/ohmyfood/stil-u2Lp8tXIcjw-unsplash-375-min.webp",
+                    "768w": "/images/ohmyfood/stil-u2Lp8tXIcjw-unsplash-768-min.webp",
+                    "1200w": "/images/ohmyfood/stil-u2Lp8tXIcjw-unsplash-1200-min.webp"
                 },
                 "alt": "Full Menu"
             },
             {
                 "srcSet": {
-                    "default": "/images/ohmyfood/toa-heftiba-dqkertsqwi0-unsplash-1200-min.webp",
-                    "375w": "/images/ohmyfood/toa-heftiba-dqkertsqwi0-unsplash-375-min.webp",
-                    "768w": "/images/ohmyfood/toa-heftiba-dqkertsqwi0-unsplash-768-min.webp",
-                    "1200w": "/images/ohmyfood/toa-heftiba-dqkertsqwi0-unsplash-1200-min.webp"
+                    "default": "/images/ohmyfood/toa-heftiba-DQKerTsQwi0-unsplash-1200-min.webp",
+                    "375w": "/images/ohmyfood/toa-heftiba-DQKerTsQwi0-unsplash-375-min.webp",
+                    "768w": "/images/ohmyfood/toa-heftiba-DQKerTsQwi0-unsplash-768-min.webp",
+                    "1200w": "/images/ohmyfood/toa-heftiba-DQKerTsQwi0-unsplash-1200-min.webp"
                 },
                 "alt": "Toa Heftiba Starter"
             }
@@ -297,9 +297,10 @@
         "description": "Développer le site portfolio d’une architecte d’intérieur avec Javascript et Figma.",
         "cardImage": {
             "srcSet": {
-                "default": "images/sophie-bluel/abajour-tahina-768-min.webp",
-                "375w": "images/sophie-bluel/abajour-tahina-375-min.webp",
-                "768w": "images/sophie-bluel/abajour-tahina-768-min.webp"
+                "default": "/images/sophie-bluel/abajour-tahina-768-min.webp",
+                "375w": "/images/sophie-bluel/abajour-tahina-375-min.webp",
+                "768w": "/images/sophie-bluel/abajour-tahina-768-min.webp",
+                "1200w": "/images/sophie-bluel/abajour-tahina-1200-min.webp"
             },
             "alt": "Sophie Bluel"
         },
@@ -360,10 +361,10 @@
         "description": "Qwenta a créé un “Menu Maker” : un site permettant aux restaurateurs d’afficher et de mettre en page leurs menus facilement, en quelques clics.",
         "cardImage": {
             "srcSet": {
-                "default": "/images/menu-maker/banner-qwenta-768-min.webp",
-                "375w": "/images/menu-maker/banner-qwenta-375-min.webp",
-                "768w": "/images/menu-maker/banner-qwenta-768-min.webp",
-                "1200w": "/images/menu-maker/banner-qwenta-1200-min.webp"
+                "default": "/images/menu-maker/Banner-Qwenta-768-min.webp",
+                "375w": "/images/menu-maker/Banner-Qwenta-375-min.webp",
+                "768w": "/images/menu-maker/Banner-Qwenta-768-min.webp",
+                "1200w": "/images/menu-maker/Banner-Qwenta-1200-min.webp"
             },
             "alt": "Menu Maker"
         },
@@ -379,19 +380,19 @@
             },
             {
                 "srcSet": {
-                    "default": "/images/menu-maker/eden-constantino-oxmym9cuaey-unsplash-768-min.webp",
-                    "375w": "/images/menu-maker/eden-constantino-oxmym9cuaey-unsplash-375-min.webp",
-                    "768w": "/images/menu-maker/eden-constantino-oxmym9cuaey-unsplash-768-min.webp",
-                    "1200w": "/images/menu-maker/eden-constantino-oxmym9cuaey-unsplash-1200-min.webp"
+                    "default": "/images/menu-maker/eden-constantino-OXmym9cuaEY-unsplash-768-min.webp",
+                    "375w": "/images/menu-maker/eden-constantino-OXmym9cuaEY-unsplash-375-min.webp",
+                    "768w": "/images/menu-maker/eden-constantino-OXmym9cuaEY-unsplash-768-min.webp",
+                    "1200w": "/images/menu-maker/eden-constantino-OXmym9cuaEY-unsplash-1200-min.webp"
                 },
                 "alt": "Eden Constantino Kanban"
             },
             {
                 "srcSet": {
-                    "default": "/images/menu-maker/rubaitul-azad-8tro5_ogsfa-unsplash-768-min.webp",
-                    "375w": "/images/menu-maker/rubaitul-azad-8tro5_ogsfa-unsplash-375-min.webp",
-                    "768w": "/images/menu-maker/rubaitul-azad-8tro5_ogsfa-unsplash-768-min.webp",
-                    "1200w": "/images/menu-maker/rubaitul-azad-8tro5_ogsfa-unsplash-1200-min.webp"
+                    "default": "/images/menu-maker/rubaitul-azad-8tRo5_ogsfA-unsplash-768-min.webp",
+                    "375w": "/images/menu-maker/rubaitul-azad-8tRo5_ogsfA-unsplash-375-min.webp",
+                    "768w": "/images/menu-maker/rubaitul-azad-8tRo5_ogsfA-unsplash-768-min.webp",
+                    "1200w": "/images/menu-maker/rubaitul-azad-8tRo5_ogsfA-unsplash-1200-min.webp"
                 },
                 "alt": "Notion"
             }
@@ -515,9 +516,9 @@
         "modalImages": [
             {
                 "srcSet": {
-                    "375w": "/images/nina-carducci-min/hannah-busing-rvf2r_qmprk-unsplash-375-min.webp",
-                    "768w": "/images/nina-carducci-min/hannah-busing-rvf2r_qmprk-unsplash-768-min.webp",
-                    "1200w": "/images/nina-carducci-min/hannah-busing-rvf2r_qmprk-unsplash-1200-min.webp"
+                    "375w": "/images/nina-carducci-min/hannah-busing-RvF2R_qMpRk-unsplash-375-min.webp",
+                    "768w": "/images/nina-carducci-min/hannah-busing-RvF2R_qMpRk-unsplash-768-min.webp",
+                    "1200w": "/images/nina-carducci-min/hannah-busing-RvF2R_qMpRk-unsplash-1200-min.webp"
                 },
                 "alt": "Mariage par Nina Carducci"
             },
@@ -531,17 +532,17 @@
             },
             {
                 "srcSet": {
-                    "375w": "/images/nina-carducci-min/ryoji-iwata-wuzjnov7t0g-unsplash-375-min.webp",
-                    "768w": "/images/nina-carducci-min/ryoji-iwata-wuzjnov7t0g-unsplash-768-min.webp",
-                    "1200w": "/images/nina-carducci-min/ryoji-iwata-wuzjnov7t0g-unsplash-1200-min.webp"
+                    "375w": "/images/nina-carducci-min/ryoji-iwata-wUZjnOv7t0g-unsplash-375-min.webp",
+                    "768w": "/images/nina-carducci-min/ryoji-iwata-wUZjnOv7t0g-unsplash-768-min.webp",
+                    "1200w": "/images/nina-carducci-min/ryoji-iwata-wUZjnOv7t0g-unsplash-1200-min.webp"
                 },
                 "alt": "Paysage urbain par Nina Carducci"
             },
             {
                 "srcSet": {
-                    "375w": "/images/nina-carducci-min/mateus-campos-felipe-felipe-fsgzm8n0hiy-unsplash-375-min.webp",
-                    "768w": "/images/nina-carducci-min/mateus-campos-felipe-felipe-fsgzm8n0hiy-unsplash-768-min.webp",
-                    "1200w": "/images/nina-carducci-min/mateus-campos-felipe-felipe-fsgzm8n0hiy-unsplash-1200-min.webp"
+                    "375w": "/images/nina-carducci-min/mateus-campos-felipe-Fsgzm8N0hIY-unsplash-375-min.webp",
+                    "768w": "/images/nina-carducci-min/mateus-campos-felipe-Fsgzm8N0hIY-unsplash-768-min.webp",
+                    "1200w": "/images/nina-carducci-min/mateus-campos-felipe-Fsgzm8N0hIY-unsplash-1200-min.webp"
                 },
                 "alt": "Photographie corporate par Nina Carducci"
             }
