@@ -106,7 +106,9 @@ const Contact = () => {
                     </fieldset>
 
                     <button type="submit" className="button">
-                        <FaPaperPlane aria-hidden="true" /> ENVOYER
+                        {/* <FaPaperPlane aria-hidden="true" /> ENVOYER */}
+                        {/* <img src="/icons/mail-send.svg" alt="Send mail" className="icon" /> */}
+                        Envoyer
                     </button>
 
                     {formStatus === "success" && (

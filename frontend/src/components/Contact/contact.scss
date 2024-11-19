@@ -4,82 +4,83 @@
 .contact {
 
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     justify-content: center;
-    padding: 1rem 5rem 2rem; 
+    padding: 1rem 5rem 2rem;
     background: linear-gradient(180deg,
-                $blue-light-color 0%, 
-                $blue-light-color 50%,
-                $background-color 100%
-            );
-    
+            $blue-light-color 0%,
+            $blue-light-color 50%,
+            $background-color 100%);
+
     @include respond-to("mobile") {
-        padding: 0 1rem 2.5rem; 
+        padding: 0 1rem 2.5rem;
     }
-     
+
     h2 {
-        font-size: $subtitle-h2-font-size; 
-        color: $text-pale-color; 
+        font-size: $subtitle-h2-font-size;
+        color: $text-pale-color;
         margin: 1.5rem;
-        text-align: center; 
+        text-align: center;
     }
 
     &__form {
-        @include flex-center; 
-        flex-direction: column; 
-        justify-content: center; 
+        @include flex-center;
+        flex-direction: column;
+        justify-content: center;
         text-align: center;
 
         &-fieldset {
-            border: none; 
+            border: none;
             width: 100%;
-            max-width: 500px; 
+            max-width: 500px;
 
             &--group {
                 display: flex;
-                flex-direction: column; 
+                flex-direction: column;
                 margin-bottom: 1rem;
                 text-align: left;
 
                 label {
                     display: block;
-                    margin-bottom: 0.3rem; 
-                    color: $text-pale-color; 
+                    margin-bottom: 0.3rem;
+                    color: $text-pale-color;
                     width: 7.5rem;
                 }
 
                 input,
                 textarea {
                     font-family: $font-body;
-                    flex: 1; 
-                    padding: 0.8rem; 
-                    border: transparent; 
-                    border-radius: 5px; 
+                    flex: 1;
+                    padding: 0.8rem;
+                    // margin-bottom: 1rem; 
+                    border: transparent;
+                    border-radius: 5px;
                     background-color: $background-color;
                     box-shadow: $box-shadow;
                     color: $primary-color;
 
                     &:focus {
                         outline: none;
-                        border-color: $primary-color; 
-                        box-shadow: 0 0 0 3px rgba($primary-color, 0.9); 
+                        border-color: $primary-color;
+                        box-shadow: 0 0 0 3px rgba($primary-color, 0.9);
                     }
                 }
 
                 textarea {
-                    height: 200px; 
-                    resize: auto; 
+                    height: 200px;
+                    resize: auto;
                 }
             }
         }
     }
 
     .button {
+        margin: 1.2rem 0;
+
         @include button($primary-color,
-                $text-pale-color,
-                $secondary-color,
-                $primary-color,
-                1rem 3.5rem);
+            $text-pale-color,
+            $secondary-color,
+            $primary-color,
+            1rem 3.5rem);
     }
 }
-

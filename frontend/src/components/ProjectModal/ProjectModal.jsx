@@ -1,6 +1,5 @@
 import { AnimatePresence, motion } from "framer-motion";
 import React, { useEffect, useState } from "react";
-import { FaTimes } from "react-icons/fa";
 
 import "./project-modal.scss";
 
@@ -54,7 +53,11 @@ const ProjectModal = ({ project, onClose }) => {
                             onClick={handleToggleModal}
                             aria-label="Fermer la modale"
                         >
-                            <FaTimes />
+                            {/* <FaTimes /> */}
+                            <img
+                                src="/icons/menu-close.svg"
+                                alt="Fermer la modale"
+                            />
                         </button>
                         <h2 id="modal-title">{project.title}</h2>
                         <div className="modal__container">

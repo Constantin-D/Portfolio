@@ -2,7 +2,7 @@ import React, { useState } from "react";
 // import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 import Card from "../Card/Card";
-import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
+// import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
 import "./slider.scss";
 
@@ -31,13 +31,23 @@ const Slider = ({ projects }) => {
                 className="slider__arrow slider__arrow--left"
                 onClick={prevSlide}
             >
-                <IoIosArrowBack className="slider__arrow-icon" />
+                {/* <IoIosArrowBack className="slider__arrow-icon" /> */}
+                <img
+                    src="/icons/arrow-back.svg"
+                    alt="Flèche gauche"
+                    className="slider__arrow-icon"
+                />
             </button>
             <button
                 className="slider__arrow slider__arrow--right"
                 onClick={nextSlide}
             >
-                <IoIosArrowForward className="slider__arrow-icon" />
+                {/* <IoIosArrowForward className="slider__arrow-icon" /> */}
+                <img
+                    src="/icons/arrow-forward.svg"
+                    alt="Flèche droite"
+                    className="slider__arrow-icon"
+                />
             </button>
 
             {/* Slide Actuelle */}

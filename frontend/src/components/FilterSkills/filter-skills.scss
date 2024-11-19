@@ -11,7 +11,7 @@
         flex-wrap: wrap;
         justify-content: center;
         gap: 1rem;
-        margin-bottom: 2rem;
+        margin-bottom: 3rem;
 
         button {
             @include button($primary-color,
@@ -43,14 +43,26 @@
             max-width: 300px;
             box-sizing: border-box;
 
+            .icon-container {
+                    display: flex;
+                    justify-content: center;
+                    gap: 1.5rem;
+                    // margin-bottom: 1rem;
+            
+                    .skill-icon {
+                        width: 48px;
+                        height: 48px;
+                    }
+                }
+
             &:hover {
                 transform: translateY(-3px);
             }
 
-            svg {
-                font-size: 3rem;
-                color: $primary-color;
-            }
+            // svg {
+            //     font-size: 3rem;
+            //     color: $primary-color;
+            // }
 
             h4 {
                 margin-top: 1.1rem;
@@ -109,8 +121,9 @@
             gap: 1rem;
 
             &--item {
-                width: 100%;
+                width: 87%;
                 max-width: 100%;
+
             }
         }
     }

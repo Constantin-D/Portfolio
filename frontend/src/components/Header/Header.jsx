@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import { FaBars, FaTimes } from "react-icons/fa";
+// import { FaBars, FaTimes } from "react-icons/fa";
 import { Link, useLocation } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 
@@ -95,7 +95,20 @@ const Header = () => {
                     </ul>
                 </nav>
                 <div className="header__bars" onClick={toggleMenu}>
-                    {isMenuOpen ? <FaTimes /> : <FaBars />}
+                    {/* {isMenuOpen ? <FaTimes /> : <FaBars />} */}
+                    {isMenuOpen ? (
+                        <img
+                            src="/icons/menu-close.svg"
+                            alt="Fermer"
+                            className="close-icon"
+                        />
+                    ) : (
+                        <img
+                            src="/icons/menu-bars.svg"
+                            alt="Menu"
+                            className="menu-icon"
+                        />
+                    )}
                 </div>
             </header>
         </section>

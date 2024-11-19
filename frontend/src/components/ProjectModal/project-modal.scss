@@ -41,7 +41,7 @@
         max-width: 95%;
     }
 
-    .modal__close {
+    .modal__close img {
         position: absolute;
         top: 1rem;
         right: 1rem;
@@ -49,16 +49,18 @@
         border: none;
         cursor: pointer;
         color: $close-icon-color;
-        font-size: 1.5rem;
+        // font-size: 1.5rem;
 
-        &:hover {
-            // color: darken($close-icon-color, 15%);
-            color: color.adjust($close-icon-color, $lightness: -15%);
-        }
+        // &:hover {
+        //     // color: darken($close-icon-color, 15%);
+        //     color: color.adjust($close-icon-color, $lightness: -15%);
+        // }
 
-        &:focus {
-            outline: none;
-        }
+        // &:focus {
+        //     outline: none;
+        // }
+        width: 2rem;
+        height: 2rem;
     }
 
     #modal-title {

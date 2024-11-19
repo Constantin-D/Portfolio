@@ -46,12 +46,14 @@
         }
     }
 
-    &__bars {
+    &__bars img {
         display: none;
 
         @include respond-to("mobile") {
             display: block;
-            font-size: 1rem;
+            filter:  invert(1);
+            width: 2rem;
+            height: 2rem;
             cursor: pointer;
         }
     }

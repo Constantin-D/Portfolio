@@ -13,21 +13,28 @@
 
     &__links {
         margin-top: 1rem;
-        display: flex;
+        // display: flex;
+        @include flex-center;
         justify-content: center;
         gap: 2rem; 
 
-        a {
-            color: $text-pale-color; 
+        a img {
+            // color: $text-pale-color; 
 
-            &:hover {
-                color: $secondary-color; 
-            }
+            // &:hover {
+            //     color: $secondary-color; 
+            // }
 
-            &.logo-link {
-                @include flex-center; 
-                gap: 0.5rem; 
-            }
+            // &.logo-link {
+            //     @include flex-center; 
+            //     gap: 0.5rem; 
+            // }
+            // display: flex;
+            width: 1.7rem;
+            height: 1.7rem;
+            filter: invert(1);
+            // gap: 1rem;
+
         }
     }
 }
@@ -40,8 +47,10 @@
         &__links {
             gap: 1rem;
             
-            a {
-                font-size: 0.7rem; 
+            a img {
+                width: 1.3rem;
+                height: 1.3rem; 
+                
             }
         }
     }

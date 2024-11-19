@@ -25,3 +25,10 @@ dist-ssr
 
  # Ignore environment file
 .env
+
+# Ignore build files
+dist/
+
+# Ignore bundle analysis files
+bundle-analysis.html
+

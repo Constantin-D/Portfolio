@@ -21,6 +21,8 @@
         transform: translateY(-50%);
         background: transparent;
         border: none;
+        // width: 2rem;
+        // height: 2rem;
         cursor: pointer;
         z-index: 2;
 
@@ -32,16 +34,26 @@
             right: 10px;
         }
 
-        @include respond-to("mobile") {
-            display: none;
-        }
+        // @include respond-to("mobile") {
+        //     display: none;
+        // }
 
+        // &-icon {
+        //     font-size: 3rem;
+        //     color: $text-pale-color;
+
+        //     @include respond-to("tablet") {
+        //         font-size: 2rem;
+        //     }
+        // }
         &-icon {
-            font-size: 3rem;
-            color: $text-pale-color;
+            width: 3.5rem;
+            height: 3.5rem;
+            filter: invert(1);
 
             @include respond-to("tablet") {
-                font-size: 2rem;
+                width: 2rem;
+                height: 2rem;
             }
         }
     }

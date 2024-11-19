@@ -3,9 +3,9 @@ import React, { useContext, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { ProjectsContext } from "../../context/ProjectsContext";
 import { Helmet } from "react-helmet-async";
+import ResponsiveImages from "../../components/ResponsiveImages/ResponsiveImages";
 
 import "./project-to-show.scss";
-import ResponsiveImages from "../../components/ResponsiveImages/ResponsiveImages";
 
 const ProjectToShow = () => {
     const { id } = useParams();
@@ -189,11 +189,11 @@ const ProjectToShow = () => {
                                     key={index}
                                     src={image.srcSet.default}
                                     srcSet={`${image.srcSet["375w"]} 375w, ${image.srcSet["768w"]} 768w, ${image.srcSet["1200w"]} 1200w`}
-                                    sizes="(max-width: 375px) 375px, (max-width: 768px) 768px, (min-width: 769px) 1200px"
+                                    sizes="(max-width: 480px) 375px, (max-width: 768px) 768px, (min-width: 769px) 1200px"
                                     alt={image.alt}
-                                    className="template__right--images"
                                     loading="lazy"
-                                />
+                                    className="template__right--images"
+                                    />
                             ))
                         ) : (
                             <p>Aucune image disponible.</p>
