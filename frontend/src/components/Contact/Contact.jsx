@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FaPaperPlane } from "react-icons/fa";
+// import { FaPaperPlane } from "react-icons/fa";
 import PageTransition from "../../components/PageTransition/PageTransition";
 import "./contact.scss";
 
