@@ -1,5 +1,6 @@
 import { AnimatePresence, motion } from "framer-motion";
 import React, { useEffect, useState } from "react";
+import CloseIcon from "./../Icons/CloseIcon/CloseIcon";
 
 import "./project-modal.scss";
 
@@ -48,17 +49,13 @@ const ProjectModal = ({ project, onClose }) => {
                             damping: 50,
                         }}
                     >
-                        <button
-                            className="modal__close"
-                            onClick={handleToggleModal}
-                            aria-label="Fermer la modale"
-                        >
-                            {/* <FaTimes /> */}
-                            <img
-                                src="/icons/menu-close.svg"
-                                alt="Fermer la modale"
+                        <div className="modal__close-container">
+                            <CloseIcon
+                                className="modal__close"
+                                onClick={handleToggleModal}
                             />
-                        </button>
+                        </div>
+
                         <h2 id="modal-title">{project.title}</h2>
                         <div className="modal__container">
                             {/* Partie gauche pour la description */}

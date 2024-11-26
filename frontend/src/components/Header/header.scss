@@ -25,7 +25,6 @@
     &__nav {
         ul {
             display: flex;
-            // flex-direction: row;
 
             li {
                 margin-left: 1rem;
@@ -46,15 +45,17 @@
         }
     }
 
-    &__bars img {
-        display: none;
+    &__bars {
+        .header__icon {
+            display: none; // Icône masquée par défaut sur desktop
 
-        @include respond-to("mobile") {
-            display: block;
-            filter:  invert(1);
-            width: 2rem;
-            height: 2rem;
-            cursor: pointer;
+            @include respond-to("mobile") {
+                @include flex-center;
+                justify-content: center;
+                // width: 2rem;
+                // height: 2rem;
+                cursor: pointer;
+            }
         }
     }
 }
@@ -134,11 +135,6 @@
         // Quand le menu est ouvert on affiche les liens
         &__nav--open {
             max-height: 260px;
-        }
-
-        &__bars {
-            // font-size: 1.5rem;
-            font-weight: 100;
         }
     }
 }

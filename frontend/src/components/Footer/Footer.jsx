@@ -1,25 +1,22 @@
 import React from "react";
-// import { FaGithub } from "react-icons/fa";
-// import { FaXTwitter, FaLinkedinIn } from "react-icons/fa6";
+import SocialIcons from "./../Icons/SocialIcons/SocialIcons";
+
 import "./footer.scss";
 
 const socialLinks = [
     {
         href: "https://github.com/",
-        // icon: <FaGithub />,
-        icon: <img src="/icons/github.svg" alt="GitHub" />,
+        platform: "github",
         // label: "GitHub",
     },
     {
         href: "https://twitter.com/",
-        // icon: <FaXTwitter />,
-        icon: <img src="/icons/x-twitter.svg" alt="Twitter" />,
+        platform: "twitter",
         // label: "Twitter",
     },
     {
         href: "https://linkedin.com/",
-        // icon: <FaLinkedinIn />,
-        icon: <img src="/icons/linkedin-2.svg" alt="LinkedIn" />,
+        platform: "linkedin",
         // label: "LinkedIn",
     },
 ];
@@ -37,7 +34,10 @@ const Footer = () => {
                         rel="noopener noreferrer"
                         className="logo-link"
                     >
-                        {link.icon} 
+                        <SocialIcons
+                            platform={link.platform}
+                            className="footer-icon"
+                        />
                         {/* {link.label} */}
                     </a>
                 ))}

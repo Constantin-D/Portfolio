@@ -1,8 +1,7 @@
 import React, { useState } from "react";
-// import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 import Card from "../Card/Card";
-// import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
+import ArrowButton from "./../Icons/ArrowButton/ArrowButton";
 
 import "./slider.scss";
 
@@ -21,40 +20,29 @@ const Slider = ({ projects }) => {
     };
 
     const handleCardClick = (id) => {
-        navigate(`/project/${id}`); 	
+        navigate(`/project/${id}`);
     };
 
     return (
         <div className="slider">
-            {/* Flèches de Navigation pour Desktop */}
-            <button
-                className="slider__arrow slider__arrow--left"
-                onClick={prevSlide}
-            >
-                {/* <IoIosArrowBack className="slider__arrow-icon" /> */}
-                <img
-                    src="/icons/arrow-back.svg"
-                    alt="Flèche gauche"
-                    className="slider__arrow-icon"
+            {/* Flèches de Navigation */}
+            <div className="slider__arrow slider__arrow--left">
+                <ArrowButton
+                    direction="left"
+                    onClick={prevSlide}
                 />
-            </button>
-            <button
-                className="slider__arrow slider__arrow--right"
-                onClick={nextSlide}
-            >
-                {/* <IoIosArrowForward className="slider__arrow-icon" /> */}
-                <img
-                    src="/icons/arrow-forward.svg"
-                    alt="Flèche droite"
-                    className="slider__arrow-icon"
+            </div>
+            <div className="slider__arrow slider__arrow--right">
+                <ArrowButton
+                    direction="right"
+                    onClick={nextSlide}
                 />
-            </button>
+            </div>
 
             {/* Slide Actuelle */}
             <div
                 className="slider__slide"
                 onClick={() => handleCardClick(projects[currentIndex].id)}
-                // showSliderCardDetails={() => handleCardClick(projects[currentIndex].id)}
             >
                 <Card project={projects[currentIndex]} />
             </div>
@@ -76,4 +64,3 @@ const Slider = ({ projects }) => {
 };
 
 export default Slider;
-

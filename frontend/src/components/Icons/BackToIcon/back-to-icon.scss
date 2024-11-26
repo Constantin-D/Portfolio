@@ -1,0 +1,38 @@
+@use "./../../../styles/variables.scss" as *;
+@use "./../../../styles/mixins.scss" as *;
+
+.back-to-icon {
+    background: none;
+    border: 3px solid $blue-light-color;
+    border-radius: 50%;
+    cursor: pointer;
+   @include flex-center;
+    justify-content: center;
+    padding: 0.1rem;
+    position: fixed;
+    top: 20%;
+    left: 1%;
+    z-index: 1000;
+    
+
+    svg {
+        display: block; 
+        width: 2rem;
+        height: 2rem;
+        fill: none;
+        stroke: $blue-light-color;
+        stroke-width: 2;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+    }
+
+    &:hover {
+        border: $section-background-color;
+        svg {
+            stroke: $section-background-color;
+            transform: scale(1.1);
+        }
+        
+        
+    }
+}

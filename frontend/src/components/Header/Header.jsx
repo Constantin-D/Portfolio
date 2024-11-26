@@ -1,7 +1,10 @@
 import React, { useEffect, useRef, useState } from "react";
-// import { FaBars, FaTimes } from "react-icons/fa";
 import { Link, useLocation } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
+// import Icon from "@components/Icons/Icon/Icon";
+// import { ReactComponent as MenuBars } from "/icons/menu-bars.svg";
+// import { ReactComponent as MenuClose } from "/icons/menu-close.svg";
+import MenuIcons from "./../Icons/MenuIcons/MenuIcons";
 
 import "./header.scss";
 
@@ -94,21 +97,14 @@ const Header = () => {
                         ))}
                     </ul>
                 </nav>
-                <div className="header__bars" onClick={toggleMenu}>
-                    {/* {isMenuOpen ? <FaTimes /> : <FaBars />} */}
-                    {isMenuOpen ? (
-                        <img
-                            src="/icons/menu-close.svg"
-                            alt="Fermer"
-                            className="close-icon"
+
+                <div className="header__bars">
+                    <div className="header__icon" onClick={toggleMenu}>
+                        <MenuIcons
+                            type={isMenuOpen ? "menu-close" : "menu-bars"}
+                            className="header__icon-img"
                         />
-                    ) : (
-                        <img
-                            src="/icons/menu-bars.svg"
-                            alt="Menu"
-                            className="menu-icon"
-                        />
-                    )}
+                    </div>
                 </div>
             </header>
         </section>

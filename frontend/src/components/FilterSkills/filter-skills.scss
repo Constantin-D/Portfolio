@@ -47,22 +47,17 @@
                     display: flex;
                     justify-content: center;
                     gap: 1.5rem;
-                    // margin-bottom: 1rem;
-            
+
                     .skill-icon {
-                        width: 48px;
+                        // width: 48px;
                         height: 48px;
+                        object-fit: contain;
                     }
                 }
 
             &:hover {
                 transform: translateY(-3px);
             }
-
-            // svg {
-            //     font-size: 3rem;
-            //     color: $primary-color;
-            // }
 
             h4 {
                 margin-top: 1.1rem;

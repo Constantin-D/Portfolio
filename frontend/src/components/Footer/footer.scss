@@ -2,55 +2,51 @@
 @use "../../styles/mixins" as *;
 
 .footer {
-    background-color: $primary-color; 
-    color: $text-pale-color; 
+    background-color: $primary-color;
+    color: $text-pale-color;
     padding: 2rem 1rem;
 
     p {
         text-align: center;
-        margin: 0; 
+        margin: 0;
+        font-size: $footer-text-font-size; // Utilisation de la nouvelle variable
     }
 
     &__links {
         margin-top: 1rem;
-        // display: flex;
         @include flex-center;
         justify-content: center;
-        gap: 2rem; 
+        gap: 1.5rem;
 
-        a img {
-            // color: $text-pale-color; 
+        a {
+            .footer-icon {
+                width: $footer-icon-size; 
+                height: $footer-icon-size;
+                fill: $text-pale-color;
+                transition: transform 0.2s ease, opacity 0.2s ease;
 
-            // &:hover {
-            //     color: $secondary-color; 
-            // }
-
-            // &.logo-link {
-            //     @include flex-center; 
-            //     gap: 0.5rem; 
-            // }
-            // display: flex;
-            width: 1.7rem;
-            height: 1.7rem;
-            filter: invert(1);
-            // gap: 1rem;
-
+                &:hover {
+                    fill: $secondary-color;
+                    transform: scale(1.1);
+                }
+            }
         }
     }
 }
 
 @include respond-to("mobile") {
     .footer {
-        font-size: 0.7rem; 
-        padding: 1.5rem 1rem; 
+        font-size: 0.7rem;
+        padding: 1.5rem 1rem;
 
         &__links {
             gap: 1rem;
-            
-            a img {
-                width: 1.3rem;
-                height: 1.3rem; 
-                
+
+            a {
+                .footer-icon {
+                    width: $footer-icon-size; 
+                    height: $footer-icon-size;
+                }
             }
         }
     }

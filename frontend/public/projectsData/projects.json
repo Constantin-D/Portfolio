@@ -352,7 +352,8 @@
             }
         ],
         "technologies": ["JavaScript", "Figma"],
-        "date": "2024-02-01"
+        "date": "2024-02-01",
+        "githubUrl": "https://github.com/Constantin-D/FrontEnd"
     },
     {
         "id": 5,
@@ -497,7 +498,8 @@
             }
         ],
         "technologies": ["React", "React-Router"],
-        "date": "2024-04-01"
+        "date": "2024-04-01",
+        "githubUrl": "https://github.com/Constantin-D/kasaP8"
     },
     {
         "id": 7,
@@ -570,7 +572,8 @@
             }
         ],
         "technologies": ["SEO", "Accessibilité", "Performance"],
-        "date": "2024-05-01"
+        "date": "2024-05-01",
+        "githubUrl": "https://github.com/Constantin-D/P9-Nina-Carducci"
     },
     {
         "id": 8,

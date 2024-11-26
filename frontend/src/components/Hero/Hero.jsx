@@ -1,9 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-// import { FaGithub, FaXTwitter, FaLinkedinIn } from "react-icons/fa6";
-// import FaGithub from "react-icons/fa6/FaGithub";
-// import FaXTwitter from "react-icons/fa6/FaXTwitter";
-// import FaLinkedinIn from "react-icons/fa6/FaLinkedinIn";
+import SocialIcons from "./../Icons/SocialIcons/SocialIcons"
 import { Link } from "react-router-dom"; 
 
 import "./hero.scss";
@@ -19,9 +16,6 @@ const Hero = () => {
             <div className="hero__image">
                 <h1>Intégrateur web</h1>
                 <img
-                    // className="hero__image--profile"
-                    // src="/images/profile/Profile-768-min.webp"
-                    // alt="Profile"
                     className="hero__image--profile"
                     src="/images/profile/Profile-768-min.webp"
                     srcSet="/images/profile/Profile-375-min.webp 375w,
@@ -48,41 +42,24 @@ const Hero = () => {
                         href="https://github.com/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="github-link"
+
                     >
-                        {/* <FaGithub /> */}
-                        <img
-                            src="/icons/github.svg"
-                            alt="GitHub"
-                            className="social-icon"
-                        />        
+                        <SocialIcons platform="github" />
                     </a>
                     <a
-                        // noreferrer est une directive de politique de sécurité qui indique au navigateur de ne pas envoyer de référents pour les requêtes effectuées à partir d'une page donnée.
                         href="https://twitter.com/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="twitter-link"
+                        aria-label="Visitez mon profil Twitter"
                     >
-                        {/* <FaXTwitter /> */}
-                        <img
-                            src="/icons/x-twitter.svg"
-                            alt="Twitter"
-                            className="social-icon"
-                        />
+                        <SocialIcons platform="twitter" />
                     </a>
                     <a
                         href="https://linkedin.com/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="linkedin-link"
                     >
-                        {/* <FaLinkedinIn /> */}
-                        <img
-                            src="/icons/linkedin-2.svg"
-                            alt="LinkedIn"
-                            className="social-icon"
-                        />
+                        <SocialIcons platform="linkedin" />
                     </a>
                 </div>
                 <div className="hero__presentation--link">

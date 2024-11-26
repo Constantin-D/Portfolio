@@ -102,14 +102,13 @@ const Home = () => {
                         name="twitter:image"
                         content="https://portfolio-dugards-projects.vercel.app/images/profile-512-min.webp"
                     />
-                    <meta name="robots" 
-                    content="index, follow" 
-                    />
+                    <meta name="robots" content="index, follow" />
                 </Helmet>
                 <section className="home">
                     <Hero />
 
-                    <section className="home__projects">
+                    <section id="home-projects" className="home__projects">
+                        .
                         <h2>Mes Projets</h2>
                         <p>
                             Découvrez mes projets récents et les technologies
@@ -139,12 +138,11 @@ const Home = () => {
                         </div>
                         <FilterSkills />
                     </section>
-
+                    <section id="contact"></section>
                     <motion.section
                         initial={{ opacity: 0, scale: 0 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 0.6 }}
-                        id="contact"
                         className="home__contact"
                     >
                         <div>
@@ -156,9 +154,6 @@ const Home = () => {
                                 ravi d'échanger avec vous.
                             </p>
                         </div>
-                        {/* <Link to="/contact" className="home__contact-cta--link">
-                        Contactez-moi !
-                    </Link> */}
                         <Contact />
                     </motion.section>
                 </section>

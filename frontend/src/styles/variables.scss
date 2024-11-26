@@ -3,32 +3,35 @@ $primary-color: rgb(8, 45, 82);
 $secondary-color: #95a5a6; 
 $background-color: #f8f9fa;
 $card-background-color: gainsboro;
-// $home-background-color: rgb(179, 221, 249);
-// $card-background-color: #d3dce6;
+$section-background-color: rgb(179, 221, 249);
 $modal-background-color: #fff;
 $indicator-background-color: #ccc;
-// $description-color: #333;
-// $text-color: #333;
 $text-pale-color: #fff;
 $see-thro-primary-color: rgba(8, 45, 82, 0.8);
 $modal-overlay-color: rgba(0, 0, 0, 0.7);
 $close-icon-color: #ccc;
 $blue-light-color: #4d94f2;
 
-$modal-padding: 2rem;
-
-$box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
-
 // Typographies
 $font-title: 'Montserrat', sans-serif;
 $font-body: 'Open Sans', sans-serif;
+
+$box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+
+// Tailles de typographies et espacements
+$modal-padding: 2rem;
 $title-font-size: clamp(1.9rem, 5vw, 2.5rem);
 $subtitle-h2-font-size: clamp(1.5rem, 4vw, 2rem);
 $subtitle-h3-font-size: clamp(1.2rem, 3vw, 1.5rem);
 $text-font-size: clamp(1rem, 2vw, 1.2rem);
 $anchor-font-size: clamp(1rem, 2vw, 1.2rem);
+$icon-size: clamp(1.5rem, 5vw, 2.5rem);
+$footer-text-font-size: clamp(0.8rem, 2vw, 1.5rem); 
+$footer-icon-size: clamp(1rem, 4vw, 2rem);
+$gap-size: clamp(1rem, 2vw, 2rem);
 
 // Breakpoints pour le responsive 
 $breakpoint-mobile: 480px;
 $breakpoint-tablet: 768px;
+// $breakpoint-laptop: 990px;
 $breakpoint-desktop: 1200px; 

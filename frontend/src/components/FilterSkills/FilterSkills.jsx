@@ -1,10 +1,14 @@
 import React, { useState } from "react";
-// import { AiOutlineStock } from "react-icons/ai";
-// import { DiScrum } from "react-icons/di";
-// import { FaReact, FaSass } from "react-icons/fa";
-// import { IoIosPulse, IoLogoHtml5, IoLogoJavascript } from "react-icons/io";
-// import { SiCss3, SiFigma, SiRedux } from "react-icons/si";
-// import { motion, AnimatePresence } from "framer-motion";
+import HtmlIcon from "/icons/html5.svg";
+import CssIcon from "/icons/css3.svg";
+import SassIcon from "/icons/sass-2.svg";
+import JsIcon from "/icons/javascript.svg";
+import ReactIcon from "/icons/reactjs.svg";
+import ReduxIcon from "/icons/redux.svg";
+import UiUxIcon from "/icons/ui-ux.svg";
+import FigmaIcon from "/icons/figma.svg";
+import SeoIcon from "/icons/seo.svg";
+import AgileIcon from "/icons/agile.svg";
 
 import "./filter-skills.scss";
 
@@ -12,124 +16,92 @@ const skillsData = {
     frontend: [
         {
             name: "HTML/CSS",
-            // icon: (
-            //     <>
-            //         <IoLogoHtml5 />
-            //         <SiCss3 />
-            //     </>
-            // ),
-            icon: ["/icons/html5.svg", "/icons/css3.svg"],
+            icon: [HtmlIcon, CssIcon],
             description: "Création de pages web structurées et stylisées.",
-            category: "frontend",
         },
         {
             name: "SASS",
-            // icon: <FaSass />,
-            icon: ["/icons/sass-2.svg"],
+            icon: [SassIcon],
             description:
                 "Préprocesseur CSS pour un code plus propre et maintenable.",
-            category: "frontend",
         },
         {
             name: "JavaScript/React",
-            // icon: (
-            //     <>
-            //         <IoLogoJavascript />
-            //         <FaReact />
-            //     </>
-            // ),
-            icon: ["/icons/javascript.svg", "/icons/reactjs.svg"],
+            icon: [JsIcon, ReactIcon],
             description:
-                "Langage de programmation pour des interactions dynamiques. Et la bibliothèque React pour des interfaces utilisateurs réactives.",
-            category: "frontend",
+                "Langage de programmation pour des interactions dynamiques.",
         },
         {
             name: "Redux",
-            // icon: <SiRedux />,
-            icon: ["/icons/redux.svg"],
+            icon: [ReduxIcon],
             description: "Gestion de l'état pour les applications React.",
-            category: "frontend",
         },
     ],
     design: [
         {
             name: "UI/UX Design",
-            // icon: (
-            //     <>
-            //         <AiOutlineStock />
-            //         <SiFigma />
-            //     </>
-            // ),
-            icon: ["/icons/ui-ux.svg", "/icons/figma.svg"],
+            icon: [UiUxIcon, FigmaIcon],
             description: "Conception d'interfaces utilisateur intuitives.",
         },
     ],
     tools: [
         {
             name: "SEO",
-            // icon: <IoIosPulse />,
-            icon: ["/icons/seo.svg"],
+            icon: [SeoIcon],
             description:
                 "Optimisation du référencement pour améliorer la visibilité.",
-            category: "tools",
         },
         {
             name: "Agile/Scrum",
-            // icon: <DiScrum />,
-            icon: ["/icons/agile.svg"],
+            icon: [AgileIcon],
             description: "Méthodologie de gestion de projet collaborative.",
-            category: "tools",
         },
     ],
 };
 
-// copie des skills dans un tableau
-const allSkills = [
-    ...skillsData.frontend,
-    ...skillsData.design,
-    ...skillsData.tools,
-];
-
 const FilterSkills = () => {
     const [selectedCategory, setSelectedCategory] = useState("all");
+    const categories = ["all", ...Object.keys(skillsData)];
     const filteredSkills =
-        selectedCategory === "all" ? allSkills : skillsData[selectedCategory];
+        selectedCategory === "all"
+            ? [
+                  ...skillsData.frontend,
+                  ...skillsData.design,
+                  ...skillsData.tools,
+              ]
+            : skillsData[selectedCategory];
 
     return (
         <div className="filter-skills">
             <div className="filter-skills__buttons">
-                <button onClick={() => setSelectedCategory("all")}>
-                    Toutes
-                </button>
-                <button onClick={() => setSelectedCategory("frontend")}>
-                    Frontend
-                </button>
-                <button onClick={() => setSelectedCategory("design")}>
-                    Design
-                </button>
-                <button onClick={() => setSelectedCategory("tools")}>
-                    Outils
-                </button>
+                {categories.map((category) => (
+                    <button
+                        key={category}
+                        onClick={() => setSelectedCategory(category)}
+                        className={
+                            selectedCategory === category ? "active" : ""
+                        }
+                    >
+                        {category === "all"
+                            ? "Toutes"
+                            : category.charAt(0).toUpperCase() +
+                              category.slice(1)}
+                    </button>
+                ))}
             </div>
-
-            <ul
-                className={`filter-skills__list ${
-                    selectedCategory === "all" ? "all-category" : ""
-                }`}
-            >
+            <ul className="filter-skills__list">
                 {filteredSkills.map((skill, index) => (
                     <li key={index} className="filter-skills__list--item">
                         <div className="icon-container">
-                            {skill.icon.map((src, index) => (
+                            {skill.icon.map((src, id) => (
                                 <img
-                                    key={index}
+                                    key={id}
                                     src={src}
-                                    alt={`{skill.name} icon`}
+                                    alt={`${skill.name} icon`}
                                     className="skill-icon"
                                 />
                             ))}
                         </div>
-                        {/* {skill.icon} */}
                         <h4>{skill.name}</h4>
                         {selectedCategory !== "all" && (
                             <p>{skill.description}</p>
@@ -142,3 +114,4 @@ const FilterSkills = () => {
 };
 
 export default FilterSkills;
+

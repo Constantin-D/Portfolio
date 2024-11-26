@@ -1,0 +1,14 @@
+@use "../../../styles/variables.scss" as *;
+
+.close-icon {
+    svg {
+        stroke: $secondary-color;
+        stroke-width: 2px;
+    }
+
+    &:hover {
+        svg {
+            stroke: $close-icon-color;
+        }
+    }
+}
