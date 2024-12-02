@@ -16,17 +16,15 @@
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         justify-content: center;
-        gap: 32px;
+        gap: $gap-size;
 
         @include respond-to("tablet") {
             grid-template-columns: repeat(2, 1fr);
-            gap: 24px;
         }
 
         @include respond-to("mobile") {
             padding: 0;
             grid-template-columns: 1fr;
-            gap: 16px;
         }
     }
 }

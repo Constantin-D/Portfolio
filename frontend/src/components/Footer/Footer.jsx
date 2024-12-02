@@ -5,19 +5,16 @@ import "./footer.scss";
 
 const socialLinks = [
     {
-        href: "https://github.com/",
+        href: "https://github.com/Constantin-D",
         platform: "github",
-        // label: "GitHub",
     },
     {
         href: "https://twitter.com/",
         platform: "twitter",
-        // label: "Twitter",
     },
     {
         href: "https://linkedin.com/",
         platform: "linkedin",
-        // label: "LinkedIn",
     },
 ];
 
@@ -32,13 +29,13 @@ const Footer = () => {
                         href={link.href}
                         target="_blank"
                         rel="noopener noreferrer"
+                        aria-label={`Visitez mon profil ${link.platform}`}
                         className="logo-link"
                     >
                         <SocialIcons
                             platform={link.platform}
                             className="footer-icon"
                         />
-                        {/* {link.label} */}
                     </a>
                 ))}
             </div>

@@ -3,8 +3,7 @@
 
 .menu-icon {
     width: $icon-size;
-    height: $icon-size;
-    // fill: $primary-color; 
+    height: $icon-size; 
     transition: transform 0.2s ease, opacity 0.2s ease;
 
     &:hover {

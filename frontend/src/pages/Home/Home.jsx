@@ -13,13 +13,13 @@ import "./home.scss";
 
 const Home = () => {
     const { projects, loading, error } = useContext(ProjectsContext);
-    const location = useLocation();
+    const location = useLocation(); 
 
     useEffect(() => {
-        if (location.hash) {
+        if (location.hash) { 
             const element = document.querySelector(location.hash);
             if (element) {
-                element.scrollIntoView();
+                element.scrollIntoView(); 
             }
         }
     }, [location]);

@@ -8,7 +8,7 @@ import "./about.scss";
 const aboutSections = [
     {
         subtitle: "Intégrateur Web",
-        description: `Passionné par le développement web, je m'engage à acquérir une expertise dans la création de sites web modernes, performants et optimisés. Mon parcours de formation chez OpenClassrooms a mis un accent particulier sur l'accessibilité, l'optimisation et le respect de l'environnement, adoptant une approche de green code pour un impact plus durable.`,
+        description: `Passionné par le développement web, je m'engage à acquérir une expertise dans la création de sites web modernes, performants et optimisés. Mon parcours de formation chez OpenClassrooms a mis un accent particulier sur l'accessibilité, l'optimisation et le respect de l'environnement, adoptant une approche de green code pour concevoir des solutions numériques durables et économes en ressources.`,
         delay: 0.2,
     },
     {
@@ -24,7 +24,7 @@ const aboutSections = [
     },
 ];
 
-// Variants for cascading animation
+// Variants en cascade
 const titleVariant = {
     hidden: { opacity: 0, x: -50 },
     // visible: { opacity: 1, x: 0, transition: { duration: 0.6 } },
@@ -97,14 +97,14 @@ const About = () => {
                     />
                 </Helmet>
                 <section className="about">
-                    <motion.h2
+                    <motion.h1
                         className="about__title"
                         variants={titleVariant}
                         initial="hidden"
                         animate="visible"
                     >
                         À propos de moi
-                    </motion.h2>
+                    </motion.h1>
                     {aboutSections.map((section, index) => (
                         <React.Fragment key={index}>
                             <motion.h3

@@ -1,61 +1,35 @@
 import { motion } from "framer-motion"; // Import Framer Motion
 import React, { useContext, useEffect } from "react";
 import { Helmet } from "react-helmet-async";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
+import BackToIcon from "../../components/Icons/BackToIcon/BackToIcon";
 import ResponsiveImages from "../../components/ResponsiveImages/ResponsiveImages";
 import { ProjectsContext } from "../../context/ProjectsContext";
-// import githubIcon from "/icons/github-icon.svg";
-import BackToIcon from "../../components/Icons/BackToIcon/BackToIcon";
 
 import "./project-to-show.scss";
 
 const ProjectToShow = () => {
     const { id } = useParams();
+    const navigate = useNavigate();
     const { projects, loading, error } = useContext(ProjectsContext);
 
     useEffect(() => {
-        const images = document.querySelectorAll(".template__right--images");
-        images.forEach((img) => {
-            // console.log("image actuelles chargées", img.currentSrc);
-            // console.log("srcSet dans le DOM:", img.getAttribute("srcset"));
-
-            img.onload = () => {
-                const loadedWidth = img.naturalWidth;
-                const srcLoaded = img.currentSrc;
-
-                // if (!srcLoaded) {
-                //     console.log("Image non chargée : aucun src trouvé.");
-                //     return;
-                // }
-
-                let format;
-                if (loadedWidth <= 375) {
-                    format = "375w";
-                } else if (loadedWidth <= 768) {
-                    format = "768w";
-                } else {
-                    format = "1200w";
-                }
-
-                console.log(
-                    `Image chargées : ${srcLoaded} | format : ${format}`
-                );
-                img.srcSet = `${project.modalImages[0].srcSet[format]} ${format}`;
-            };
-
-            console.log("Image srcSet:", img.srcSet);
-            console.log("Image sizes:", img.sizes);
-        });
-    }, [projects]);
+        if (!loading && !error) {
+            const projectExists = projects.some(
+                (project) => project.id === parseInt(id, 10)
+            );
+            if (!projectExists) {
+                navigate("/not-found", { replace: true }); // Évite page error au retour en arrière sur NAvig
+            }
+        }
+    }, [projects, loading, error, id, navigate]);
 
     if (loading) return <div>Chargement...</div>;
     if (error) return <div>Erreur lors du chargement des projets {error}</div>;
 
-    const project = projects.find((project) => project.id === parseInt(id));
+    const project = projects.find((project) => project.id === parseInt(id, 10));
 
     if (!project) return <div>Projet introuvable</div>;
-
-    // console.log("Project data:", project);
 
     const titleVariant = {
         hidden: { opacity: 0, y: -50 },
@@ -179,7 +153,9 @@ const ProjectToShow = () => {
                                 </p>
                             </div>
                             <div className="project-links">
-                                <p className="project-links_text">Code source du projet</p>
+                                <p className="project-links_text">
+                                    Code source du projet
+                                </p>
                                 <a
                                     href={project.githubUrl}
                                     target="_blank"
@@ -213,20 +189,11 @@ const ProjectToShow = () => {
                                         sizes="(max-width: 480px) 375px, (max-width: 768px) 768px, (min-width: 769px) 1200px"
                                         alt={image.alt}
                                         loading="lazy"
-                                        className="template__right--images"
                                     />
                                 ))
                             ) : (
                                 <p>Aucune image disponible.</p>
                             )}
-                            {/* <img
-                            src="/images/nina-carducci-min/camera-740-min.webp"
-                            srcSet="/images/nina-carducci-min/camera-375-min.webp 375w, /images/nina-carducci-min/camera-768-min.webp 768w, /images/nina-carducci-min/camera-1200-min.webp 1200w"
-                            sizes="(max-width: 375px) 375px, (max-width: 768px) 768px, (min-width: 769px) 1200px"
-                            alt="Image test"
-                            className="template__right--images"
-                            loading="lazy"
-                        /> */}
                         </motion.section>
                     </div>
                 </section>

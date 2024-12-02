@@ -98,7 +98,7 @@ const FilterSkills = () => {
                                     key={id}
                                     src={src}
                                     alt={`${skill.name} icon`}
-                                    className="skill-icon"
+                                    className={`skill-icon ${src === ReactIcon ? "rotate" : ""}`}
                                 />
                             ))}
                         </div>

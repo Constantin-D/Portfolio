@@ -5,7 +5,7 @@
     margin: 12rem 2rem 6rem;
 
     @include respond-to("tablet") {
-        margin: 9rem 0 1rem;
+        margin: 9rem 0 3rem;
     }
 
     @include respond-to("mobile") {
@@ -80,7 +80,6 @@
             .project-links {
                 @include flex-center;
                 flex-direction: column;
-                
 
                 &_text {
                     margin-bottom: 0.5rem;
@@ -106,10 +105,10 @@
             flex-direction: column;
             justify-content: space-around;
             flex: 1;
-            gap: 1.5rem;
+            gap: 1rem;
 
-            &--images {
-                width: 70%;
+            img {
+                width: 50%;
                 max-height: 100%;
                 border-radius: 5px;
                 box-shadow: $box-shadow;

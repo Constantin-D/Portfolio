@@ -39,10 +39,10 @@ const Hero = () => {
                 </p>
                 <div className="hero__presentation--social">
                     <a
-                        href="https://github.com/"
+                        href="https://github.com/Constantin-D"
                         target="_blank"
                         rel="noopener noreferrer"
-
+                        aria-label="Visitez mon profil GitHub"
                     >
                         <SocialIcons platform="github" />
                     </a>
@@ -58,6 +58,7 @@ const Hero = () => {
                         href="https://linkedin.com/"
                         target="_blank"
                         rel="noopener noreferrer"
+                        aria-label="Visitez mon profil LinkedIn"
                     >
                         <SocialIcons platform="linkedin" />
                     </a>

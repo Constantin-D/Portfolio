@@ -4,7 +4,7 @@
 
 // Marges et paddings
 *,
-*::before,
+*::before, 
 *::after {
   padding: 0;
   margin: 0;
@@ -57,7 +57,6 @@ h1 {
 
 h2 {
   font-size: $subtitle-h2-font-size;
-  margin: 2rem 0;
 
   @include respond-to("tablet") {
     margin: 1.5rem 0;
@@ -72,10 +71,8 @@ h3 {
   font-size: $subtitle-h3-font-size;
 }
 
-
 p {
   font-size: $text-font-size;
-  // font-family: $font-body;
 }
 
 //Liens

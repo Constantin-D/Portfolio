@@ -49,15 +49,12 @@
         border: none;
         cursor: pointer;
         width: 2rem;
-        height: 2rem;
-        // transition: transform 0.2s ease, opacity 0.2s ease; 
-
-
+        height: 2rem; 
     }
 
     #modal-title {
         font-family: $font-title;
-        font-size: 2rem;
+        font-size: $subtitle-h2-font-size;
     }
 
     .modal__container {

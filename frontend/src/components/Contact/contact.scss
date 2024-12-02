@@ -52,7 +52,6 @@
                     font-family: $font-body;
                     flex: 1;
                     padding: 0.8rem;
-                    // margin-bottom: 1rem; 
                     border: transparent;
                     border-radius: 5px;
                     background-color: $background-color;
@@ -67,7 +66,7 @@
                 }
 
                 textarea {
-                    height: 200px;
+                    height: 300px;
                     resize: auto;
                 }
             }

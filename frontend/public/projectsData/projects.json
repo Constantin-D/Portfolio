@@ -288,7 +288,9 @@
                 "task": "Optimisation multi-supports",
                 "details": "Tester et optimiser le carrousel pour une navigation sur desktop et mobile."
             }
-        ]
+        ],
+        "technologies": ["JavaScript"],
+        "date": "2024-02-01"
     },
     {
         "id": 4,

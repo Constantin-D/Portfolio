@@ -1,9 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
-// import Icon from "@components/Icons/Icon/Icon";
-// import { ReactComponent as MenuBars } from "/icons/menu-bars.svg";
-// import { ReactComponent as MenuClose } from "/icons/menu-close.svg";
 import MenuIcons from "./../Icons/MenuIcons/MenuIcons";
 
 import "./header.scss";

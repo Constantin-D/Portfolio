@@ -17,7 +17,7 @@
         .arrow-icon {
             width: $icon-size;
             height: $icon-size;
-            fill: $text-pale-color; // Couleur par défaut
+            fill: $text-pale-color; 
             transition: transform 0.2s ease, opacity 0.2s ease;
 
             &:hover {

@@ -34,11 +34,13 @@
         background: $modal-background-color;
         text-align: center;
         padding: 5rem 0;
-        // margin: 5rem 0;
-
 
         p {
-            margin: 3rem 0;
+            margin: 2rem 0;
+        }
+
+        @include respond-to("mobile") {
+            margin: 0;
         }
 
         &--button {
@@ -51,7 +53,7 @@
     }
 
     &__skills {
-        margin: 10rem 0;
+        padding-top: 8rem;
         text-align: center;
 
         h2 {
@@ -64,12 +66,16 @@
         }
 
         @include respond-to("tablet") {
-            margin-top: 2rem;
+            padding-top: 5rem;
+        }
+
+        @include respond-to("mobile") {
+            padding-top: 4rem;
         }
     }
 
     &__contact {
-        margin-top: 4rem;
+        padding: 7rem 0 5rem;
         text-align: center;
 
         h3 {
@@ -77,12 +83,20 @@
         }
 
         p {
-            margin-block: 2rem;
+            margin: 2rem;
             color: $secondary-color;
         }
 
-        @include respond-to("tablet") {
-            margin-top: 2rem;
+        @include respond-to("mobile") {
+            padding: 4rem 0;
+
+            h3 {
+                margin: 1rem;
+            }
+
+            p {
+                margin: 1rem;
+            }
         }
     }
 }

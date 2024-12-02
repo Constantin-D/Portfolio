@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-// import { FaPaperPlane } from "react-icons/fa";
 import PageTransition from "../../components/PageTransition/PageTransition";
+
 import "./contact.scss";
 
 const Contact = () => {
@@ -64,7 +64,6 @@ const Contact = () => {
                 <h2>Contactez-moi</h2>
                 <form className="contact__form" onSubmit={onSubmit}>
                     <fieldset className="contact__form-fieldset">
-                        {/* <legend>Vos informations</legend> */}
                         {formFields.map((field) => (
                             <div
                                 className="contact__form-fieldset--group"
@@ -90,7 +89,6 @@ const Contact = () => {
                     </fieldset>
 
                     <fieldset className="contact__form-fieldset">
-                        {/* <legend>Votre message</legend> */}
                         <div className="contact__form-fieldset--group">
                             <label htmlFor="message" id="label-message">
                                 Message
@@ -104,10 +102,7 @@ const Contact = () => {
                             ></textarea>
                         </div>
                     </fieldset>
-
                     <button type="submit" className="button">
-                        {/* <FaPaperPlane aria-hidden="true" /> ENVOYER */}
-                        {/* <img src="/icons/mail-send.svg" alt="Send mail" className="icon" /> */}
                         Envoyer
                     </button>
 

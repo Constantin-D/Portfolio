@@ -2,9 +2,8 @@
 @use "../../styles/mixins" as *;
 
 .about {
-    padding: 2rem;
     max-width: 800px;
-    margin-top: 5rem;
+    padding: 7rem 0 5rem;
     margin-inline: auto;
 
     &__title {
@@ -22,9 +21,19 @@
     }
 }
 
+@include respond-to("tablet") {
+    .about {
+        padding-inline: 1.5rem;
+    }
+}
+
 @include respond-to("mobile") {
     .about {
-        padding: rem;
+        padding: 5rem 1rem 3rem;
         text-align: left;
+
+        &__title {
+            margin: 1.5rem 0;
+        }
     }
 }

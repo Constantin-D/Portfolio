@@ -87,14 +87,11 @@ const ProjectModal = ({ project, onClose }) => {
                                             key={index}
                                             src={image.srcSet.default}
                                             srcSet={`${
-                                                image.srcSet["375w"] ||
-                                                image.srcSet.default
+                                                image.srcSet["375w"] 
                                             } 375w, ${
-                                                image.srcSet["768w"] ||
-                                                image.srcSet.default
+                                                image.srcSet["768w"] 
                                             } 768w, ${
-                                                image.srcSet["1200w"] ||
-                                                image.srcSet.default
+                                                image.srcSet["1200w"] 
                                             } 1200w`}
                                             sizes="(max-width: 375px) 375px, (max-width: 768px) 768px, 1200px"
                                             alt={image.alt}
@@ -103,7 +100,7 @@ const ProjectModal = ({ project, onClose }) => {
                                         />
                                     ))
                                 ) : (
-                                    <p>Aucune image disponible.</p>
+                                    <p>Aucune images disponible.</p>
                                 )}
                             </section>
                         </div>
