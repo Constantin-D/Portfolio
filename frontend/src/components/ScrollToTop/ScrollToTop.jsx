@@ -9,7 +9,7 @@ const ScrollToTop = () => {
             // Conflit avec ancre HashLink ds le Header et Home
             setTimeout(() => {
                 window.scrollTo(0, 0);
-            }, 50); 
+            }, 50); //
         }
     }, [pathname, hash]);
 

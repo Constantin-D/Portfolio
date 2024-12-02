@@ -1,5 +1,5 @@
 @use "./variables.scss" as *;
-@use "sass:color";
+@use "sass:color"; // Importation de la fonction color.adjust
 
 /* Mixin pour le centrement flex */
 @mixin flex-center {
