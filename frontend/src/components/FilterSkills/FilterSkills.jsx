@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import HtmlIcon from "/icons/html5.svg";
-import CssIcon from "/icons/css3.svg";
+import CssIcon from "/icons/css-new.svg";
 import SassIcon from "/icons/sass-2.svg";
 import JsIcon from "/icons/javascript.svg";
 import ReactIcon from "/icons/reactjs.svg";

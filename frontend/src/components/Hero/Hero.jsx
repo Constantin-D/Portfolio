@@ -41,13 +41,13 @@ const Hero = () => {
                     <a
                         href="https://github.com/Constantin-D"
                         target="_blank"
-                        rel="noopener noreferrer"
+                        rel="noopener noreferrer" //Évite les vulnérabilités aux liens externes.
                         aria-label="Visitez mon profil GitHub"
                     >
                         <SocialIcons platform="github" />
                     </a>
                     <a
-                        href="https://twitter.com/"
+                        href="https://twitter.com/DevConstantin42"
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label="Visitez mon profil Twitter"
@@ -55,7 +55,7 @@ const Hero = () => {
                         <SocialIcons platform="twitter" />
                     </a>
                     <a
-                        href="https://linkedin.com/"
+                        href="https://www.linkedin.com/in/dugard-constantin-b7b7b328a/"
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label="Visitez mon profil LinkedIn"

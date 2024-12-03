@@ -9,11 +9,11 @@ const socialLinks = [
         platform: "github",
     },
     {
-        href: "https://twitter.com/",
+        href: "https://twitter.com/DevConstantin42",
         platform: "twitter",
     },
     {
-        href: "https://linkedin.com/",
+        href: "https://www.linkedin.com/in/dugard-constantin-b7b7b328a//",
         platform: "linkedin",
     },
 ];
