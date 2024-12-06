@@ -39,7 +39,17 @@ const Header = () => {
         <section>
             <header className="header">
                 <div className="header__logo">
-                    <Link to="/" onClick={() => setIsMenuOpen(false)}>
+                    {/* <Link to="/" onClick={() => setIsMenuOpen(false)}> */}
+                    <Link
+                        to="/"
+                        onClick={(e) => {
+                            if (location.pathname === "/") {
+                                e.preventDefault(); 
+                                window.scrollTo({ top: 0, behavior: "smooth" }); 
+                            }
+                            setIsMenuOpen(false);
+                        }}
+                    >
                         <img
                             src="/images/logo/Logo-1-768-min.webp"
                             srcSet="/images/logo/Logo-1-375-min.webp 375w, /images/logo/Logo-1-768-min.webp 768w, /images/logo/Logo-1-1200-min.webp 1200w"

@@ -1,12 +1,15 @@
 @use "../../styles/variables" as *;
-// @use "../../styles/mixins" as *;
+@use "../../styles/mixins" as *;
 
 .slider {
     position: relative;
     width: 100%;
     max-width: 400px;
     margin: 0 auto 2rem;
-    // overflow: hidden;
+
+    @include respond-to("mobile") {
+        padding-inline: 0.5rem;
+    }
 
     &__slide {
         cursor: pointer;
