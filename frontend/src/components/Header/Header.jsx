@@ -32,7 +32,7 @@ const Header = () => {
         { path: "about", label: "À propos de moi" },
         { path: "projects", label: "Projets" },
         { path: "skills", label: "Compétences", isHashLink: true },
-        { path: "contact", label: "Contactez-moi", isHashLink: true },
+        { path: "contact", label: "Contact", isHashLink: true },
     ];
 
     return (

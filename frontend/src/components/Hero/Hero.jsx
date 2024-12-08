@@ -55,7 +55,7 @@ const Hero = () => {
                         <SocialIcons platform="twitter" />
                     </a>
                     <a
-                        href="https://www.linkedin.com/in/dugard-constantin-b7b7b328a/"
+                        href="https://www.linkedin.com/in/Constantindugard/"
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label="Visitez mon profil LinkedIn"

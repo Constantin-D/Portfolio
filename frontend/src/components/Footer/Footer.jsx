@@ -13,7 +13,7 @@ const socialLinks = [
         platform: "twitter",
     },
     {
-        href: "https://www.linkedin.com/in/dugard-constantin-b7b7b328a//",
+        href: "https://www.linkedin.com/in/Constantindugard/",
         platform: "linkedin",
     },
 ];
