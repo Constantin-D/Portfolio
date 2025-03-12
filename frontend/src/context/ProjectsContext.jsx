@@ -4,8 +4,8 @@ import React, { createContext, useEffect, useState } from "react";
 export const ProjectsProvider = ({ children }) => {
     const [projects, setProjects] = useState(() => {
         const savedProjects = localStorage.getItem("projects");
-        // console.log("Récup des projets depuis localStorage:", savedProjects);
-        return savedProjects ? JSON.parse(savedProjects) : [];
+
+        return savedProjects ? JSON.parse(savedProjects) : []; 
     });
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
@@ -20,12 +20,9 @@ export const ProjectsProvider = ({ children }) => {
                 const data = await response.json();
                 setProjects(data);
                 localStorage.setItem("projects", JSON.stringify(data));
-                // console.log("Sauvegarde des projets dans localStorage:", data);
             } catch (err) {
-                // console.error("Fetch error:", err);
                 setError(err.message);
             } finally {
-                // console.log("Chargement des projets terminé.");
                 setLoading(false);
             }
         };
