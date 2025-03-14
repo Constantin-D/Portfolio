@@ -727,7 +727,7 @@
         "id": 10,
         "title": "European Weather Forecast",
         "presentation": "Application météo pour l'Europe",
-        "description": "Application de prévisions météorologiques pour les principales villes européennes sur 7 jours.",
+        "description": "Application de prévisions météorologiques des principales villes européennes sur 7 jours pour les clients d'une agence de voyage",
         "cardImage": {
             "srcSet": {
                 "default": "/images/skykive-europe/1-weather-forcast-768-min.webp",
@@ -784,8 +784,16 @@
                 "details": "Mettre en place des tests automatisés pour assurer la fiabilité et la qualité du code."
             },
             {
-                "task": "Intégration de l'API 7Timer",
-                "details": "Récupérer et traiter les données météorologiques en temps réel grâce à l'API 7Timer."
+                "task": "Intégration de l'API 7Timer!",
+                "details": "Récupérer et traiter les données météorologiques en temps réel grâce à l'API 7Timer!."
+            },
+            {
+                "task": "Optimisation pour l'accessibilité",
+                "details": "Implémentation des meilleures pratiques WCAG pour rendre l'application accessible à tous les utilisateurs, validée avec WAVE et les lecteurs d'écran."
+            },
+            {
+                "task": "Implémentation SEO et performance",
+                "details": "Configuration des balises meta pour le référencement et optimisation des performances selon les standards Lighthouse, avec validation HTML/CSS/JS."
             }
         ],
         "technologies": ["HTML5", "CSS3", "JavaScript", "Mocha", "Chai", "API Integration"],
